@@ -160,6 +160,7 @@ nav ul {
     position: fixed;
     padding-left: 2em;
     font-weight: bold;
+    z-index: 1000;
 }
 
 /* Navbar links */
