@@ -3409,3 +3409,25 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {There are several models of quantum computation which exhibit shared fundamental fault-tolerance properties. This article makes commonalities explicit by presenting these different models in a unifying framework based on the ZX calculus. We focus on models of topological fault tolerance - specifically surface codes - including circuit-based, measurement-based and fusion-based quantum computation, as well as the recently introduced model of Floquet codes. We find that all of these models can be viewed as different flavors of the same underlying stabilizer fault-tolerance structure, and sustain this through a set of local equivalence transformations which allow mapping between flavors. We anticipate that this unifying perspective will pave the way to transferring progress among the different views of stabilizer fault-tolerance and help researchers familiar with one model easily understand others.}
 }
 
+
+@article{winderl2023recursively,
+    author = {Winderl, David and Huang, Qunsheng and B. Mendl, Christian},
+    title = {{A recursively partitioned approach to architecture-aware ZX Polynomial synthesis and optimization}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2303.17366},
+    urldate = {2023-03-30},
+    link = {http://arxiv.org/abs/2303.17366},
+    keywords = {Optimisation, Phase Gadgets, Variational Circuits, Applied, ZX-calculus},
+    abstract = {The synthesis of quantum circuits from phase gadgets in the ZX-calculus facilitates quantum circuit optimization. Our work provides an alternative formulation for the architecture-aware synthesis algorithm of PauliOpt by replacing the stochastic approach of PauliOpt with a heuristic based search and utilizes a divide and conquer method to synthesize an optimized circuit from a ZX polynomial. We provide a comparison of our algorithm with PauliOpt and other state-of-the-art optimization libraries. While we note poorer performance for highly structured circuits, as in the QAOA formulation for Max-Cut, we demonstrate a significant advantage for randomized circuits, which highlights the advantages of utilizing an architecture-aware methodology.}
+}
+
+@article{boto2023zetcalculus,
+    author = {Bot{\"o}, Nicklas and Forslund, Fabian},
+    title = {{The Zeta Calculus}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2303.17399},
+    urldate = {2023-03-30},
+    link = {http://arxiv.org/abs/2303.17399},
+    keywords = {Protocols, Category Theory, Verification, ZX-calculus},
+    abstract = {We propose a quantum programming language that generalizes the $\lambda$-calculus. The language is non-linear; duplicated variables denote, not cloning of quantum data, but sharing a qubit's state; that is, producing an entangled pair of qubits whose amplitudes are identical with respect to a chosen basis. The language has two abstraction operators, $\zeta$ and $\xi$, corresponding to the Z- and X-bases; each abstraction operator is also parameterised by a phase, indicating a rotation that is applied to the input before it is shared. We give semantics for the language in the ZX-calculus and prove its equational theory sound. We show how this language can provide a good representation of higher-order functions in the quantum world.}
+}
