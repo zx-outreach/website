@@ -50,6 +50,7 @@ for a in q['authors']:
 	if ID is None: 
 		ID = last.replace(" ","").lower() + str(d.tm_year)
 		ID = ID.replace('í','i').replace('ó','o').replace('á','a').replace('é','e')
+		ID = ID.replace('ö','o').replace('ä','a').replace('ü','u').replace('ï','i').replace('ë','e')
 
 t = q['title'].lower().replace("the ","").replace("a ","").replace("an ", "")
 t = t.replace("towards ", "").replace("-","")
@@ -85,6 +86,7 @@ db = BibDatabase()
 db.entries = [entry]
 data = writer.write(db)
 data = data.replace("í",r"{\'i}").replace("é",r"{\'e}").replace("á",r"{\'a}").replace('ó',r"{\'o}")
+data = data.replace("ö",r'{\"o}').replace("ä",r'{\"a}').replace("ë",r'{\"e}').replace("ï",r'{\"i}')
 print()
 print(data)
 print()
