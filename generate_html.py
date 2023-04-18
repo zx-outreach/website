@@ -94,7 +94,10 @@ HTML = r"""
     </div>
     <div class="crossContent">
         <div class="abstract" style="display:none">{abstract}</div>
-        <div class="bibdata" style="display:none"><pre><code>{bibdata}</code></pre></div>
+        <div class="bibdata" style="display:none">
+            <pre><code>{bibdata}</code></pre>
+            <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
+        </div>
     </div>
 </div>"""
 
