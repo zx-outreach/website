@@ -3457,3 +3457,25 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {The ZX calculus and the ZH calculus use diagrams to denote and to compute properties of quantum operations, and other multi-linear operators described by tensor networks. These calculi involve 'rewrite rules', which are algebraic manipulations of the tensor networks through transformations of diagrams. The way in which diagrams denote tensor networks is through a semantic map, which assigns a meaning to each diagram in a compositional way. Slightly different semantic maps, which may prove more convenient for one purpose or another (e.g., analysing unitary circuits versus analysing counting complexity), give rise to slightly different rewrite systems. Through a simple application of measure theory on discrete sets, we describe a semantic map for ZX and ZH diagrams for qudits of any dimension D>1, well-suited to represent unitary circuits, and admitting simple rewrite rules. In doing so, we reproduce the 'well-tempered' semantics of [arXiv:2006.02557] for ZX and ZH diagrams in the case D=2. We demonstrate rewrite rules for the 'stabiliser fragment' of the ZX calculus and a 'multicharacter fragment' of the ZH calculus; and demonstrate relationships which would allow the two calculi to be used interoperably as a single 'ZXH calculus'.}
 }
 
+
+@article{wu2023zxcalculus,
+    author = {Wu, Zipeng and Cheng, Song and Zeng, Bei},
+    title = {{A ZX-Calculus Approach to Concatenated Graph Codes}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2304.08363},
+    urldate = {2023-04-17},
+    link = {http://arxiv.org/abs/2304.08363},
+    keywords = {Error Correcting Codes, Graph States, Local Complementation, ZX-calculus, Applied},
+    abstract = {Quantum Error-Correcting Codes (QECCs) are vital for ensuring the reliability of quantum computing and quantum communication systems. Among QECCs, stabilizer codes, particularly graph codes, have attracted considerable attention due to their unique properties and potential applications. Concatenated codes, whichcombine multiple layers of quantum codes, offer a powerful technique for achieving high levels of error correction with a relatively low resource overhead. In this paper, we examine the concatenation of graph codes using the powerful and versatile graphical language of ZX-calculus. We establish a correspondence between the encoding map and ZX-diagrams, and provide a simple proof of the equivalence between encoding maps in the Pauli X basis and the graphic operation "generalized local complementation" (GLC) as previously demonstrated in [J. Math. Phys. 52, 022201]. Our analysis reveals that the resulting concatenated code remains a graph code only when the encoding qubits of the same inner code are not directly connected. When they are directly connected, additional Clifford operations are necessary to transform the concatenated code into a graphcode, thus generalizing the results in [J. Math. Phys. 52, 022201]. We further explore concatenated graph codesin different bases, including the examination of holographic codes as concatenated graph codes. Our findings showcase the potential of ZX-calculus in advancing the field of quantum error correction.}
+}
+
+@article{mcelvanney2023flowpreserving,
+    author = {McElvanney, Tommy and Backens, Miriam},
+    title = {{Flow-preserving ZX-calculus rewrite rules for optimisation and obfuscation}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2304.08166},
+    urldate = {2023-04-17},
+    link = {http://arxiv.org/abs/2304.08166},
+    keywords = {MBQC, gflow, Local Complementation, ZX-calculus},
+    abstract = {In the one-way model of measurement-based quantum computation (MBQC), computation proceeds via measurements on a resource state. So-called flow conditions ensure that the overall computation is deterministic in a suitable sense, with Pauli flow being the most general of these. Computations, represented as measurement patterns, may be rewritten to optimise resource use and for other purposes. Such rewrites need to preserve the existence of flow to ensure the new pattern can still be implemented deterministically. The majority of existing work in this area has focused on rewrites that reduce the number of qubits, yet it can be beneficial to increase the number of qubits for certain kinds of optimisation, as well as for obfuscation.   In this work, we introduce several ZX-calculus rewrite rules that increase the number of qubits and preserve the existence of Pauli flow. These rules can be used to transform any measurement pattern into a pattern containing only (general or Pauli) measurements within the XY-plane. We also give the first flow-preserving rewrite rule that allows measurement angles to be changed arbitrarily, and use this to prove that the `neighbour unfusion' rule of Staudacher et al. preserves the existence of Pauli flow. This implies it may be possible to reduce the runtime of their two-qubit-gate optimisation procedure by removing the need to regularly run the costly gflow-finding algorithm.}
+}
