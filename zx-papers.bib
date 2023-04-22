@@ -2730,7 +2730,7 @@ Quantum Physics and Logic,
     urldate = {2022-04-28},
     link = {http://arxiv.org/abs/2204.13681},
     video = {https://youtu.be/v_y8Wu6GLxc?t=2548},
-    keywords = {ZX-calculus, Qutrits, Phase Gadgets, Applied, Clifford Fragment},
+    keywords = {ZX-calculus, Qutrits, Phase Gadgets, Optimisation, Applied},
     abstract = {Phase gadgets have proved to be an indispensable tool for reasoning about ZX-diagrams, being used in optimisation and simulation of quantum circuits and the theory of measurement-based quantum computation. In this paper we study phase gadgets for qutrits. We present the flexsymmetric variant of the original qutrit ZX-calculus, which allows for rewriting that is closer in spirit to the original (qubit) ZX-calculus. In this calculus phase gadgets look as you would expect, but there are non-trivial differences in their properties. We devise new qutrit-specific tricks to extend the graphical Fourier theory of qubits, resulting in a translation between the 'additive' phase gadgets and a 'multiplicative' counterpart we dub phase multipliers. This enables us to build different types of qutrit multiple-controlled phase gates. As an application of these results we find a construction for emulating arbitrary qubit diagonal unitaries, and specifically find an emulation for the qubit CCZ gate that only requires three single-qutrit non-Clifford gates to implement - provably lower than the four T gates needed using just qubit gates.}
 }
 
@@ -3004,7 +3004,7 @@ effective, and suggest avenues for further improvement.}
     school = {University of Oxford},
     link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/cole-thesis.pdf},
     urldate = {2022-10-16},
-    keywords = {ZX-Calculus, Optimisation, Phase Gadgets, Applied, Master Thesis},
+    keywords = {ZX-Calculus, Optimisation, Phase Gadgets, Automation, Applied, Master Thesis},
     abstract = {Quantum circuits require careful and in-depth optimisation to be run on existing quantum computers. This project investigates the application of the Product Rotation Lemma, introduced by Will Simmons in [32], as a tool for general circuit optimisation. These optimisations exploit the initial state information to identify redundancies in the circuit. This project delves into the lemma’s applications for the Clifford-Pauli-Exponential form and its synthesis alongside the practical applications of this theory. The main contributions from this project are (1) the Pauli DAG Merging Theorem and its surrounding theory that gives simple necessary, and sufficient conditions for applying the Product Rotation Lemma in a strictly beneficial way and (2) providing results strongly indicating the feasibility of the techniques presented here as tools to be used in generic compilation procedures. This report provides proof of the novel theory coming out of this project, alongside a design and implementation of an end-to-end QASM-to-QASM compiler using staq as the base [3]. This compiler is very efficient on large circuits and provides CX count, and depth reductions of up to 42\% after existing methods are applied.}
 }
 
@@ -3037,7 +3037,7 @@ effective, and suggest avenues for further improvement.}
     school = {University of Oxford},
     link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/codsi-thesis.pdf},
     urldate = {2022-10-19},
-    keywords = {ZX-Calculus, Classical Simulation, Phase Gadgets, Applied, Master Thesis},
+    keywords = {ZX-Calculus, Classical Simulation, Phase Gadgets, Automation, Applied, Master Thesis},
     abstract = {The aim of this thesis is to study and improve classical simulation of quan tum circuits with stabiliser decompositions by using the ZX-calculus. We propose more efficient decompositions for a large family of states in addi- tion to integrating graphs cuts to make use of potential low connectivity of ZX-diagrams. We also discovered different heuristics to speed up the simulations. Finally, we implemented our method and compared it with the state-of-the-art on different families of circuits to asses the improvements achieved by our approach.}
 }
 
@@ -3070,7 +3070,7 @@ effective, and suggest avenues for further improvement.}
     school = {University of Oxford},
     link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/raj-thesis.pdf},
     urldate = {2022-11-23},
-    keywords = {ZX-Calculus, Classical Simulation, Tensor Networks, Applied, Master Thesis},
+    keywords = {ZX-Calculus, Classical Simulation, Tensor Networks, Automation, Applied, Master Thesis},
     abstract = {Quantum computing is an emerging field of research that harnesses the laws of quantum mechanics to solve computationally hard problems. In addition to developing better and bigger quantum computers, a significant challenge is developing techniques to benchmark these devices. Thus, pushing the barrier of classical simulation goes hand in hand with the development of quantum computers. In this dissertation, we hope to leverage the existing work on quantum graphical languages such as the ZX-calculus to aid one of the most prominent classical simulation tools, tensor network methods. By their very nature, graphical languages have a more modular representation of quantum circuits, which could be optimized using the associated rewrite rules of the calculi. We investigate how effective the existing procedures are at enhancing tensor network contractions and propose new strategies based on our observations. Furthermore, we evaluate our strategies using a variety of circuits, including the Sycamore circuits used by Google to demonstrate quantum supremacy in 2019.}
 }
 
@@ -3137,7 +3137,7 @@ effective, and suggest avenues for further improvement.}
     journal = {arXiv preprint arXiv:2212.08609},
     urldate = {2022-12-16},
     link = {http://arxiv.org/abs/2212.08609},
-    keywords = {Classical Simulation, ZX-calculus, Applied},
+    keywords = {Classical Simulation, Clifford+T, Automation, ZX-calculus, Applied},
     abstract = {Quantum Supremacy is a demonstration of a computation by a quantum computer that can not be performed by the best classical computer in a reasonable time. A well-studied approach to demonstrating this on near-term quantum computers is to use random circuit sampling. It has been suggested that a good candidate for demonstrating quantum supremacy with random circuit sampling is to use \emph{IQP circuits}. These are quantum circuits where the unitary it implements is diagonal. In this paper we introduce improved techniques for classically simulating random IQP circuits. We find a simple algorithm to calculate an amplitude of an $n$-qubit IQP circuit with dense random two-qubit interactions in time $O(\frac{\log^2 n}{n} 2^n )$, which for sparse circuits (where each qubit interacts with $O(\log n)$ other qubits) runs in $o(2^n/\text{poly}(n))$ for any given polynomial. Using a more complicated stabiliser decomposition approach we improve the algorithm for dense circuits to $O\left(\frac{(\log n)^{4-\beta}}{n^{2-\beta}} 2^n \right)$ where $\beta \approx 0.396$. We benchmarked our algorithm and found that we can simulate up to 50-qubit circuits in a couple of minutes on a laptop. We estimate that 70-qubit circuits are within reach for a large computing cluster.}
 }
 
@@ -3420,7 +3420,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2303.17366},
     urldate = {2023-03-30},
     link = {http://arxiv.org/abs/2303.17366},
-    keywords = {Optimisation, Phase Gadgets, Variational Circuits, Applied, ZX-calculus},
+    keywords = {Optimisation, Phase Gadgets, Variational Circuits, Automation, Applied, ZX-calculus},
     abstract = {The synthesis of quantum circuits from phase gadgets in the ZX-calculus facilitates quantum circuit optimization. Our work provides an alternative formulation for the architecture-aware synthesis algorithm of PauliOpt by replacing the stochastic approach of PauliOpt with a heuristic based search and utilizes a divide and conquer method to synthesize an optimized circuit from a ZX polynomial. We provide a comparison of our algorithm with PauliOpt and other state-of-the-art optimization libraries. While we note poorer performance for highly structured circuits, as in the QAOA formulation for Max-Cut, we demonstrate a significant advantage for randomized circuits, which highlights the advantages of utilizing an architecture-aware methodology.}
 }
 
@@ -3479,3 +3479,16 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     keywords = {MBQC, gflow, Local Complementation, ZX-calculus},
     abstract = {In the one-way model of measurement-based quantum computation (MBQC), computation proceeds via measurements on a resource state. So-called flow conditions ensure that the overall computation is deterministic in a suitable sense, with Pauli flow being the most general of these. Computations, represented as measurement patterns, may be rewritten to optimise resource use and for other purposes. Such rewrites need to preserve the existence of flow to ensure the new pattern can still be implemented deterministically. The majority of existing work in this area has focused on rewrites that reduce the number of qubits, yet it can be beneficial to increase the number of qubits for certain kinds of optimisation, as well as for obfuscation.   In this work, we introduce several ZX-calculus rewrite rules that increase the number of qubits and preserve the existence of Pauli flow. These rules can be used to transform any measurement pattern into a pattern containing only (general or Pauli) measurements within the XY-plane. We also give the first flow-preserving rewrite rule that allows measurement angles to be changed arbitrarily, and use this to prove that the `neighbour unfusion' rule of Staudacher et al. preserves the existence of Pauli flow. This implies it may be possible to reduce the runtime of their two-qubit-gate optimisation procedure by removing the need to regularly run the costly gflow-finding algorithm.}
 }
+
+@article{peham2022equivalence,
+    author = {Peham, Tom and Burgholzer, Lukas and Wille, Robert},
+    title = {{Equivalence Checking of Parameterized Quantum Circuits: Verifying the Compilation of Variational Quantum Algorithms}},
+    year = {2022},
+    journal = {arXiv preprint arXiv:2210.12166},
+    doi = {10.1145/3566097.3567932},
+    urldate = {2022-10-21},
+    link = {http://arxiv.org/abs/2210.12166},
+    keywords = {Verification, Variational Circuits, Automation, ZX-calculus, Applied},
+    abstract = {Variational quantum algorithms have been introduced as a promising class of quantum-classical hybrid algorithms that can already be used with the noisy quantum computing hardware available today by employing parameterized quantum circuits. Considering the non-trivial nature of quantum circuit compilation and the subtleties of quantum computing, it is essential to verify that these parameterized circuits have been compiled correctly. Established equivalence checking procedures that handle parameter-free circuits already exist. However, no methodology capable of handling circuits with parameters has been proposed yet. This work fills this gap by showing that verifying the equivalence of parameterized circuits can be achieved in a purely symbolic fashion using an equivalence checking approach based on the ZX-calculus. At the same time, proofs of inequality can be efficiently obtained with conventional methods by taking advantage of the degrees of freedom inherent to parameterized circuits. We implemented the corresponding methods and proved that the resulting methodology is complete. Experimental evaluations (using the entire parametric ansatz circuit library provided by Qiskit as benchmarks) demonstrate the efficacy of the proposed approach. The implementation is open source and publicly available as part of the equivalence checking tool QCEC (https://github.com/cda-tum/qcec) which is part of the Munich Quantum Toolkit (MQT).}
+}
+
