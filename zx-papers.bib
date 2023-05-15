@@ -3515,3 +3515,15 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {We identify a novel qudit gate which we call the $\sqrt[d]{Z}$ gate. This is an alternate generalization of the qutrit $T$ gate to any odd prime dimension $d$, in the $d^{\text{th}}$ level of the Clifford hierarchy. Using this gate which is efficiently realizable fault-tolerantly should a certain conjecture hold, we deterministically construct in the Clifford+$\sqrt[d]{Z}$ gate set, $d$-qubit $W$ states in the qudit $\{ |0\rangle , |1\rangle \}$ subspace. For qutrits, this gives deterministic and fault-tolerant constructions for the qubit $W$ state of sizes three with $T$ count 3, six, and powers of three.   Furthermore, we adapt these constructions to recursively scale the $W$ state size to arbitrary size $N$, in $O(N)$ gate count and $O(\text{log }N)$ depth. This is moreover deterministic for any size qubit $W$ state, and for any prime $d$-dimensional qudit $W$ state, size a power of $d$.   For these purposes, we devise constructions of the $ |0\rangle $-controlled Pauli $X$ gate and the controlled Hadamard gate in any prime qudit dimension. These decompositions, for which exact synthesis is unknown in Clifford+$T$ for $d > 3$, may be of independent interest.}
 }
 
+
+@article{cam2023speeding,
+    author = {Cam, Tristan and Martiel, Simon},
+    title = {{Speeding up quantum circuits simulation using ZX-Calculus}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2305.02669},
+    urldate = {2023-05-04},
+    link = {http://arxiv.org/abs/2305.02669},
+    keywords = {Classical Simulation, Tensor Networks, Local Complementation, Automation, Applied, ZX-calculus},
+    abstract = {We present a simple and efficient way to reduce the contraction cost of a tensor network to simulate a quantum circuit. We start by interpreting the circuit as a ZX-diagram. We then use simplification and local complementation rules to sparsify it. We find that optimizing graph-like ZX-diagrams improves existing state of the art contraction cost by several order of magnitude. In particular, we demonstrate an average contraction cost 1180 times better for Sycamore circuits of depth 20, and up to 4200 times better at peak performance.}
+}
+
