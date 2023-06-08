@@ -3550,3 +3550,15 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {In this paper, we develop a graphical calculus to rewrite photonic circuits involving light-matter interactions and non-linear optical effects. We introduce the infinite ZW calculus, a graphical language for linear operators on the bosonic Fock space which captures both linear and non-linear photonic circuits. This calculus is obtained by combining the QPath calculus, a diagrammatic language for linear optics, and the recently developed qudit ZXW calculus, a complete axiomatisation of linear maps between qudits. It comes with a 'lifting' theorem allowing to prove equalities between infinite operators by rewriting in the ZXW calculus. We give a method for representing bosonic and fermionic Hamiltonians in the infinite ZW calculus. This allows us to derive their exponentials by diagrammatic reasoning. Examples include phase shifts and beam splitters, as well as non-linear Kerr media and Jaynes-Cummings light-matter interaction.}
 }
 
+
+@article{meijer-vandegriend2023generic,
+    author = {Meijer - van de Griend, Arianne},
+    title = {{Towards a generic compilation approach for quantum circuits through resynthesis}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2304.08814},
+    urldate = {2023-04-18},
+    link = {http://arxiv.org/abs/2304.08814},
+    keywords = {ZX-Supported, Optimisation, Applied, Phase gadgets},
+    abstract = {In this paper, we propose a generic quantum circuit resynthesis approach for compilation. We use an intermediate representation consisting of Paulistrings over {Z, I} and {X, I} called a ``mixed ZX-phase polynomial``. From this universal representation, we generate a completely new circuit such that all multi-qubit gates (CNOTs) are satisfying a given quantum architecture. Moreover, we attempt to minimize the amount of generated gates.   The proposed algorithms generate fewer CNOTs than similar previous methods on different connectivity graphs ranging from 5-20 qubits. In most cases, the CNOT counts are also lower than Qiskit's. For large circuits, containing >= 100 Paulistrings, our proposed algorithms even generate fewer CNOTs than the TKET compiler.   Additionally, we give insight into the trade-off between compilation time and final CNOT count.}
+}
+
