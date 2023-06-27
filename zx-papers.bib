@@ -3586,3 +3586,14 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {We present a smorgasbord of results on the stabiliser ZX-calculus for odd prime-dimensional qudits (i.e. qupits). We derive a simplified rule set that closely resembles the original rules of qubit ZX-calculus. Using these rules, we demonstrate analogues of the spider-removing local complementation and pivoting rules. This allows for efficient reduction of diagrams to the affine with phases normal form. We also demonstrate a reduction to a unique form, providing an alternative and simpler proof of completeness. Furthermore, we introduce a different reduction to the graph state with local Cliffords normal form, which leads to a novel layered decomposition for qupit Clifford unitaries. Additionally, we propose a new approach to handle scalars formally, closely reflecting their practical usage. Finally, we have implemented many of these findings in DiZX, a new open-source Python library for qudit ZX-diagrammatic reasoning.}
 }
 
+
+@article{zilk2022compiler,
+    author = {Zilk, Felix and Staudacher, Korbinian and Guggemos, Tobias and F{\"u}rlinger, Karl and Kranzlm{\"u}ller, Dieter and Walther, Philip},
+    title = {{A compiler for universal photonic quantum computers}},
+    year = {2022},
+    journal = {arXiv preprint arXiv:2210.09251},
+    urldate = {2022-10-17},
+    link = {http://arxiv.org/abs/2210.09251},
+    keywords = {MBQC, Optimization, PyZX, Automation, ZX-calculus},
+    abstract = {Photons are a natural resource in quantum information, and the last decade showed significant progress in high-quality single photon generation and detection. Furthermore, photonic qubits are easy to manipulate and do not require particularly strongly sealed environments, making them an appealing platform for quantum computing. With the one-way model, the vision of a universal and large-scale quantum computer based on photonics becomes feasible. In one-way computing, the input state is not an initial product state, but a so-called cluster state. A series of measurements on the cluster state's individual qubits and their temporal order, together with a feed-forward procedure, determine the quantum circuit to be executed. We propose a pipeline to convert a QASM circuit into a graph representation named measurement-graph (m-graph), that can be directly translated to hardware instructions on an optical one-way quantum computer. In addition, we optimize the graph using ZX-Calculus before evaluating the execution on an experimental discrete variable photonic platform.}
+}
