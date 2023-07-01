@@ -3609,3 +3609,13 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {Measurement-based quantum computing (MBQC), an alternate paradigm for formulating quantum algorithms, can lead to potentially more flexible and efficient implementations as well as to theoretical insights on the role of entanglement in a quantum algorithm. Using the recently developed ZX-calculus, we outline a general scheme for reformulating quantum circuits as MBQC implementations. After illustrating the method using the two-qubit Deutsch-Jozsa algorithm, we derive a ZX graph-diagram that encodes a general MBQC implementation for the three-qubit Deutsch-Jozsa algorithm. This graph describes an 11-qubit cluster state on which single-qubit measurements are used to execute the algorithm. Particular sets of choices of the axes for the measurements can be used to implement any realization of the oracle. In addition, we derive an equivalent lattice cluster state for the algorithm.}
 }
 
+@article{zilk2022compiler,
+    author = {Zilk, Felix and Staudacher, Korbinian and Guggemos, Tobias and F{\"u}rlinger, Karl and Kranzlm{\"u}ller, Dieter and Walther, Philip},
+    title = {{A compiler for universal photonic quantum computers}},
+    year = {2022},
+    journal = {arXiv preprint arXiv:2210.09251},
+    urldate = {2022-10-17},
+    link = {http://arxiv.org/abs/2210.09251},
+    keywords = {MBQC, Optimisation, PyZX, Automation, ZX-calculus},
+    abstract = {Photons are a natural resource in quantum information, and the last decade showed significant progress in high-quality single photon generation and detection. Furthermore, photonic qubits are easy to manipulate and do not require particularly strongly sealed environments, making them an appealing platform for quantum computing. With the one-way model, the vision of a universal and large-scale quantum computer based on photonics becomes feasible. In one-way computing, the input state is not an initial product state, but a so-called cluster state. A series of measurements on the cluster state's individual qubits and their temporal order, together with a feed-forward procedure, determine the quantum circuit to be executed. We propose a pipeline to convert a QASM circuit into a graph representation named measurement-graph (m-graph), that can be directly translated to hardware instructions on an optical one-way quantum computer. In addition, we optimize the graph using ZX-Calculus before evaluating the execution on an experimental discrete variable photonic platform.}
+}
