@@ -3586,3 +3586,26 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {We present a smorgasbord of results on the stabiliser ZX-calculus for odd prime-dimensional qudits (i.e. qupits). We derive a simplified rule set that closely resembles the original rules of qubit ZX-calculus. Using these rules, we demonstrate analogues of the spider-removing local complementation and pivoting rules. This allows for efficient reduction of diagrams to the affine with phases normal form. We also demonstrate a reduction to a unique form, providing an alternative and simpler proof of completeness. Furthermore, we introduce a different reduction to the graph state with local Cliffords normal form, which leads to a novel layered decomposition for qupit Clifford unitaries. Additionally, we propose a new approach to handle scalars formally, closely reflecting their practical usage. Finally, we have implemented many of these findings in DiZX, a new open-source Python library for qudit ZX-diagrammatic reasoning.}
 }
 
+
+@mastersthesis{Poor2022Masters,
+    author = {Po{\'o}r, Boldizs{\'a}r},
+    title = {{A unique normal form for prime-dimensional qudit Clifford ZX-calculus}},
+    year = {2022},
+    school = {University of Oxford},
+    link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/poor-thesis.pdf},
+    urldate = {2022-11-25},
+    keywords = {Qudits, Completeness, Clifford Fragment, ZX-calculus, Master Thesis},
+    abstract = {In this thesis, we use a slightly modified version of the calculus presented Ref. [2]. This calculus is designed for odd prime dimensional qudits, and the modification is related to the representation of scalars. Using this calculus, we present and prove the correctness of the qudit version of local complementation and pivoting for odd prime dimensions. Moreover, we present the AP-form and its unique variant, the reduced AP-form, and show how to transform any Clifford circuit into these normal forms in the calculus. Furthermore, we present the qudit variant of the efficient weak simulation algorithm of Clifford states presented in Ref. [38]. Lastly, we also show an alternative completeness proof of the qudit ZX-calculus for odd prime dimensions using the reduced AP-form. While the completeness of the above-mentioned calculus has already been shown in Ref. [2], we aim to present a completeness proof that can be more accessible and easier to implement in practice. }
+}
+
+@article{schwetz2023threequbit,
+    author = {Schwetz, M. and M. Noack, R.},
+    title = {{Three-qubit Deutsch-Jozsa in measurement-based quantum computing}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2306.13372},
+    urldate = {2023-06-23},
+    link = {http://arxiv.org/abs/2306.13372},
+    keywords = {MBQC, Protocols, Applied, ZX-calculus},
+    abstract = {Measurement-based quantum computing (MBQC), an alternate paradigm for formulating quantum algorithms, can lead to potentially more flexible and efficient implementations as well as to theoretical insights on the role of entanglement in a quantum algorithm. Using the recently developed ZX-calculus, we outline a general scheme for reformulating quantum circuits as MBQC implementations. After illustrating the method using the two-qubit Deutsch-Jozsa algorithm, we derive a ZX graph-diagram that encodes a general MBQC implementation for the three-qubit Deutsch-Jozsa algorithm. This graph describes an 11-qubit cluster state on which single-qubit measurements are used to execute the algorithm. Particular sets of choices of the axes for the measurements can be used to implement any realization of the oracle. In addition, we derive an equivalent lattice cluster state for the algorithm.}
+}
+
