@@ -3620,3 +3620,15 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     keywords = {MBQC, Optimisation, PyZX, Automation, ZX-calculus},
     abstract = {Photons are a natural resource in quantum information, and the last decade showed significant progress in high-quality single photon generation and detection. Furthermore, photonic qubits are easy to manipulate and do not require particularly strongly sealed environments, making them an appealing platform for quantum computing. With the one-way model, the vision of a universal and large-scale quantum computer based on photonics becomes feasible. In one-way computing, the input state is not an initial product state, but a so-called cluster state. A series of measurements on the cluster state's individual qubits and their temporal order, together with a feed-forward procedure, determine the quantum circuit to be executed. We propose a pipeline to convert a QASM circuit into a graph representation named measurement-graph (m-graph), that can be directly translated to hardware instructions on an optical one-way quantum computer. In addition, we optimize the graph using ZX-Calculus before evaluating the execution on an experimental discrete variable photonic platform.}
 }
+
+@article{koch2023speedy,
+    author = {Koch, Mark and Yeung, Richie and Wang, Quanlong},
+    title = {{Speedy Contraction of ZX Diagrams with Triangles via Stabiliser Decompositions}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2307.01803},
+    urldate = {2023-07-04},
+    link = {http://arxiv.org/abs/2307.01803},
+    keywords = {Classical Simulation, Triangle, Automation, ZX-calculus, Variational Circuits, Applied},
+    abstract = {Recent advances in classical simulation of Clifford+T circuits make use of the ZX calculus to iteratively decompose and simplify magic states into stabiliser terms. We improve on this method by studying stabiliser decompositions of ZX diagrams involving the triangle operation. We show that this technique greatly speeds up the simulation of quantum circuits involving multi-controlled gates which can be naturally represented using triangles. We implement our approach in the QuiZX library and demonstrate a significant simulation speed-up (up to multiple orders of magnitude) for random circuits and a variation of previously used benchmarking circuits. Furthermore, we use our software to contract diagrams representing the gradient variance of parametrised quantum circuits, which yields a tool for the automatic numerical detection of the barren plateau phenomenon in ans\"atze used for quantum machine learning. Compared to traditional statistical approaches, our method yields exact values for gradient variances and only requires contracting a single diagram. The performance of this tool is competitive with tensor network approaches, as demonstrated with benchmarks against the quimb library.}
+}
+
