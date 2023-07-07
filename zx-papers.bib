@@ -3632,3 +3632,15 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {Recent advances in classical simulation of Clifford+T circuits make use of the ZX calculus to iteratively decompose and simplify magic states into stabiliser terms. We improve on this method by studying stabiliser decompositions of ZX diagrams involving the triangle operation. We show that this technique greatly speeds up the simulation of quantum circuits involving multi-controlled gates which can be naturally represented using triangles. We implement our approach in the QuiZX library and demonstrate a significant simulation speed-up (up to multiple orders of magnitude) for random circuits and a variation of previously used benchmarking circuits. Furthermore, we use our software to contract diagrams representing the gradient variance of parametrised quantum circuits, which yields a tool for the automatic numerical detection of the barren plateau phenomenon in ans\"atze used for quantum machine learning. Compared to traditional statistical approaches, our method yields exact values for gradient variances and only requires contracting a single diagram. The performance of this tool is competitive with tensor network approaches, as demonstrated with benchmarks against the quimb library.}
 }
 
+
+@article{huang2023graphical,
+    author = {Huang, Jiaxin and Meng Li, Sarah and Yeh, Lia and Kissinger, Aleks and Mosca, Michele and Vasmer, Michael},
+    title = {{Graphical CSS Code Transformation Using ZX Calculus}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2307.02437},
+    urldate = {2023-07-05},
+    link = {http://arxiv.org/abs/2307.02437},
+    keywords = {Error Correcting Codes, Clifford Fragment},
+    abstract = {In this work, we present a generic approach to transform CSS codes by building upon their equivalence to phase-free ZX diagrams. Using the ZX calculus, we demonstrate diagrammatic transformations between encoding maps associated with different codes. As a motivating example, we give explicit transformations between the Steane code and the quantum Reed-Muller code, since by switching between these two codes, one can obtain a fault-tolerant universal gate set. To this end, we propose a bidirectional rewrite rule to find a (not necessarily transversal) physical implementation for any logical ZX diagram in any CSS code.   We then focus on two code transformation techniques: $\textit{code morphing}$, a procedure that transforms a code while retaining its fault-tolerant gates, and $\textit{gauge fixing}$, where complimentary codes can be obtained from a common subsystem code (e.g., the Steane and the quantum Reed-Muller codes from the [[15,1,3,3]] code). We provide explicit graphical derivations for these techniques and show how ZX and graphical encoder maps relate several equivalent perspectives on these code transforming operations.}
+}
+
