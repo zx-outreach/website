@@ -48,8 +48,11 @@ def clear_arXiv_preprint_text(s):
 
 
 def clean_text(s):
-    s = s.replace(r'\"o','&ouml;').replace(r'\"u', '&uuml;').replace(r'\"a', '&auml;')
-    s = s.replace(r"\'e",'&eacute;').replace(r"\'a",'&aacute;').replace(r"\'u",'&uacute;')
+    for letter in ['a','o','u','i','e']:
+        s = s.replace(r'\"'+letter,'&'+letter+'uml;')
+        s = s.replace(r"\'"+letter,'&'+letter+'acute;')
+    # s = s.replace(r'\"o','&ouml;').replace(r'\"u', '&uuml;').replace(r'\"a', '&auml;')
+    # s = s.replace(r"\'e",'&eacute;').replace(r"\'a",'&aacute;').replace(r"\'u",'&uacute;')
     return s.replace('{','').replace('}','').replace(r'\rm','')
 
 
