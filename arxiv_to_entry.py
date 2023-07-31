@@ -51,6 +51,7 @@ for a in q['authors']:
 		ID = last.replace(" ","").lower() + str(d.tm_year)
 		ID = ID.replace('í','i').replace('ó','o').replace('á','a').replace('é','e')
 		ID = ID.replace('ö','o').replace('ä','a').replace('ü','u').replace('ï','i').replace('ë','e')
+		ID = ID.replace('õ','o').replace('ã','a')
 
 t = q['title'].lower().replace("the ","").replace("a ","").replace("an ", "")
 t = t.replace("towards ", "").replace("-","")
@@ -87,6 +88,7 @@ db.entries = [entry]
 data = writer.write(db)
 data = data.replace("í",r"{\'i}").replace("é",r"{\'e}").replace("á",r"{\'a}").replace('ó',r"{\'o}")
 data = data.replace("ö",r'{\"o}').replace("ä",r'{\"a}').replace("ë",r'{\"e}').replace("ï",r'{\"i}')
+data = data.replace("õ",r'{\~o}').replace("ã",r'{\~a}')
 print()
 print(data)
 print()
