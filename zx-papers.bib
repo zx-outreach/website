@@ -3664,3 +3664,47 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {Vilmart recently gave a complete equational theory for the balanced sum-over-paths over Toffoli-Hadamard circuits, and by extension Clifford+$\mathrm{diag}(1, \zeta_{2^k})$ circuits. Their theory is based on the phase-free ZH-calculus which crucially omits the average rule of the full ZH-calculus, dis-allowing the local summation of amplitudes. Here we study the question of completeness in unbalanced path sums which naturally support local summation. We give a concrete syntax for the unbalanced sum-over-paths and show that, together with symbolic multilinear algebra and the interference rule, various formulations of the average and ortho rules of the ZH-calculus are sufficient to give complete equational theories over arbitrary rings and fields.}
 }
 
+
+@article{roy2023qudit,
+    author = {Roy, Patrick and van de Wetering, John and Yeh, Lia},
+    title = {{The Qudit ZH-Calculus: Generalised Toffoli+Hadamard and Universality}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2307.10095},
+    urldate = {2023-07-19},
+    link = {http://arxiv.org/abs/2307.10095},
+    keywords = {Qudits, ZH-calculus, Completeness, Toffoli},
+    abstract = {We introduce the qudit ZH-calculus and show how to generalise the phase-free qubit rules to qudits. We prove that for prime dimensions $d$, the phase-free qudit ZH-calculus is universal for matrices over the ring $\mathbb{Z}[e^{2\pi i/d}]$. For qubits, there is a strong connection between phase-free ZH-diagrams and Toffoli+Hadamard circuits, a computationally universal fragment of quantum circuits. We generalise this connection to qudits, by finding that the two-qudit $|0\rangle$-controlled $X$ gate can be used to construct all classical reversible qudit logic circuits in any odd qudit dimension, which for qubits requires the three-qubit Toffoli gate. We prove that our construction is asymptotically optimal up to a logarithmic term. Twenty years after the celebrated result by Shi proving universality of Toffoli+Hadamard for qubits, we prove that circuits of $|0\rangle$-controlled $X$ and Hadamard gates are approximately universal for qudit quantum computing for any odd prime $d$, and moreover that phase-free ZH-diagrams correspond precisely to such circuits allowing postselections.}
+}
+
+@article{townsend-teague2023floquetifying,
+    author = {Townsend-Teague, Alex and Magdalena de la Fuente, Julio and Kesselring, Markus},
+    title = {{Floquetifying the Colour Code}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2307.11136},
+    urldate = {2023-07-20},
+    link = {http://arxiv.org/abs/2307.11136},
+    keywords = {Error Correcting Codes, ZX-calculus, Applied, Clifford Fragment},
+    abstract = {Floquet codes are a recently discovered type of quantum error correction code. They can be thought of as generalising stabilizer codes and subsystem codes, by allowing the logical Pauli operators of the code to vary dynamically over time. In this work, we use the ZX-calculus to create new Floquet codes that are in a definable sense equivalent to known stabilizer codes. In particular, we find a Floquet code that is equivalent to the colour code, but has the advantage that all measurements required to implement it are of weight one or two. Notably, the qubits can even be laid out on a square lattice. This circumvents current difficulties with implementing the colour code fault-tolerantly, while preserving its advantages over other well-studied codes, and could furthermore allow one to benefit from extra features exclusive to Floquet codes. On a higher level, as in arXiv:2303.08829, this work shines a light on the relationship between 'static' stabilizer and subsystem codes and 'dynamic' Floquet codes; at first glance the latter seems a significant generalisation of the former, but in the case of the codes that we find here, the difference is essentially just a few basic ZX-diagram deformations.}
+}
+
+@article{vilmart2023rewriting,
+    author = {Vilmart, Renaud},
+    title = {{Rewriting and Completeness of Sum-Over-Paths in Dyadic Fragments of Quantum Computing}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2307.14223},
+    urldate = {2023-07-26},
+    link = {http://arxiv.org/abs/2307.14223},
+    keywords = {ZH-calculus, Sum-Over-Paths, Completeness, Clifford+T, Toffoli},
+    abstract = {The "Sum-Over-Paths" formalism is a way to symbolically manipulate linear maps that describe quantum systems, and is a tool that is used in formal verification of such systems. We give here a new set of rewrite rules for the formalism, and show that it is complete for "Toffoli-Hadamard", the simplest approximately universal fragment of quantum mechanics. We show that the rewriting is terminating, but not confluent (which is expected from the universality of the fragment). We do so using the connection between Sum-over-Paths and graphical language ZH-calculus, and also show how the axiomatisation translates into the latter. We provide generalisations of the presented rewrite rules, that can prove useful when trying to reduce terms in practice, and we show how to graphically make sense of these new rules. We show how to enrich the rewrite system to reach completeness for the dyadic fragments of quantum computation, used in particular in the Quantum Fourier Transform, and obtained by adding phase gates with dyadic multiples of $\pi$ to the Toffoli-Hadamard gate-set. Finally, we show how to perform sums and concatenation of arbitrary terms, something which is not native in a system designed for analysing gate-based quantum computation, but necessary when considering Hamiltonian-based quantum computation.}
+}
+
+@article{peres2023nonstabilizerness,
+    author = {Peres, Filipa C. R. and Wagner, Rafael and F. Galv{\~a}o, Ernesto},
+    title = {{Non-stabilizerness and entanglement from cat-state injection}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2305.19988},
+    urldate = {2023-05-31},
+    link = {http://arxiv.org/abs/2305.19988},
+    keywords = {Classical Simulation, ZX-calculus, Applied, Automation},
+    abstract = {Recently, cat states have been used to heuristically improve the runtime of a classical simulator of quantum circuits based on the diagrammatic ZX-calculus. Here we explore the use of cat-state injection within the quantum circuit model. We introduce a new family of cat states $\left| \mathrm{cat}_m^* \right>$, and describe circuit gadgets using them to concurrently inject non-stabilizerness (also known as magic) and entanglement into any quantum circuit. We provide numerical evidence that cat-state injection does not lead to speed-up in classical simulation. On the other hand, we show that our gadgets can be used to widen the scope of compelling applications of cat states. Specifically, we show how to leverage them to achieve savings in the number of injected qubits, and also to induce scrambling dynamics in otherwise non-entangling Clifford circuits in a controlled manner.}
+}
