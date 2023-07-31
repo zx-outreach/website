@@ -4,8 +4,7 @@ function log(a) {
 
 function search(s) {
   var reg = new RegExp((s || "").replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "gim");
-  $("li").each(function (index, elt) {
-
+  $("main").find("li").each(function (index, elt) {
     var pubtype = "paper";
     var journal = $(elt).find(".journal").text();
     if (journal.match(/arxiv/gi) || journal.match(/preprint/gi)) {pubtype="preprint";}
