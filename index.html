@@ -11,18 +11,18 @@
         var setup = function () {
             var i;
             var slides = [
-                ["figures/swap1.png", "We start with three CNOT gates"],
-                ["figures/swap2.png", "Apply the bi-algebra rule"],
-                ["figures/swap3.png", "Pull the gate through the swap"],
-                ["figures/swap4.png", "Merge the two red nodes and the two green nodes"],
-                ["figures/swap5.png", "Apply the Hopf law"],
-                ["figures/swap6.png", "And remove the blank spiders, leaving just the swap gate"]
+                ["figures/swap1.svg", "We start with three CNOT gates"],
+                ["figures/swap2.svg", "Flip one of the CNOTs"],
+                ["figures/swap3.svg", "Apply the bi-algebra rule"],
+                ["figures/swap4.svg", "Merge the two red nodes and the two green nodes"],
+                ["figures/swap5.svg", "Apply the Hopf law"],
+                ["figures/swap6.svg", "And remove the blank spiders, leaving just the swap gate"]
             ]
 
             var slideshowHTML = ""
             slides.forEach(function (sc) {
                 slideshowHTML += `<div class="slideHolder">
-                <img src="${sc[0]}" class="slide">
+                <img src="${sc[0]}" class="slide" width="400">
                 <div class="slideCaption">${sc[1]}</div>
             </div>`
             })
