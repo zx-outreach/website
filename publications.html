@@ -62,7 +62,7 @@
                 <div id="search" class="row cell">
                     <h2>Search: <input type="text" id="txtSearch" onKeyUp="updateSearch()"></h2>
                     Search inside:
-                    <label><input type="checkbox" id="chkall" checked onclick="deselectAllChecks('all');">All</label>
+                    <label><input type="checkbox" id="chkall" checked onclick="setSearchInside('100000');">All</label>
                     <label><input type="checkbox" id="chkpaperTitle"
                                   onclick="$('#chkall').prop('checked',false);">Title</label>
                     <label><input type="checkbox" id="chkauthors"
@@ -75,7 +75,7 @@
                                   onclick="$('#chkall').prop('checked',false);">Journal</label>
                     <br>
                     View:
-                    <label><input type="checkbox" id="viewall" checked onclick="deselectAllViews('all');">All</label>
+                    <label><input type="checkbox" id="viewall" checked onclick="setSearchView('100000');">All</label>
                     <label><input type="checkbox" id="viewpapers" onclick="$('#viewall').prop('checked',false);">Journal
                         article</label>
                     <label><input type="checkbox" id="viewpreprints" onclick="$('#viewall').prop('checked',false);">Preprints</label>
