@@ -2679,7 +2679,7 @@ Quantum Physics and Logic,
     urldate = {2022-04-27},
     link = {http://arxiv.org/abs/2204.12985},
     video = {https://www.youtube.com/watch?v=BomcbwrJxvs},
-    keywords = {ZX-calculus, Applied, Pauli Fusion, Completeness},
+    keywords = {Photons, ZX-calculus, Applied, Pauli Fusion, Completeness},
     abstract = {We establish a formal bridge between qubit-based and photonic quantum computing. We do this by defining a functor from the ZX calculus to linear optical circuits. In the process we provide a compositional theory of quantum linear optics which allows to reason about events involving multiple photons such as those required to perform linear-optical and fusion-based quantum computing.}
 }
 
@@ -3611,7 +3611,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
   doi       = {10.4204/EPTCS.384.2},
   urldate = {2023-06-03},
     link = {http://arxiv.org/abs/2306.02114},
-    keywords = {ZW-calculus, Fermionic quantum computing, Algebraic ZX, Qudits, Qudits},
+    keywords = {Photons, ZW-calculus, Fermionic quantum computing, Algebraic ZX, Qudits, Qudits},
     abstract = {In this paper, we develop a graphical calculus to rewrite photonic circuits involving light-matter interactions and non-linear optical effects. We introduce the infinite ZW calculus, a graphical language for linear operators on the bosonic Fock space which captures both linear and non-linear photonic circuits. This calculus is obtained by combining the QPath calculus, a diagrammatic language for linear optics, and the recently developed qudit ZXW calculus, a complete axiomatisation of linear maps between qudits. It comes with a 'lifting' theorem allowing to prove equalities between infinite operators by rewriting in the ZXW calculus. We give a method for representing bosonic and fermionic Hamiltonians in the infinite ZW calculus. This allows us to derive their exponentials by diagrammatic reasoning. Examples include phase shifts and beam splitters, as well as non-linear Kerr media and Jaynes-Cummings light-matter interaction.}
 }
 
@@ -3693,7 +3693,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
   journal = {arXiv preprint arXiv:2210.09251},
     urldate = {2022-10-17},
     link = {http://arxiv.org/abs/2210.09251},
-    keywords = {MBQC, Optimisation, PyZX, Automation, ZX-calculus},
+    keywords = {Photons, MBQC, Optimisation, PyZX, Automation, ZX-calculus},
     abstract = {Photons are a natural resource in quantum information, and the last decade showed significant progress in high-quality single photon generation and detection. Furthermore, photonic qubits are easy to manipulate and do not require particularly strongly sealed environments, making them an appealing platform for quantum computing. With the one-way model, the vision of a universal and large-scale quantum computer based on photonics becomes feasible. In one-way computing, the input state is not an initial product state, but a so-called cluster state. A series of measurements on the cluster state's individual qubits and their temporal order, together with a feed-forward procedure, determine the quantum circuit to be executed. We propose a pipeline to convert a QASM circuit into a graph representation named measurement-graph (m-graph), that can be directly translated to hardware instructions on an optical one-way quantum computer. In addition, we optimize the graph using ZX-Calculus before evaluating the execution on an experimental discrete variable photonic platform.}
 }
 
@@ -3844,4 +3844,15 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     link = {http://arxiv.org/abs/2309.13014},
     keywords = {ZW-calculus, ZX-calculus, Qudits, Completeness},
     abstract = {Finite-dimensional quantum theory serves as the theoretical foundation for quantum information and computation based on 2-dimensional qubits, d-dimensional qudits, and their interactions. The qufinite ZX calculus has been used as a framework for mixed-dimensional quantum computing; however, it lacked the crucial property of completeness, which ensures that the calculus incorporates a set of rules rich enough to prove any equation. The ZXW calculus is a complete language for qudit quantum computing with applications previously unreachable solely with the ZX or ZW calculus. In this paper, we introduce the qufinite ZXW calculus, a unification of all qudit ZXW calculi in a single framework for mixed-dimensional quantum computing. We provide a set of rewrite rules and a unique normal form that make the calculus complete for finite-dimensional quantum theory. This work paves the way for the optimization of mixed dimensional circuits and tensor networks appearing in different areas of quantum computing including quantum chemistry, compilation, and quantum many-body systems.}
+}
+
+@article{pankovich2023flexible,
+    author = {Pankovich, Brendan and Neville, Alex and Kan, Angus and Omkar, Srikrishna and Ho Wan, Kwok and Br{\'a}dler, Kamil},
+    title = {{Flexible entangled state generation in linear optics}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2310.06832},
+    urldate = {2023-10-10},
+    link = {http://arxiv.org/abs/2310.06832},
+    keywords = {ZX-calculus, Graph States, Photons, Applied},
+    abstract = {Fault-tolerant quantum computation can be achieved by creating constant-sized, entangled resource states and performing entangling measurements on subsets of their qubits. Linear optical quantum computers can be designed based on this approach, even though entangling operations at the qubit level are non-deterministic in this platform. Probabilistic generation and measurement of entangled states must be pushed beyond the required threshold by some combination of scheme optimisation, introduction of redundancy and auxiliary state assistance. We report progress in each of these areas. We explore multi-qubit fusion measurements on dual-rail photonic qubits and their role in measurement-based resource state generation, showing that it is possible to boost the success probability of photonic GHZ state analysers with single photon auxiliary states. By incorporating generators of basic entangled "seed" states, we provide a method that simplifies the process of designing and optimising generators of complex, encoded resource states by establishing links to ZX diagrams.}
 }

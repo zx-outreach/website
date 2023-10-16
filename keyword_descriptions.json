@@ -4,6 +4,7 @@
     "ZX-calculus": "This paper uses the core ZX-calculus and not any of the other variations that exists",
     "ZH-calculus": "This paper uses the ZH-calculus in some way",
     "ZW-calculus": "This paper uses the ZW-calculus in some way",
+    "Algebraic ZX": "The paper uses the algebraic ZX-calculus",
     "Foundational": "This is a paper that was foundational to the original development of the ZX-calculus",
     "Foundations": "This paper discusses Quantum Foundations, including topics such as entanglement theory or contextuality",
     "MBQC": "This paper discusses measurement-based quantum computation",
@@ -34,7 +35,6 @@
     "Spekkens Toy Model": "The paper discusses Spekkens' Toy Model",
     "Scalable ZX": "The paper uses the Scalable ZX notation",
     "Fourier": "The paper uses the (graphical) Fourier transform of semi-Boolean functions",
-    "Algebraic ZX": "The paper uses the algebraic ZX-calculus",
     "Scalars": "The paper discusses scalar diagrams in a non-trivial way",
     "T-count": "The paper discusses T-count (optimisation)",
     "Graph States": "The paper uses or discusses graph states in a non-trivial way",
@@ -68,5 +68,6 @@
     "Classical Simulation": "This paper discusses classical simulation of quantum circuits",
     "Verification": "This paper discusses verification of equality (of quantum circuits)",
     "Chemistry": "This paper is about quantum chemistry",
-    "Cryptography": "This paper is about (post-)quantum cryptography"
+    "Cryptography": "This paper is about (post-)quantum cryptography",
+    "Photons": "This paper is about photons or photonic computing"
 }
