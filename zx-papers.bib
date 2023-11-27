@@ -3928,3 +3928,14 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     keywords = {Verification, Automation, ZX-calculus, Category Theory},
     abstract = {Mathematical representations of graphs often resemble adjacency matrices or lists, representations that facilitate whiteboard reasoning and algorithm design. In the realm of proof assistants, inductive representations effectively define semantics for formal reasoning. This highlights a gap where algorithm design and proof assistants require a fundamentally different structure of graphs, particularly for process theories which represent programs using graphs. To address this gap, we present VyZX, a verified library for reasoning about inductively defined graphical languages. These inductive constructs arise naturally from category theory definitions. A key goal for VyZX is to Verify the ZX-calculus, a graphical language for reasoning about quantum computation. The ZX-calculus comes with a collection of diagrammatic rewrite rules that preserve the graph's semantic interpretation. We show how inductive graphs in VyZX are used to prove the correctness of the ZX-calculus rewrite rules and apply them in practice using standard proof assistant techniques. VyZX integrates easily with the proof engineer's workflow through visualization and automation.}
 }
+
+@article{clement2023minimal,
+    author = {Cl{\'e}ment, Alexandre and Delorme, No{\'e} and Perdrix, Simon},
+    title = {{Minimal Equational Theories for Quantum Circuits}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2311.07476},
+    urldate = {2023-11-13},
+    link = {http://arxiv.org/abs/2311.07476},
+    keywords = {ZX-Supported, Completeness, Category Theory, Mixed States},
+    abstract = {We introduce the first minimal and complete equational theory for quantum circuits. Hence, we show that any true equation on quantum circuits can be derived from simple rules, all of them being standard except a novel but intuitive one which states that a multi-control $2\pi$ rotation is nothing but the identity. Our work improves on the recent complete equational theories for quantum circuits, by getting rid of several rules including a fairly unpractical one. One of our main contributions is to prove the minimality of the equational theory, i.e. none of the rules can be derived from the other ones. More generally, we demonstrate that any complete equational theory on quantum circuits (when all gates are unitary) requires rules acting on an unbounded number of qubits. Finally, we also simplify the complete equational theories for quantum circuits with ancillary qubits and/or qubit discarding.}
+}
