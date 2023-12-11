@@ -86,8 +86,8 @@ entry['keywords'] = keywords
 db = BibDatabase()
 db.entries = [entry]
 data = writer.write(db)
-data = data.replace("í",r"{\'i}").replace("é",r"{\'e}").replace("á",r"{\'a}").replace('ó',r"{\'o}")
-data = data.replace("ö",r'{\"o}').replace("ä",r'{\"a}').replace("ë",r'{\"e}').replace("ï",r'{\"i}')
+data = data.replace("í",r"{\'i}").replace("é",r"{\'e}").replace("á",r"{\'a}").replace('ó',r"{\'o}").replace('ú',r"{\'u}")
+data = data.replace("ö",r'{\"o}').replace("ä",r'{\"a}').replace("ë",r'{\"e}').replace("ï",r'{\"i}').replace("ü",r'{\"u}')
 data = data.replace("õ",r'{\~o}').replace("ã",r'{\~a}')
 print()
 print(data)
