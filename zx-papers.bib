@@ -3950,3 +3950,29 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     keywords = {Optimisation, Automation, ZX-calculus},
     abstract = {ZX-diagrams are a powerful graphical language for the description of quantum processes with applications in fundamental quantum mechanics, quantum circuit optimization, tensor network simulation, and many more. The utility of ZX-diagrams relies on a set of local transformation rules that can be applied to them without changing the underlying quantum process they describe. These rules can be exploited to optimize the structure of ZX-diagrams for a range of applications. However, finding an optimal sequence of transformation rules is generally an open problem. In this work, we bring together ZX-diagrams with reinforcement learning, a machine learning technique designed to discover an optimal sequence of actions in a decision-making problem and show that a trained reinforcement learning agent can significantly outperform other optimization techniques like a greedy strategy or simulated annealing. The use of graph neural networks to encode the policy of the agent enables generalization to diagrams much bigger than seen during the training phase.}
 }
+
+@article{holker2023causal,
+    author = {Holker, Calum},
+    title = {{Causal flow preserving optimisation of quantum circuits in the ZX-calculus}},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2312.02793},
+    urldate = {2023-12-05},
+    link = {http://arxiv.org/abs/2312.02793},
+    keywords = {Optimisation, MBQC, gflow, Local Complementation, PyZX, Automation, ZX-calculus},
+    abstract = {Optimising quantum circuits to minimise resource usage is crucial, particularly in the context of near term hardware which is limited by quantum volume. This paper introduces an optimisation algorithm which aims to minimise non-Clifford gate count and two-qubit gate count by building on ZX-calculus-based strategies. By translating a circuit into a ZX-diagram it can be simplified before being extracted back into a circuit. I assert that simplifications preserve a graph-theoretic property called causal flow. This has the advantage that qubit lines are well defined throughout, permitting a trivial extraction procedure and in turn enabling the calculation of an individual transformation's impact on the resulting circuit. A general procedure for a decision strategy is introduced, inspired by an existing heuristic based method. Both phase teleportation and the neighbour unfusion rule are generalised. In particular, allowing unfusion of multiple neighbours is shown to lead to significant improvements in optimisation. When run on a set of benchmark circuits, the algorithm developed reduces the two-qubit gate count by an average of 19.6%, beating both the previous best ZX-based strategy (14.2%) and non-ZX strategy (18.9%). This lays a foundation for multiple avenues of improvement. A particularly effective strategy for optimising QFT circuits is also noted, resulting in exactly one two-qubit gate per non-Clifford gate.}
+}
+
+@article{dundar-coecke2023quantum,
+    author = {D{\"u}ndar-Coecke, Selma and Yeh, Lia and Puca, Caterina and M. -L. Pfaendler, Sieglinde and Hamza Waseem, Muhammad and Cervoni, Thomas and Kissinger, Aleks and Gogioso, Stefano and Coecke, Bob},
+    title = {{Quantum Picturalism: Learning Quantum Theory in High School}},
+    year = {2023},
+    volume = {3},
+    number = {},
+    pages = {21--32},
+    journal = {2023 IEEE International Conference on Quantum Computing and Engineering (QCE), 2023, pp. 21-32},
+    doi = {10.1109/QCE57702.2023.20321},
+    urldate = {2023-12-06},
+    link = {http://arxiv.org/abs/2312.03653},
+    keywords = {ZX-calculus},
+    abstract = {Quantum theory is often regarded as challenging to learn and teach, with advanced mathematical prerequisites ranging from complex numbers and probability theory to matrix multiplication, vector space algebra and symbolic manipulation within the Hilbert space formalism. It is traditionally considered an advanced undergraduate or graduate-level subject.   In this work, we challenge the conventional view by proposing "Quantum Picturalism" as a new approach to teaching the fundamental concepts of quantum theory and computation. We establish the foundations and methodology for an ongoing educational experiment to investigate the question "From what age can students learn quantum theory if taught using a diagrammatic approach?". We anticipate that the primary benefit of leveraging such a diagrammatic approach, which is conceptually intuitive yet mathematically rigorous, will be eliminating some of the most daunting barriers to teaching and learning this subject while enabling young learners to reason proficiently about high-level problems. We posit that transitioning from symbolic presentations to pictorial ones will increase the appeal of STEM education, attracting more diverse audience.}
+}
