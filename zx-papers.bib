@@ -2837,6 +2837,7 @@ formula to produce a complete diagrammatic calculus.}
     journal = {Preprint},
     urldate = {2022-04-23},
     link = {https://mediatum.ub.tum.de/doc/1658567/0cqw8i7hoo3k7g3wsrbs0k51m.pdf},
+    video = {https://www.youtube.com/watch?v=V8dlZgSQYiU&t=67s},
     keywords = {ZX-calculus, Optimisation, Applied, Phase Gadgets},
     abstract = {The Noisy intermediate state quantum devices era (NISQ era) in quantum computing can be seen as the era of quantum devices with 50-100 qubits, which provide restricted connectivity between qubits and nosy qubits with a limited coherence time. This issue motivates efficient algorithms to reduce the number of gates applied to circuits in an automated way, similar to the simplification process of classical compilers. Various researchers have proposed methods that reduce the number of gates, and the depth of the quantum circuit. Nevertheless, providing a routed circuit, so a circuit that suffices the connectivity graph of the device was always considered a process that is done after optimization. Griend et al. has proposed a recursive algorithm for synthesizing so-called Z polynomials. Moreover, they showed that optimization and routing in combination are pretty effective for Z Polynomials. Hence they proposed the avenue of future work to extend their algorithm to Pauli gadgets. This guided research aims to analyze the problem of general phase gadget synthesis. Herefore we provide two extensions to the algorithm by Griend et al.. One extension focuses on splitting the ZX Polynomial into smaller commuting regions, while the other tries to identify blocking columns and resolve them beforehand. Next, we provide an algorithm based on the A* search heuristic. Finally, we compare our results to the Pauli-Gadet simplification-pass by tket combined with their internal routing strategy and our optimization strategy with pyzx concerning one qubit gates}
 }
@@ -2887,6 +2888,7 @@ formula to produce a complete diagrammatic calculus.}
     doi = {10.1088/1367-2630/acfab6},
     urldate = {2022-06-27},
     link = {http://arxiv.org/abs/2206.13330},
+    video = {https://www.youtube.com/watch?v=xFihqZ5cIZ0},
     keywords = {MBQC, gflow, Applied, Graph States},
     abstract = {Blind quantum computation (BQC) protocols enable quantum algorithms to be executed on third-party quantum agents while keeping the data and algorithm confidential. The previous proposals for measurement-based BQC require preparing a highly entangled cluster state. In this paper, we show that such a requirement is not necessary. Our protocol only requires pre-shared Bell pairs between delegated quantum agents, and there is no requirement for any classical or quantum information exchange between agents during the execution. Our proposal requires fewer quantum resources than previous proposals by eliminating the need for a universal cluster state.}
 }
@@ -3536,6 +3538,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2303.17399},
     urldate = {2023-03-30},
     link = {http://arxiv.org/abs/2303.17399},
+    video = {https://www.youtube.com/watch?v=iUHEy3PZCso},
     keywords = {Protocols, Category Theory, Verification, ZX-calculus},
     abstract = {We propose a quantum programming language that generalizes the $\lambda$-calculus. The language is non-linear; duplicated variables denote, not cloning of quantum data, but sharing a qubit's state; that is, producing an entangled pair of qubits whose amplitudes are identical with respect to a chosen basis. The language has two abstraction operators, $\zeta$ and $\xi$, corresponding to the Z- and X-bases; each abstraction operator is also parameterised by a phase, indicating a rotation that is applied to the input before it is shared. We give semantics for the language in the ZX-calculus and prove its equational theory sound. We show how this language can provide a good representation of higher-order functions in the quantum world.}
 }
@@ -3577,6 +3580,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2304.08363},
     urldate = {2023-04-17},
     link = {http://arxiv.org/abs/2304.08363},
+    video = {https://www.youtube.com/watch?v=mbqx0OudY5c},
     keywords = {Error Correcting Codes, Graph States, Local Complementation, ZX-calculus, Applied},
     abstract = {Quantum Error-Correcting Codes (QECCs) are vital for ensuring the reliability of quantum computing and quantum communication systems. Among QECCs, stabilizer codes, particularly graph codes, have attracted considerable attention due to their unique properties and potential applications. Concatenated codes, whichcombine multiple layers of quantum codes, offer a powerful technique for achieving high levels of error correction with a relatively low resource overhead. In this paper, we examine the concatenation of graph codes using the powerful and versatile graphical language of ZX-calculus. We establish a correspondence between the encoding map and ZX-diagrams, and provide a simple proof of the equivalence between encoding maps in the Pauli X basis and the graphic operation "generalized local complementation" (GLC) as previously demonstrated in [J. Math. Phys. 52, 022201]. Our analysis reveals that the resulting concatenated code remains a graph code only when the encoding qubits of the same inner code are not directly connected. When they are directly connected, additional Clifford operations are necessary to transform the concatenated code into a graphcode, thus generalizing the results in [J. Math. Phys. 52, 022201]. We further explore concatenated graph codesin different bases, including the examination of holographic codes as concatenated graph codes. Our findings showcase the potential of ZX-calculus in advancing the field of quantum error correction.}
 }
@@ -3596,6 +3600,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
   doi       = {10.4204/EPTCS.384.12},
   urldate = {2023-04-17},
     link = {http://arxiv.org/abs/2304.08166},
+    video = {https://www.youtube.com/watch?v=rKbtnOgzKZQ},
     keywords = {MBQC, gflow, Local Complementation, ZX-calculus},
     abstract = {In the one-way model of measurement-based quantum computation (MBQC), computation proceeds via measurements on a resource state. So-called flow conditions ensure that the overall computation is deterministic in a suitable sense, with Pauli flow being the most general of these. Computations, represented as measurement patterns, may be rewritten to optimise resource use and for other purposes. Such rewrites need to preserve the existence of flow to ensure the new pattern can still be implemented deterministically. The majority of existing work in this area has focused on rewrites that reduce the number of qubits, yet it can be beneficial to increase the number of qubits for certain kinds of optimisation, as well as for obfuscation.   In this work, we introduce several ZX-calculus rewrite rules that increase the number of qubits and preserve the existence of Pauli flow. These rules can be used to transform any measurement pattern into a pattern containing only (general or Pauli) measurements within the XY-plane. We also give the first flow-preserving rewrite rule that allows measurement angles to be changed arbitrarily, and use this to prove that the `neighbour unfusion' rule of Staudacher et al. preserves the existence of Pauli flow. This implies it may be possible to reduce the runtime of their two-qubit-gate optimisation procedure by removing the need to regularly run the costly gflow-finding algorithm.}
 }
@@ -3620,6 +3625,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2304.10584},
     urldate = {2023-04-20},
     link = {http://arxiv.org/abs/2304.10584},
+    video = {https://www.youtube.com/watch?v=80rx6LzWCWo},
     keywords = {Clifford Fragment, Qudits, Error Correcting Codes, Spekkens Toy Model, Category Theory, Completeness, Mixed States },
     abstract = {There is a bijection between odd prime dimensional qudit pure stabilizer states modulo invertible scalars and affine Lagrangian subspaces of finite dimensional symplectic $\mathbb{F}_p$-vector spaces. In the language of the stabilizer formalism, full rank stabilizer tableaus are exactly the bases for affine Lagrangian subspaces. This correspondence extends to an isomorphism of props where the composition of stabilizer circuits becomes the relational composition of affine subspaces and the tensor product becomes the direct sum. In this paper, we extend this correspondence between stabilizer circuits and tableaus to the mixed setting; by regarding stabilizer codes as affine coisotropic susbspaces (again only in odd prime qudit dimension/for qubit CSS codes). We show that by splitting the projector for a stabilizer code we recover the error detection protocol and the error correction protocol with affine classical processing power.}
 }
@@ -3661,6 +3667,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
   doi       = {10.4204/EPTCS.384.2},
   urldate = {2023-06-03},
     link = {http://arxiv.org/abs/2306.02114},
+    video = {https://www.youtube.com/watch?v=nOli0jB2hoY},
     keywords = {Photons, ZW-calculus, Fermionic quantum computing, Algebraic ZX, Qudits, Qudits},
     abstract = {In this paper, we develop a graphical calculus to rewrite photonic circuits involving light-matter interactions and non-linear optical effects. We introduce the infinite ZW calculus, a graphical language for linear operators on the bosonic Fock space which captures both linear and non-linear photonic circuits. This calculus is obtained by combining the QPath calculus, a diagrammatic language for linear optics, and the recently developed qudit ZXW calculus, a complete axiomatisation of linear maps between qudits. It comes with a 'lifting' theorem allowing to prove equalities between infinite operators by rewriting in the ZXW calculus. We give a method for representing bosonic and fermionic Hamiltonians in the infinite ZW calculus. This allows us to derive their exponentials by diagrammatic reasoning. Examples include phase shifts and beam splitters, as well as non-linear Kerr media and Jaynes-Cummings light-matter interaction.}
 }
@@ -3753,6 +3760,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2307.01803},
     urldate = {2023-07-04},
     link = {http://arxiv.org/abs/2307.01803},
+    video = {https://www.youtube.com/watch?v=8L6jqiNg9iM},
     keywords = {Classical Simulation, Triangle, Automation, ZX-calculus, Variational Circuits, Applied},
     abstract = {Recent advances in classical simulation of Clifford+T circuits make use of the ZX calculus to iteratively decompose and simplify magic states into stabiliser terms. We improve on this method by studying stabiliser decompositions of ZX diagrams involving the triangle operation. We show that this technique greatly speeds up the simulation of quantum circuits involving multi-controlled gates which can be naturally represented using triangles. We implement our approach in the QuiZX library and demonstrate a significant simulation speed-up (up to multiple orders of magnitude) for random circuits and a variation of previously used benchmarking circuits. Furthermore, we use our software to contract diagrams representing the gradient variance of parametrised quantum circuits, which yields a tool for the automatic numerical detection of the barren plateau phenomenon in ans\"atze used for quantum machine learning. Compared to traditional statistical approaches, our method yields exact values for gradient variances and only requires contracting a single diagram. The performance of this tool is competitive with tensor network approaches, as demonstrated with benchmarks against the quimb library.}
 }
@@ -3771,6 +3779,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
   doi       = {10.4204/EPTCS.384.1},
   urldate = {2023-07-05},
   link = {http://arxiv.org/abs/2307.02437},
+  video = {https://www.youtube.com/watch?v=ZhfQxdjodNs},
   keywords = {Error Correcting Codes, Clifford Fragment},
   abstract = {In this work, we present a generic approach to transform CSS codes by building upon their equivalence to phase-free ZX diagrams. Using the ZX calculus, we demonstrate diagrammatic transformations between encoding maps associated with different codes. As a motivating example, we give explicit transformations between the Steane code and the quantum Reed-Muller code, since by switching between these two codes, one can obtain a fault-tolerant universal gate set. To this end, we propose a bidirectional rewrite rule to find a (not necessarily transversal) physical implementation for any logical ZX diagram in any CSS code.   We then focus on two code transformation techniques: $\textit{code morphing}$, a procedure that transforms a code while retaining its fault-tolerant gates, and $\textit{gauge fixing}$, where complimentary codes can be obtained from a common subsystem code (e.g., the Steane and the quantum Reed-Muller codes from the [[15,1,3,3]] code). We provide explicit graphical derivations for these techniques and show how ZX and graphical encoder maps relate several equivalent perspectives on these code transforming operations.}
 }
@@ -3823,6 +3832,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
   pages     = {265-303},
   doi       = {10.4204/EPTCS.384.14},
   urldate = {2023-07-20},
+  video = {https://www.youtube.com/watch?v=pP1DaKxlC_8},
     link = {http://arxiv.org/abs/2307.11136},
     keywords = {Error Correcting Codes, ZX-calculus, Applied, Clifford Fragment},
     abstract = {Floquet codes are a recently discovered type of quantum error correction code. They can be thought of as generalising stabilizer codes and subsystem codes, by allowing the logical Pauli operators of the code to vary dynamically over time. In this work, we use the ZX-calculus to create new Floquet codes that are in a definable sense equivalent to known stabilizer codes. In particular, we find a Floquet code that is equivalent to the colour code, but has the advantage that all measurements required to implement it are of weight one or two. Notably, the qubits can even be laid out on a square lattice. This circumvents current difficulties with implementing the colour code fault-tolerantly, while preserving its advantages over other well-studied codes, and could furthermore allow one to benefit from extra features exclusive to Floquet codes. On a higher level, as in arXiv:2303.08829, this work shines a light on the relationship between 'static' stabilizer and subsystem codes and 'dynamic' Floquet codes; at first glance the latter seems a significant generalisation of the former, but in the case of the codes that we find here, the difference is essentially just a few basic ZX-diagram deformations.}
@@ -3857,6 +3867,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2308.07844},
     urldate = {2023-08-15},
     link = {http://arxiv.org/abs/2308.07844},
+    video = {https://www.youtube.com/watch?v=wCwkOX03hq8},
     keywords = {Error Correcting Codes, Lattice Surgery, Automation, Surface Code, Applied, ZX-calculus},
     abstract = {Fault-tolerant complexes describe surface-code fault-tolerant protocols from a single geometric object. We first introduce fusion complexes that define a general family of fusion-based quantum computing (FBQC) fault-tolerant quantum protocols based on surface codes. We show that any 3-dimensional cell complex where each edge has four incident faces gives a valid fusion complex. This construction enables an automated search for fault tolerance schemes, allowing us to identify 627 examples within a moderate search time. We implement this using the open-source software tool Gavrog and present threshold results for a variety of schemes, finding fusion networks with higher erasure and Pauli thresholds than those existing in the literature. We then define more general structures we call fault-tolerant complexes that provide a homological description of fault tolerance from a large family of low-level error models, which include circuit-based computation, floquet-based computation, and FBQC with multi-qubit measurements. This extends the applicability of homological descriptions of fault tolerance, and enables the generation of many new schemes which have not been previously identified. We also define families of fault-tolerant complexes for color codes and 3d single-shot subsystem codes, which enables similar constructive methods, and we present several new examples of each.}
 }
@@ -3891,6 +3902,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2309.13014},
     urldate = {2023-09-22},
     link = {http://arxiv.org/abs/2309.13014},
+    video = {https://www.youtube.com/watch?v=AhEEOqpzADY},
     keywords = {ZW-calculus, ZX-calculus, Qudits, Completeness},
     abstract = {Finite-dimensional quantum theory serves as the theoretical foundation for quantum information and computation based on 2-dimensional qubits, d-dimensional qudits, and their interactions. The qufinite ZX calculus has been used as a framework for mixed-dimensional quantum computing; however, it lacked the crucial property of completeness, which ensures that the calculus incorporates a set of rules rich enough to prove any equation. The ZXW calculus is a complete language for qudit quantum computing with applications previously unreachable solely with the ZX or ZW calculus. In this paper, we introduce the qufinite ZXW calculus, a unification of all qudit ZXW calculi in a single framework for mixed-dimensional quantum computing. We provide a set of rewrite rules and a unique normal form that make the calculus complete for finite-dimensional quantum theory. This work paves the way for the optimization of mixed dimensional circuits and tensor networks appearing in different areas of quantum computing including quantum chemistry, compilation, and quantum many-body systems.}
 }
@@ -3912,6 +3924,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     year = {2023},
     school = {Universitat de Barcelona},
     link = {https://diposit.ub.edu/dspace/bitstream/2445/202911/1/Memoria_TFM-JanNogue.pdf},
+    video = {https://www.youtube.com/watch?v=PwqKvMNVzj0},
     urldate = {2023-08-28},
     keywords = {ZX-Calculus, Automation, PyZX, Optimisation, Master Thesis},
     abstract = {ZX-calculus is a formalism that can be used for quantum circuit compilation and optimization. We developed a Reinforcement Learning approach for enhanced circuit optimization via the ZX-diagram graph representation of the quantum circuit. The agent is trained using the well-established Proximal Policy Optimization (PPO) algorithm, and it uses Conditional Action Trees to perform Invalid Action Masking to reduce the space of actions available to the agent and speed up its training. Additionally, we also design and implement a Genetic Algorithm for the same task. Both the genetic algorithm and the most widely used ZX-calculus-based library for circuit optimization, the PyZX library, are used to benchmark our RL approach. We find our RL algorithm to be competitive against both approaches, but further exploration is required.}
@@ -3924,6 +3937,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2310.11288},
     urldate = {2023-10-17},
     link = {http://arxiv.org/abs/2310.11288},
+    video = {https://www.youtube.com/watch?v=yJCaEdw_Ots},
     keywords = {Category Theory, Mixed States, ZX-calculus},
     abstract = {In this paper, we extend diagrammatic reasoning in monoidal categories with algebraic operations and equations. We achieve this by considering monoidal categories that are enriched in the category of Eilenberg-Moore algebras for a monad. Under the condition that this monad is monoidal and affine, we construct an adjunction between symmetric monoidal categories and symmetric monoidal categories enriched over algebras for the monad. This allows us to devise an extension, and its semantics, of the ZX-calculus with probabilistic choices by freely enriching over convex algebras, which are the algebras of the finite distribution monad. We show how this construction can be used for diagrammatic reasoning of noise in quantum systems.}
 }
@@ -3935,6 +3949,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2311.11571},
     urldate = {2023-11-20},
     link = {http://arxiv.org/abs/2311.11571},
+    video = {https://www.youtube.com/watch?v=5cwd9u8jivo},
     keywords = {Verification, Automation, ZX-calculus, Category Theory},
     abstract = {Mathematical representations of graphs often resemble adjacency matrices or lists, representations that facilitate whiteboard reasoning and algorithm design. In the realm of proof assistants, inductive representations effectively define semantics for formal reasoning. This highlights a gap where algorithm design and proof assistants require a fundamentally different structure of graphs, particularly for process theories which represent programs using graphs. To address this gap, we present VyZX, a verified library for reasoning about inductively defined graphical languages. These inductive constructs arise naturally from category theory definitions. A key goal for VyZX is to Verify the ZX-calculus, a graphical language for reasoning about quantum computation. The ZX-calculus comes with a collection of diagrammatic rewrite rules that preserve the graph's semantic interpretation. We show how inductive graphs in VyZX are used to prove the correctness of the ZX-calculus rewrite rules and apply them in practice using standard proof assistant techniques. VyZX integrates easily with the proof engineer's workflow through visualization and automation.}
 }
@@ -3946,6 +3961,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2311.07476},
     urldate = {2023-11-13},
     link = {http://arxiv.org/abs/2311.07476},
+    video = {https://www.youtube.com/watch?v=3q8eqihdtTs},
     keywords = {ZX-Supported, Completeness, Category Theory, Mixed States},
     abstract = {We introduce the first minimal and complete equational theory for quantum circuits. Hence, we show that any true equation on quantum circuits can be derived from simple rules, all of them being standard except a novel but intuitive one which states that a multi-control $2\pi$ rotation is nothing but the identity. Our work improves on the recent complete equational theories for quantum circuits, by getting rid of several rules including a fairly unpractical one. One of our main contributions is to prove the minimality of the equational theory, i.e. none of the rules can be derived from the other ones. More generally, we demonstrate that any complete equational theory on quantum circuits (when all gates are unitary) requires rules acting on an unbounded number of qubits. Finally, we also simplify the complete equational theories for quantum circuits with ancillary qubits and/or qubit discarding.}
 }
@@ -3957,6 +3973,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2311.18588},
     urldate = {2023-11-30},
     link = {http://arxiv.org/abs/2311.18588},
+    video = {https://www.youtube.com/watch?v=jVu-7MBImvs},
     keywords = {Optimisation, Automation, ZX-calculus},
     abstract = {ZX-diagrams are a powerful graphical language for the description of quantum processes with applications in fundamental quantum mechanics, quantum circuit optimization, tensor network simulation, and many more. The utility of ZX-diagrams relies on a set of local transformation rules that can be applied to them without changing the underlying quantum process they describe. These rules can be exploited to optimize the structure of ZX-diagrams for a range of applications. However, finding an optimal sequence of transformation rules is generally an open problem. In this work, we bring together ZX-diagrams with reinforcement learning, a machine learning technique designed to discover an optimal sequence of actions in a decision-making problem and show that a trained reinforcement learning agent can significantly outperform other optimization techniques like a greedy strategy or simulated annealing. The use of graph neural networks to encode the policy of the agent enables generalization to diagrams much bigger than seen during the training phase.}
 }
@@ -3968,6 +3985,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2312.02793},
     urldate = {2023-12-05},
     link = {http://arxiv.org/abs/2312.02793},
+    video = {https://www.youtube.com/watch?v=9wO_-QcSAaM},
     keywords = {Optimisation, MBQC, gflow, Local Complementation, PyZX, Automation, ZX-calculus},
     abstract = {Optimising quantum circuits to minimise resource usage is crucial, particularly in the context of near term hardware which is limited by quantum volume. This paper introduces an optimisation algorithm which aims to minimise non-Clifford gate count and two-qubit gate count by building on ZX-calculus-based strategies. By translating a circuit into a ZX-diagram it can be simplified before being extracted back into a circuit. I assert that simplifications preserve a graph-theoretic property called causal flow. This has the advantage that qubit lines are well defined throughout, permitting a trivial extraction procedure and in turn enabling the calculation of an individual transformation's impact on the resulting circuit. A general procedure for a decision strategy is introduced, inspired by an existing heuristic based method. Both phase teleportation and the neighbour unfusion rule are generalised. In particular, allowing unfusion of multiple neighbours is shown to lead to significant improvements in optimisation. When run on a set of benchmark circuits, the algorithm developed reduces the two-qubit gate count by an average of 19.6%, beating both the previous best ZX-based strategy (14.2%) and non-ZX strategy (18.9%). This lays a foundation for multiple avenues of improvement. A particularly effective strategy for optimising QFT circuits is also noted, resulting in exactly one two-qubit gate per non-Clifford gate.}
 }
@@ -4038,6 +4056,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     journal = {arXiv preprint arXiv:2401.07914},
     urldate = {2024-01-15},
     link = {http://arxiv.org/abs/2401.07914},
+    video = {https://www.youtube.com/watch?v=QJcEeZsL2S8},
     keywords = {Completeness, Category Theory, Scalable ZX, Qudits, Clifford Fragment},
     abstract = {We give complete presentations for the dagger-compact props of affine Lagrangian and coisotropic relations over an arbitrary field. This provides a unified family of graphical languages for both affinely constrained classical mechanical systems, as well as odd-prime-dimensional stabiliser quantum circuits. To this end, we present affine Lagrangian relations by a particular class of undirected coloured graphs. In order to reason about composite systems, we introduce a powerful scalable notation where the vertices of these graphs are themselves coloured by graphs. In the setting of stabiliser quantum mechanics, this scalable notation gives an extremely concise description of graph states, which can be composed via ``phased spider fusion.'' Likewise, in the classical mechanical setting of electrical circuits, we show that impedance matrices for reciprocal networks are presented in essentially the same way.}
 }
@@ -4150,4 +4169,15 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     link = {http://arxiv.org/abs/2403.11514},
     keywords = {MBQC, Optimisation, Variational Circuits, ZX-calculus},
     abstract = {Parameterized quantum circuits are attractive candidates for potential quantum advantage in the near term and beyond. At the same time, as quantum computing hardware not only continues to improve but also begins to incorporate new features such as mid-circuit measurement and adaptive control, opportunities arise for innovative algorithmic paradigms. In this work we focus on measurement-based quantum computing protocols for approximate optimization, in particular related to quantum alternating operator ans\"atze (QAOA), a popular quantum circuit model approach to combinatorial optimization. For the construction and analysis of our measurement-based protocols we demonstrate that diagrammatic approaches, specifically ZX-calculus and its extensions, are effective for adapting such algorithms to the measurement-based setting. In particular we derive measurement patterns for applying QAOA to the broad and important class of QUBO problems. We further outline how for constrained optimization, hard problem constraints may be directly incorporated into our protocol to guarantee the feasibility of the solution found and avoid the need for dealing with penalties. Finally we discuss the resource requirements and tradeoffs of our approach to that of more traditional quantum circuits.}
+}
+
+@article{m.sommers2024zerotemperature,
+    author = {M. Sommers, Grace and Gopalakrishnan, Sarang and J. Gullans, Michael and A. Huse, David},
+    title = {{Zero-temperature entanglement membranes in quantum circuits}},
+    year = {2024},
+    journal = {arXiv preprint arXiv:2404.02975},
+    urldate = {2024-04-03},
+    link = {http://arxiv.org/abs/2404.02975},
+    keywords = {MBQC, Applied, ZX-calculus},
+    abstract = {In chaotic quantum systems, the entanglement of a region $A$ can be described in terms of the surface tension of a spacetime membrane pinned to the boundary of $A$. Here, we interpret the tension of this entanglement membrane in terms of the rate at which information "flows" across it. For any orientation of the membrane, one can define (generically nonunitary) dynamics across the membrane; we explore this dynamics in various space-time translation-invariant (STTI) stabilizer circuits in one and two spatial dimensions. We find that the flux of information across the membrane in these STTI circuits reaches a steady state. In the cases where this dynamics is nonunitary and the steady state flux is nonzero, this occurs because the dynamics across the membrane is unitary in a subspace of extensive entropy. This generalized unitarity is present in a broad class of STTI stabilizer circuits, and is also present in some special non-stabilizer models. The existence of multiple unitary (or generalized unitary) directions forces the entanglement membrane tension to be a piecewise linear function of the orientation of the membrane; in this respect, the entanglement membrane behaves like an interface in a zero-temperature classical lattice model. We argue that entanglement membranes in random stabilizer circuits that produce volume-law entanglement are also effectively at zero temperature.}
 }
