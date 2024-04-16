@@ -2893,12 +2893,19 @@ formula to produce a complete diagrammatic calculus.}
     abstract = {Blind quantum computation (BQC) protocols enable quantum algorithms to be executed on third-party quantum agents while keeping the data and algorithm confidential. The previous proposals for measurement-based BQC require preparing a highly entangled cluster state. In this paper, we show that such a requirement is not necessary. Our protocol only requires pre-shared Bell pairs between delegated quantum agents, and there is no requirement for any classical or quantum information exchange between agents during the execution. Our proposal requires fewer quantum resources than previous proposals by eliminating the need for a universal cluster state.}
 }
 
-@article{gidney2022pair,
-    author = {Gidney, Craig},
-    title = {{A Pair Measurement Surface Code on Pentagons}},
-    year = {2022},
-    journal = {arXiv preprint arXiv:2206.12780},
-    urldate = {2022-06-26},
+@article{Gidney2023pairmeasurement,
+  doi = {10.22331/q-2023-10-25-1156},
+  url = {https://doi.org/10.22331/q-2023-10-25-1156},
+  title = {A {P}air {M}easurement {S}urface {C}ode on {P}entagons},
+  author = {Gidney, Craig},
+  journal = {{Quantum}},
+  issn = {2521-327X},
+  publisher = {{Verein zur F{\"{o}}rderung des Open Access Publizierens in den Quantenwissenschaften}},
+  volume = {7},
+  pages = {1156},
+  month = {10},
+  year = {2023},
+  urldate = {2022-06-26},
     link = {http://arxiv.org/abs/2206.12780},
     keywords = {Surface Code, ZX-calculus, Applied},
     abstract = {In this paper, I present a way to compile the surface code into two-body parity measurements ("pair measurements"), where the pair measurements run along the edges of a Cairo pentagonal tiling. The resulting circuit improves on prior work by Chao et al. by using fewer pair measurements per four-body stabilizer measurement (5 instead of 6) and fewer time steps per round of stabilizer measurement (6 instead of 10). Using Monte Carlo sampling, I show that these improvements increase the threshold of the surface code when compiling into pair measurements from $\approx 0.2\%$ to $\approx 0.4\%$, and also that they improve the teraquop footprint at a $0.1\%$ physical gate error rate from $\approx6000$ qubits to $\approx3000$ qubits. However, I also show that Chao et al's construction will have a smaller teraquop footprint for physical gate error rates below $\approx 0.03\%$ (due to bidirectional hook errors in my construction). I also compare to the planar honeycomb code, showing that although this work does noticeably reduce the gap between the surface code and the honeycomb code (when compiling into pair measurements), the honeycomb code is still more efficient (threshold $\approx 0.8\%$, teraquop footprint at $0.1\%$ of $\approx 1000$).}
@@ -3485,12 +3492,16 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {These are the lecture notes of guest lectures for Artur Ekert's course Introduction to Quantum Information at the Mathematical Institute of Oxford University, Hilary Term 2023. Some basic familiarity with Dirac notation is assumed. For the readers of Quantum in Pictures (QiP) who have some basic quantum background, these notes also constitute the shortest path to an explanation of how what they learn in QIP relates to the traditional quantum formalism.}
 }
 
-@article{clement2022complete,
-    author = {Cl{\'e}ment, Alexandre and Heurtel, Nicolas and Mansfield, Shane and Perdrix, Simon and Valiron, Beno{\^i}t},
-    title = {{A Complete Equational Theory for Quantum Circuits}},
-    year = {2022},
-    journal = {arXiv preprint arXiv:2206.10577},
-    urldate = {2022-06-21},
+@INPROCEEDINGS{clement2022complete,
+  author={Clément, Alexandre and Heurtel, Nicolas and Mansfield, Shane and Perdrix, Simon and Valiron, Benoît},
+  booktitle={2023 38th Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)}, 
+  title={A Complete Equational Theory for Quantum Circuits}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-13},
+  doi={10.1109/LICS56636.2023.10175801},
+  urldate = {2022-06-21},
     link = {http://arxiv.org/abs/2206.10577},
     video = {https://www.youtube.com/watch?v=MzUuXz6Y8mo},
     keywords = {Completeness, Universal Fragment, Toffoli, ZX-Supported},
@@ -3519,13 +3530,16 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {There are several models of quantum computation which exhibit shared fundamental fault-tolerance properties. This article makes commonalities explicit by presenting these different models in a unifying framework based on the ZX calculus. We focus on models of topological fault tolerance - specifically surface codes - including circuit-based, measurement-based and fusion-based quantum computation, as well as the recently introduced model of Floquet codes. We find that all of these models can be viewed as different flavors of the same underlying stabilizer fault-tolerance structure, and sustain this through a set of local equivalence transformations which allow mapping between flavors. We anticipate that this unifying perspective will pave the way to transferring progress among the different views of stabilizer fault-tolerance and help researchers familiar with one model easily understand others.}
 }
 
-
-@article{winderl2023recursively,
-    author = {Winderl, David and Huang, Qunsheng and B. Mendl, Christian},
-    title = {{A recursively partitioned approach to architecture-aware ZX Polynomial synthesis and optimization}},
-    year = {2023},
-    journal = {arXiv preprint arXiv:2303.17366},
-    urldate = {2023-03-30},
+@INPROCEEDINGS{winderl2023recursively,
+  author={Winderl, David and Huang, Qunsheng and Mendl, Christian B.},
+  booktitle={2023 IEEE International Conference on Quantum Computing and Engineering (QCE)}, 
+  title={A Recursively Partitioned Approach to Architecture-Aware ZX Polynomial Synthesis and Optimization}, 
+  year={2023},
+  volume={01},
+  number={},
+  pages={837-847},
+  doi={10.1109/QCE57702.2023.00098},
+  urldate = {2023-03-30},
     link = {http://arxiv.org/abs/2303.17366},
     keywords = {Optimisation, Phase Gadgets, Variational Circuits, Automation, Applied, ZX-calculus},
     abstract = {The synthesis of quantum circuits from phase gadgets in the ZX-calculus facilitates quantum circuit optimization. Our work provides an alternative formulation for the architecture-aware synthesis algorithm of PauliOpt by replacing the stochastic approach of PauliOpt with a heuristic based search and utilizes a divide and conquer method to synthesize an optimized circuit from a ZX polynomial. We provide a comparison of our algorithm with PauliOpt and other state-of-the-art optimization libraries. While we note poorer performance for highly structured circuits, as in the QAOA formulation for Max-Cut, we demonstrate a significant advantage for randomized circuits, which highlights the advantages of utilizing an architecture-aware methodology.}
@@ -3630,14 +3644,23 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {There is a bijection between odd prime dimensional qudit pure stabilizer states modulo invertible scalars and affine Lagrangian subspaces of finite dimensional symplectic $\mathbb{F}_p$-vector spaces. In the language of the stabilizer formalism, full rank stabilizer tableaus are exactly the bases for affine Lagrangian subspaces. This correspondence extends to an isomorphism of props where the composition of stabilizer circuits becomes the relational composition of affine subspaces and the tensor product becomes the direct sum. In this paper, we extend this correspondence between stabilizer circuits and tableaus to the mixed setting; by regarding stabilizer codes as affine coisotropic susbspaces (again only in odd prime qudit dimension/for qubit CSS codes). We show that by splitting the projector for a stabilizer code we recover the error detection protocol and the error correction protocol with affine classical processing power.}
 }
 
-@article{yeh2023scaling,
-    author = {Yeh, Lia},
-    title = {{Scaling W state circuits in the qudit Clifford hierarchy}},
-    year = {2023},
-    journal = {arXiv preprint arXiv:2304.12504},
-    urldate = {2023-04-25},
+@inproceedings{yeh2023scaling,
+author = {Yeh, Lia},
+title = {Scaling W State Circuits in the qudit Clifford Hierarchy},
+year = {2023},
+isbn = {9798400707551},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3594671.3594687},
+doi = {10.1145/3594671.3594687},
+booktitle = {Companion Proceedings of the 7th International Conference on the Art, Science, and Engineering of Programming},
+pages = {90–100},
+numpages = {11},
+location = {<conf-loc>, <city>Tokyo</city>, <country>Japan</country>, </conf-loc>},
+series = {Programming '23},
+urldate = {2023-04-25},
     link = {http://arxiv.org/abs/2304.12504},
-    keywords = {Qudits, Optimisation, ZX-calculus},
+    keywords = {Qudits, Optimisation, ZW-calculus, ZX-calculus},
     abstract = {We identify a novel qudit gate which we call the $\sqrt[d]{Z}$ gate. This is an alternate generalization of the qutrit $T$ gate to any odd prime dimension $d$, in the $d^{\text{th}}$ level of the Clifford hierarchy. Using this gate which is efficiently realizable fault-tolerantly should a certain conjecture hold, we deterministically construct in the Clifford+$\sqrt[d]{Z}$ gate set, $d$-qubit $W$ states in the qudit $\{ |0\rangle , |1\rangle \}$ subspace. For qutrits, this gives deterministic and fault-tolerant constructions for the qubit $W$ state of sizes three with $T$ count 3, six, and powers of three.   Furthermore, we adapt these constructions to recursively scale the $W$ state size to arbitrary size $N$, in $O(N)$ gate count and $O(\text{log }N)$ depth. This is moreover deterministic for any size qubit $W$ state, and for any prime $d$-dimensional qudit $W$ state, size a power of $d$.   For these purposes, we devise constructions of the $ |0\rangle $-controlled Pauli $X$ gate and the controlled Hadamard gate in any prime qudit dimension. These decompositions, for which exact synthesis is unknown in Clifford+$T$ for $d > 3$, may be of independent interest.}
 }
 
@@ -3687,8 +3710,11 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
 @article{joshi2023quantum,
     author = {Joshi, Aravind and Kairali, Akshara and Raju, Renju and Athreya, Adithya and Monica P, Reena and Vishwakarma, Sanjay and Ganguly, Srinjoy},
     title = {{Quantum Circuit Optimization of Arithmetic circuits using ZX Calculus}},
-    year = {2023},
-    journal = {arXiv preprint arXiv:2306.02264},
+    year = {2024},
+    volume = {13},
+    issue = {2},
+    journal = {International Journal of Innovative Technology and Exploring Engineering},
+    doi = {10.35940/ijitee.B9794.13020124},
     urldate = {2023-06-04},
     link = {http://arxiv.org/abs/2306.02264},
     keywords = {Optimisation, PyZX, Automation, Applied, ZX-calculus},
@@ -3726,11 +3752,16 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {In this thesis, we use a slightly modified version of the calculus presented Ref. [2]. This calculus is designed for odd prime dimensional qudits, and the modification is related to the representation of scalars. Using this calculus, we present and prove the correctness of the qudit version of local complementation and pivoting for odd prime dimensions. Moreover, we present the AP-form and its unique variant, the reduced AP-form, and show how to transform any Clifford circuit into these normal forms in the calculus. Furthermore, we present the qudit variant of the efficient weak simulation algorithm of Clifford states presented in Ref. [38]. Lastly, we also show an alternative completeness proof of the qudit ZX-calculus for odd prime dimensions using the reduced AP-form. While the completeness of the above-mentioned calculus has already been shown in Ref. [2], we aim to present a completeness proof that can be more accessible and easier to implement in practice. }
 }
 
-@article{schwetz2023threequbit,
-    author = {Schwetz, M. and M. Noack, R.},
-    title = {{Three-qubit Deutsch-Jozsa in measurement-based quantum computing}},
-    year = {2023},
-    journal = {arXiv preprint arXiv:2306.13372},
+
+@article{doi:10.1142/S0219749923500466,
+author = {Schwetz, M. and Noack, R. M.},
+title = {Three-qubit Deutsch–Jozsa in measurement-based quantum computing},
+journal = {International Journal of Quantum Information},
+volume = {0},
+number = {0},
+pages = {2350046},
+year = {2023},
+doi = {10.1142/S0219749923500466},
     urldate = {2023-06-23},
     link = {http://arxiv.org/abs/2306.13372},
     keywords = {MBQC, Protocols, Applied, ZX-calculus},
@@ -3839,26 +3870,39 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
 }
 
 @article{vilmart2023rewriting,
-    author = {Vilmart, Renaud},
-    title = {{Rewriting and Completeness of Sum-Over-Paths in Dyadic Fragments of Quantum Computing}},
-    year = {2023},
-    journal = {arXiv preprint arXiv:2307.14223},
-    urldate = {2023-07-26},
+  TITLE = {{Rewriting and Completeness of Sum-Over-Paths in Dyadic Fragments of
+  Quantum Computing}},
+  AUTHOR = {Renaud Vilmart},
+  URL = {https://lmcs.episciences.org/13200},
+  DOI = {10.46298/lmcs-20(1:20)2024},
+  JOURNAL = {{Logical Methods in Computer Science}},
+  VOLUME = {{Volume 20, Issue 1}},
+  YEAR = {2024},
+  MONTH = {3},
+  urldate = {2023-07-26},
     link = {http://arxiv.org/abs/2307.14223},
     keywords = {ZH-calculus, Sum-Over-Paths, Completeness, Clifford+T, Toffoli},
     abstract = {The "Sum-Over-Paths" formalism is a way to symbolically manipulate linear maps that describe quantum systems, and is a tool that is used in formal verification of such systems. We give here a new set of rewrite rules for the formalism, and show that it is complete for "Toffoli-Hadamard", the simplest approximately universal fragment of quantum mechanics. We show that the rewriting is terminating, but not confluent (which is expected from the universality of the fragment). We do so using the connection between Sum-over-Paths and graphical language ZH-calculus, and also show how the axiomatisation translates into the latter. We provide generalisations of the presented rewrite rules, that can prove useful when trying to reduce terms in practice, and we show how to graphically make sense of these new rules. We show how to enrich the rewrite system to reach completeness for the dyadic fragments of quantum computation, used in particular in the Quantum Fourier Transform, and obtained by adding phase gates with dyadic multiples of $\pi$ to the Toffoli-Hadamard gate-set. Finally, we show how to perform sums and concatenation of arbitrary terms, something which is not native in a system designed for analysing gate-based quantum computation, but necessary when considering Hamiltonian-based quantum computation.}
 }
 
-@article{peres2023nonstabilizerness,
-    author = {Peres, Filipa C. R. and Wagner, Rafael and F. Galv{\~a}o, Ernesto},
-    title = {{Non-stabilizerness and entanglement from cat-state injection}},
-    year = {2023},
-    journal = {arXiv preprint arXiv:2305.19988},
-    urldate = {2023-05-31},
+@article{Peres_2024,
+doi = {10.1088/1367-2630/ad1b80},
+url = {https://dx.doi.org/10.1088/1367-2630/ad1b80},
+year = {2024},
+month = {jan},
+publisher = {IOP Publishing},
+volume = {26},
+number = {1},
+pages = {013051},
+author = {Filipa C R Peres and Rafael Wagner and Ernesto F Galvão},
+title = {Non-stabilizerness and entanglement from cat-state injection},
+journal = {New Journal of Physics},
+urldate = {2023-05-31},
     link = {http://arxiv.org/abs/2305.19988},
     keywords = {Classical Simulation, ZX-calculus, Applied, Automation},
     abstract = {Recently, cat states have been used to heuristically improve the runtime of a classical simulator of quantum circuits based on the diagrammatic ZX-calculus. Here we explore the use of cat-state injection within the quantum circuit model. We introduce a new family of cat states $\left| \mathrm{cat}_m^* \right>$, and describe circuit gadgets using them to concurrently inject non-stabilizerness (also known as magic) and entanglement into any quantum circuit. We provide numerical evidence that cat-state injection does not lead to speed-up in classical simulation. On the other hand, we show that our gadgets can be used to widen the scope of compelling applications of cat states. Specifically, we show how to leverage them to achieve savings in the number of injected qubits, and also to induce scrambling dynamics in otherwise non-entangling Clifford circuits in a controlled manner.}
 }
+
 
 @article{bombin2023faulttolerant,
     author = {Bombin, Hector and Dawson, Chris and Farrelly, Terry and Liu, Yehua and Nickerson, Naomi and Pant, Mihir and Pastawski, Fernando and Roberts, Sam},
@@ -3930,11 +3974,18 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {ZX-calculus is a formalism that can be used for quantum circuit compilation and optimization. We developed a Reinforcement Learning approach for enhanced circuit optimization via the ZX-diagram graph representation of the quantum circuit. The agent is trained using the well-established Proximal Policy Optimization (PPO) algorithm, and it uses Conditional Action Trees to perform Invalid Action Masking to reduce the space of actions available to the agent and speed up its training. Additionally, we also design and implement a Genetic Algorithm for the same task. Both the genetic algorithm and the most widely used ZX-calculus-based library for circuit optimization, the PyZX library, are used to benchmark our RL approach. We find our RL algorithm to be competitive against both approaches, but further exploration is required.}
 }
 
-@article{villoria2023enriching,
-    author = {Villoria, Alejandro and Basold, Henning and Laarman, Alfons},
-    title = {{Enriching Diagrams with Algebraic Operations}},
-    year = {2023},
-    journal = {arXiv preprint arXiv:2310.11288},
+@InProceedings{10.1007/978-3-031-57228-9_7,
+author={Villoria, Alejandro and Basold, Henning and Laarman, Alfons},
+editor={Kobayashi, Naoki
+and Worrell, James},
+title={Enriching Diagrams with Algebraic Operations},
+booktitle={Foundations of Software Science and Computation Structures},
+year={2024},
+publisher={Springer Nature Switzerland},
+address={Cham},
+pages={121--143},
+isbn={978-3-031-57228-9},
+doi = {10.1007/978-3-031-57228-9_7},
     urldate = {2023-10-17},
     link = {http://arxiv.org/abs/2310.11288},
     video = {https://www.youtube.com/watch?v=yJCaEdw_Ots},
@@ -3942,7 +3993,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {In this paper, we extend diagrammatic reasoning in monoidal categories with algebraic operations and equations. We achieve this by considering monoidal categories that are enriched in the category of Eilenberg-Moore algebras for a monad. Under the condition that this monad is monoidal and affine, we construct an adjunction between symmetric monoidal categories and symmetric monoidal categories enriched over algebras for the monad. This allows us to devise an extension, and its semantics, of the ZX-calculus with probabilistic choices by freely enriching over convex algebras, which are the algebras of the finite distribution monad. We show how this construction can be used for diagrammatic reasoning of noise in quantum systems.}
 }
 
-@article{lehmann2023vyzx:,
+@article{lehmann2023vyzx,
     author = {Lehmann, Adrian and Caldwell, Ben and Shah, Bhakti and Rand, Robert},
     title = {{VyZX: Formal Verification of a Graphical Quantum Language}},
     year = {2023},
@@ -4027,11 +4078,16 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
     abstract = {In this work, we present a generic approach to transform CSS codes by building upon their equivalence to phase-free ZX diagrams. Using the ZX calculus, we demonstrate diagrammatic transformations between encoding maps associated with different codes. As a motivating example, we give explicit transformations between the Steane code and the quantum Reed-Muller code, since by switching between these two codes, one can obtain a fault-tolerant universal gate set. To this end, we propose a bidirectional rewrite rule to find a (not necessarily transversal) physical implementation for any logical ZX diagram in any CSS code. We then focus on two code transformation techniques: code morphing, a procedure that transforms a code while retaining its fault-tolerant gates, and gauge fixing, where complimentary codes can be obtained from a common subsystem code (e.g., the Steane and the quantum Reed-Muller codes from the J15, 1, 3, 3K code). We provide explicit graphical derivations for these techniques and show how ZX and graphical encoder maps relate several equivalent perspectives on these code-transforming operations}
 }
 
-@article{ercolessi2023geometry,
-    author = {Ercolessi, E. and Fioresi, R. and Weber, T.},
-    title = {{The Geometry of Quantum Computing}},
-    year = {2023},
-    journal = {arXiv preprint arXiv:2312.14807},
+
+@article{Ercolessi2023Geometry,
+author = {Ercolessi, E. and Fioresi, R. and Weber, T.},
+title = {The geometry of quantum computing},
+journal = {International Journal of Geometric Methods in Modern Physics},
+volume = {0},
+number = {0},
+pages = {2440011},
+year = {2023},
+doi = {10.1142/S0219887824400115},
     urldate = {2023-12-22},
     link = {http://arxiv.org/abs/2312.14807},
     keywords = {Frobenius algebras, Category Theory, Foundations, ZX-calculus},

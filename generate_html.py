@@ -61,12 +61,15 @@ def entry_to_rss(title,link,abstract,authors,year, arxiv, date):
     y,m,d = date.split("-")
     m = int(m)
     d = int(d)
-    return rfeed.Item(title = title,
-                    author=authors,
-                    link = link,
-                    description = abstract,
-                    guid = rfeed.Guid(arxiv),
-                    pubDate = datetime.datetime(int(year),m,d,0,0))
+    try:
+        return rfeed.Item(title = title,
+                        author=authors,
+                        link = link,
+                        description = abstract,
+                        guid = rfeed.Guid(arxiv),
+                        pubDate = datetime.datetime(int(year),m,d,0,0))
+    except ValueError:
+        print("Error:", title, authors)
 
 HTML = r"""
 <div class="perEntryDiv">
