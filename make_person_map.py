@@ -5,17 +5,32 @@ import re
 
 current_date = datetime.datetime.now().date()
 
-num_years = 5  # How many years of data to include
+num_years = 10  # How many years of data to include
 paper_cutoff = 2  # How many papers someone needs to have to be listed
 
-def clean_text(s):
-    return s.replace('{','').replace('}','').replace(r'\rm','').replace("  "," ").strip()
+# def clean_text(s):
+#     return s.replace('{','').replace('}','').replace(r'\rm','').replace("  "," ").strip()
+
+def clean_text(s,html=True):
+    for letter in ['a','o','u','i','e']:
+        if html:
+            s = s.replace(r'\"'+letter,'&'+letter+'uml;')
+            s = s.replace(r"\'"+letter,'&'+letter+'acute;')
+            s = s.replace(r"\~"+letter,letter+'&#771;')
+        else:
+            s = s.replace(r'\"'+letter,letter)
+            s = s.replace(r"\'"+letter,letter)
+            s = s.replace(r"\~"+letter,letter)
+    # s = s.replace(r'\"o','&ouml;').replace(r'\"u', '&uuml;').replace(r'\"a', '&auml;')
+    # s = s.replace(r"\'e",'&eacute;').replace(r"\'a",'&aacute;').replace(r"\'u",'&uacute;')
+    return s.replace('{','').replace('}','').replace(r'\rm','')
 
 single_letter = re.compile(r'\s[a-zA-Z]\.')
 def normalise_name(n):
     p1, p2 = n.split(', ')
     name = p2.strip() + " " + p1.strip()
     name = re.sub(single_letter, '', name) # Go from John A. Smith to John Smith
+    name = clean_text(name, html=False)
     return name
 
 

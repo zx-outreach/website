@@ -52,6 +52,7 @@ for a in q['authors']:
 		ID = ID.replace('í','i').replace('ó','o').replace('á','a').replace('é','e')
 		ID = ID.replace('ö','o').replace('ä','a').replace('ü','u').replace('ï','i').replace('ë','e')
 		ID = ID.replace('õ','o').replace('ã','a')
+		first_author = ID
 
 t = q['title'].lower().replace("the ","").replace("a ","").replace("an ", "")
 t = t.replace("towards ", "").replace("-","")
@@ -99,6 +100,7 @@ if not proceed.lower().startswith("y"):
 
 with open("zx-papers.bib", 'a') as f:
     f.write("\n"+data)
+    f.flush()
 
 print("Added data to zx-papers.bib")
 
@@ -112,3 +114,17 @@ generate_html.main()
 proceed = input("Push to github?\nY/N:")
 if not proceed.lower().startswith("y"):
     exit()
+
+import subprocess
+
+print(subprocess.run(["git", "add", "zx-papers.bib", "publications.html", "publications.rss", "map.html"]).stdout)
+print(subprocess.run(["git", "commit", "-m", f"Added paper by {first_author} arXiv:{aid}"]).stdout)
+print(subprocess.run(["git", "push"]).stdout)
+
+proceed = input("Tweet about it?\nY/N:")
+if not proceed.lower().startswith("y"):
+    exit()
+
+import twitterposting
+
+twitterposting.tweet_last_entry()
