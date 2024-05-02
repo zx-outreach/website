@@ -108,3 +108,7 @@ if not proceed.lower().startswith("y"):
 
 import generate_html
 generate_html.main()
+
+proceed = input("Push to github?\nY/N:")
+if not proceed.lower().startswith("y"):
+    exit()

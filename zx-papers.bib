@@ -4291,3 +4291,14 @@ doi = {10.1142/S0219887824400115},
     keywords = {ZH-calculus, SAT, Circuit Extraction},
     abstract = {The ZH calculus is a graphical language for quantum computation reasoning. The phase-free variant offers a simple set of generators that guarantee universality. ZH calculus is effective in MBQC and analysis of quantum circuits constructed with the universal gate set Toffoli+H. While circuits naturally translate to ZH diagrams, finding an ancilla-free circuit equivalent to a given diagram is hard. Here, we show that circuit extraction for phase-free ZH calculus is ${\mathord{\#}\mathrm P}$-hard, extending the existing result for ZX calculus. Another problem believed to be hard is comparing whether two diagrams represent the same process. We show that two closely related problems are $\mathrm{NP}^{\mathord{\#}\mathrm P}$-complete. The first problem is: given two processes represented as diagrams, determine the existence of a computational basis state on which they equalize. The second problem is checking whether the matrix representation of a given diagram contains an entry equal to a given number. Our proof adapts the proof of Cook-Levin theorem to a reduction from a non-deterministic Turing Machine with access to ${\mathord{\#}\mathrm P}$ oracle.}
 }
+
+@article{bochentan2024sat,
+    author = {Bochen Tan, Daniel and Yuezhen Niu, Murphy and Gidney, Craig},
+    title = {{A SAT Scalpel for Lattice Surgery: Representation and Synthesis of Subroutines for Surface-Code Fault-Tolerant Quantum Computing}},
+    year = {2024},
+    journal = {arXiv preprint arXiv:2404.18369},
+    urldate = {2024-04-29},
+    link = {http://arxiv.org/abs/2404.18369},
+    keywords = {Lattice Surgery, Surface Code, SAT, Optimisation, Automation, ZX-calculus},
+    abstract = {Quantum error correction is necessary for large-scale quantum computing. A promising quantum error correcting code is the surface code. For this code, fault-tolerant quantum computing (FTQC) can be performed via lattice surgery, i.e., splitting and merging patches of code. Given the frequent use of certain lattice-surgery subroutines (LaS), it becomes crucial to optimize their design in order to minimize the overall spacetime volume of FTQC. In this study, we define the variables to represent LaS and the constraints on these variables. Leveraging this formulation, we develop a synthesizer for LaS, LaSsynth, that encodes a LaS construction problem into a SAT instance, subsequently querying SAT solvers for a solution. Starting from a baseline design, we can gradually invoke the solver with shrinking spacetime volume to derive more compact designs. Due to our foundational formulation and the use of SAT solvers, LaSsynth can exhaustively explore the design space, yielding optimal designs in volume. For example, it achieves 8% and 18% volume reduction respectively over two states-of-the-art human designs for the 15-to-1 T-factory, a bottleneck in FTQC.}
+}
