@@ -36,9 +36,14 @@ def last_entry_to_tweet_text():
 	{link}
 	"""
 	chars_left = 240 - len(tweet)
-	tweet += "\n" + abstract[:chars_left-4]
-	i = tweet.rfind(' ')
-	tweet = tweet[:i] + "..."
+	if chars_left < 0:
+		print(tweet)
+		raise Exception(f"Tweet is too long by {-chars_left} characters")
+	if chars_left > 20:
+		tweet += "\n" + abstract[:chars_left-4]
+		i = tweet.rfind(' ')
+		tweet = tweet[:i] + "..."
+
 	return tweet
 
 def tweet_last_entry():
