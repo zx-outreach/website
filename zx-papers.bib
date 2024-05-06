@@ -4302,3 +4302,14 @@ doi = {10.1142/S0219887824400115},
     keywords = {Lattice Surgery, Surface Code, SAT, Optimisation, Automation, ZX-calculus},
     abstract = {Quantum error correction is necessary for large-scale quantum computing. A promising quantum error correcting code is the surface code. For this code, fault-tolerant quantum computing (FTQC) can be performed via lattice surgery, i.e., splitting and merging patches of code. Given the frequent use of certain lattice-surgery subroutines (LaS), it becomes crucial to optimize their design in order to minimize the overall spacetime volume of FTQC. In this study, we define the variables to represent LaS and the constraints on these variables. Leveraging this formulation, we develop a synthesizer for LaS, LaSsynth, that encodes a LaS construction problem into a SAT instance, subsequently querying SAT solvers for a solution. Starting from a baseline design, we can gradually invoke the solver with shrinking spacetime volume to derive more compact designs. Due to our foundational formulation and the use of SAT solvers, LaSsynth can exhaustively explore the design space, yielding optimal designs in volume. For example, it achieves 8% and 18% volume reduction respectively over two states-of-the-art human designs for the 15-to-1 T-factory, a bottleneck in FTQC.}
 }
+
+@misc{Backens2024Video,
+  title = {{The how and why of translating between the circuit model and the one-way model of quantum computing}},
+  howpublished = {FoQaCiA},
+  author = {Backens, Miriam},
+  url = {https://pirsa.org/24050004},
+  year = {2024},
+  urldate = {2024-05-03},
+  keywords = {ZX-calculus, MBQC, Circuit Extraction, gflow},
+  abstract = {In the one-way model of measurement based quantum computing, unlike the quantum circuit model, a computation is driven not by unitary gates but by successive adaptive single-qubit measurements on an entangled resource state. So-called flow properties ensure that a one-way computation, described by a measurement pattern, is deterministic overall (up to Pauli corrections on output qubits). Translations between quantum circuits and measurement patterns have been used to show universality of the one-way model, verify measurement patterns, optimise quantum circuits, and more. Yet while it is straightforward to translate a circuit into a measurement pattern, the question of algorithmic "circuit extraction" -- how to translate general measurement patterns with flow to ancilla-free circuits -- had long remained open for all but the simplest type of flow. In this talk, we will recap the one-way model of quantum computing and then explain how the problem of circuit extraction was resolved using the ZX-calculus as a common language for circuits and measurement patterns. We also discuss applications.}
+}
