@@ -49,9 +49,10 @@ for a in q['authors']:
 	authors.append('{}, {}'.format(last, first))
 	if ID is None: 
 		ID = last.replace(" ","").lower() + str(d.tm_year)
-		ID = ID.replace('í','i').replace('ó','o').replace('á','a').replace('é','e')
+		ID = ID.replace('í','i').replace('ó','o').replace('á','a').replace('é','e').replace('ú','u')
+		ID = ID.replace('ì','i').replace('ò','o').replace('à','a').replace('è','e').replace('ù','u')
 		ID = ID.replace('ö','o').replace('ä','a').replace('ü','u').replace('ï','i').replace('ë','e')
-		ID = ID.replace('õ','o').replace('ã','a')
+		ID = ID.replace('õ','o').replace('ã','a').replace('ñ','n').replace('ç','c')
 		first_author = ID
 
 t = q['title'].lower().replace("the ","").replace("a ","").replace("an ", "")
@@ -88,8 +89,9 @@ db = BibDatabase()
 db.entries = [entry]
 data = writer.write(db)
 data = data.replace("í",r"{\'i}").replace("é",r"{\'e}").replace("á",r"{\'a}").replace('ó',r"{\'o}").replace('ú',r"{\'u}")
+data = data.replace("ì",r"{\`i}").replace("è",r"{\`e}").replace("à",r"{\`a}").replace('ò',r"{\`o}").replace('ù',r"{\`u}")
 data = data.replace("ö",r'{\"o}').replace("ä",r'{\"a}').replace("ë",r'{\"e}').replace("ï",r'{\"i}').replace("ü",r'{\"u}')
-data = data.replace("õ",r'{\~o}').replace("ã",r'{\~a}')
+data = data.replace("õ",r'{\~o}').replace("ã",r'{\~a}').replace("ñ",r'{\~n}').replace("ç",r'\c{c}')
 print()
 print(data)
 print()
