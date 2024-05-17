@@ -69,5 +69,6 @@
     "Verification": "This paper discusses verification of equality (of quantum circuits)",
     "Chemistry": "This paper is about quantum chemistry",
     "Cryptography": "This paper is about (post-)quantum cryptography",
-    "Photons": "This paper is about photons or photonic computing"
+    "Photons": "This paper is about photons or photonic computing",
+    "Continuous Variable": "This paper discusses or uses continuous-variable quantum systems"
 }
