@@ -33,7 +33,6 @@ print(aid)
 q = arxiv.query(id_list=[aid])[0]
 title = q['title'].replace("\n","").replace("  "," ")
 print(title, ", ".join(q['authors']))
-
 d = q['published_parsed']
 
 entry = {
@@ -45,7 +44,11 @@ entry = {
 authors = []
 ID = None
 for a in q['authors']:
-	first, last = a.split(' ',1)
+	try:
+		first, last = a.split(' ',1)
+	except:
+		first = a
+		last = a
 	authors.append('{}, {}'.format(last, first))
 	if ID is None: 
 		ID = last.replace(" ","").lower() + str(d.tm_year)
