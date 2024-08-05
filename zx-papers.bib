@@ -4469,3 +4469,14 @@ doi = {10.1142/S0219887824400115},
     keywords = {Optimisation, Automation, ZX-calculus},
     abstract = {We propose several methods for optimizing the number of qubits in a quantum circuit while preserving the number of non-Clifford gates. One of our approaches consists in reversing, as much as possible, the gadgetization of Hadamard gates, which is a procedure used by some $T$-count optimizers to circumvent Hadamard gates at the expense of additional qubits. We prove the NP-hardness of this problem and we present an algorithm for solving it. We also propose a more general approach to optimize the number of qubits by showing how it relates to the problem of finding a minimal-width path-decomposition of the graph associated with a given ZX-diagram. This approach can be used to optimize the number of qubits for any computational model that can natively be depicted in ZX-calculus, such as the Pauli Fusion computational model which can represent lattice surgery operations. We also show how this method can be used to efficiently optimize the number of qubits in a quantum circuit by using the ZX-calculus as an intermediate representation.}
 }
+
+@article{huang2024redefining,
+    author = {Huang, Qunsheng and Winderl, David and Meijer-van de Griend, Arianne and Yeung, Richie},
+    title = {{Redefining Lexicographical Ordering: Optimizing Pauli String Decompositions for Quantum Compiling}},
+    year = {2024},
+    journal = {arXiv preprint arXiv:2408.00354},
+    urldate = {2024-08-01},
+    link = {http://arxiv.org/abs/2408.00354},
+    keywords = {ZX-Supported, Optimisation, Automation},
+    abstract = {In quantum computing, the efficient optimization of Pauli string decompositions is a crucial aspect for the compilation of quantum circuits for many applications, such as chemistry simulations and quantum machine learning. In this paper, we propose a novel algorithm for the synthesis of trotterized time-evolution operators that results in circuits with significantly fewer gates than previous solutions. Our synthesis procedure takes the qubit connectivity of a target quantum computer into account. As a result, the generated quantum circuit does not require routing, and no additional CNOT gates are needed to run the resulting circuit on a target device. We compare our algorithm against Paulihedral and TKET, and show a significant improvement for randomized circuits and different molecular ansatzes. We also investigate the Trotter error introduced by our ordering of the terms in the Hamiltonian versus default ordering and the ordering from the baseline methods and conclude that our method on average does not increase the Trotter error.}
+}
