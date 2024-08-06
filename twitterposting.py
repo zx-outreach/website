@@ -17,8 +17,8 @@ def last_entry_to_tweet_text():
 	        authors = clean_text(normalise_name(e['author'][0]))
 	else:
 	        names = [clean_text(normalise_name(a)) for a in e['author']]
-	        if len(names) > 6:
-	        	names = names[:4]
+	        if len(names) > 5:
+	        	names = names[:3]
 	        	names.append("others")
 	        for a in names[:-2]:
 	        	authors += a + ", "
@@ -30,6 +30,14 @@ def last_entry_to_tweet_text():
 	link = entry['link']
 	abstract = unescape(clean_text(entry['abstract']))
 
+	if len(title) > 100:
+		i = title.find(':')
+		if i != -1:
+			title = title[:i]
+		else:
+			title = title[:100]
+			i = title.rfind(' ')
+			title = title[:i] + "..."
 	tweet = f"""New ZX paper:
 	{title}
 	by {authors}
@@ -55,8 +63,9 @@ def tweet_last_entry():
 		consumer_secret=cred['api_secret'],
 		access_token=cred['access_token'],
 		access_token_secret=cred['access_secret'])
-
+        
 	tweet = last_entry_to_tweet_text()
+	print(tweet)
 	client.create_tweet(text=tweet)
 
 if __name__ == '__main__':
