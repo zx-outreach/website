@@ -4254,17 +4254,22 @@ doi = {10.1142/S0219887824400115},
     abstract = {A quantum circuit may be strongly classically simulated with the aid of ZX-calculus by decomposing its $t$ T-gates into a sum of $2^{\alpha t}$ classically computable stabiliser terms. In this paper, we introduce a general procedure to find an optimal pattern of vertex cuts in a ZX-diagram to maximise its T-count reduction at the cost of the fewest cuts. Rather than reducing a Clifford+T diagram based on a fixed routine of decomposing its T-gates directly (as is the conventional approach), we focus instead on taking advantage of certain patterns and structures common to such circuits to, in effect, design by automatic procedure an arrangement of spider decompositions that is optimised for the particular circuit. In short, this works by assigning weights to vertices based on how many T-like gates they are blocking from fusing/cancelling and then appropriately propagating these weights through any neighbours which are then blocking weighted vertices from fusing, and so on. Ultimately, this then provides a set of weightings on relevant nodes, which can then each be cut, starting from the highest weighted down. While this is a heuristic approach, we show that, for circuits small enough to verify, this method achieves the most optimal set of cuts possible $71\%$ of the time. Furthermore, there is no upper bound for the efficiency achieved by this method, allowing, in principle, an effective decomposition efficiency $\alpha\rightarrow0$ for highly structured circuits. Even applied to random pseudo-structured circuits (produced from CNOTs, phase gates, and Toffolis), we record the number of stabiliser terms required to reduce all T-gates, via our method as compared to that of the more conventional T-decomposition approaches (with $\alpha\approx0.47$), and show consistent improvements of orders of magnitude, with an effective efficiency $0.1\lesssim\alpha\lesssim0.2$.}
 }
 
-@article{stollenwerk2024measurementbased,
-    author = {Stollenwerk, Tobias and Hadfield, Stuart},
-    title = {{Measurement-Based Quantum Approximate Optimization}},
-    year = {2024},
-    journal = {arXiv preprint arXiv:2403.11514},
-    urldate = {2024-03-18},
+@INPROCEEDINGS{stollenwerk2024measurementbased,
+  author={Stollenwerk, Tobias and Hadfield, Stuart},
+  booktitle={2024 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)}, 
+  title={{Measurement-Based Quantum Approximate Optimization}}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1115-1127},
+  doi={10.1109/IPDPSW63119.2024.00183},
+  urldate = {2024-03-18},
     link = {http://arxiv.org/abs/2403.11514},
     video = {https://www.youtube.com/watch?v=dwLxBdhT0ZU},
     keywords = {MBQC, Optimisation, Variational Circuits, ZX-calculus},
     abstract = {Parameterized quantum circuits are attractive candidates for potential quantum advantage in the near term and beyond. At the same time, as quantum computing hardware not only continues to improve but also begins to incorporate new features such as mid-circuit measurement and adaptive control, opportunities arise for innovative algorithmic paradigms. In this work we focus on measurement-based quantum computing protocols for approximate optimization, in particular related to quantum alternating operator ans\"atze (QAOA), a popular quantum circuit model approach to combinatorial optimization. For the construction and analysis of our measurement-based protocols we demonstrate that diagrammatic approaches, specifically ZX-calculus and its extensions, are effective for adapting such algorithms to the measurement-based setting. In particular we derive measurement patterns for applying QAOA to the broad and important class of QUBO problems. We further outline how for constrained optimization, hard problem constraints may be directly incorporated into our protocol to guarantee the feasibility of the solution found and avoid the need for dealing with penalties. Finally we discuss the resource requirements and tradeoffs of our approach to that of more traditional quantum circuits.}
 }
+
 
 @article{m.sommers2024zerotemperature,
     author = {M. Sommers, Grace and Gopalakrishnan, Sarang and J. Gullans, Michael and A. Huse, David},
@@ -4550,4 +4555,19 @@ doi = {10.1142/S0219887824400115},
     link = {http://arxiv.org/abs/2409.00828},
     keywords = {Classical Simulation, Automation, PyZX, Applied, ZX-Calculus, Clifford+T},
     abstract = {We introduce a novel method for strong classical simulation of quantum circuits based on optimally k-partitioning ZX-diagrams, reducing each part individually, and then efficiently cross-referencing their results to conclude the overall probability amplitude of the original circuit. We then analyse how this method fares against the alternatives for circuits of various size, shape, and interconnectedness and demonstrate how it is often liable to outperform those alternatives in speed by orders of magnitude.}
+}
+
+@INPROCEEDINGS{Quanz2024Parallel,
+  author={Quanz, Marcel and Staudacher, Korbinian and Fürlinger, Karl},
+  booktitle={2024 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)}, 
+  title={Parallel Quantum Circuit Extraction from MBQC-Patterns}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1078-1087},
+  doi={10.1109/IPDPSW63119.2024.00179},
+  urldate = {2024-09-15},
+  link = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10596505&casa_token=IvO5I8HAAmsAAAAA:s1XrQZcpF079508i5_tYXIbnybpxOWLWMuGULR-iMG0gI6LUZh9bw2OHBsaAOUYTySpqIi-jHwo&tag=1},
+  keywords = {MBQC, ZX-calculus, Circuit Extraction, Applied},
+  abstract = {In the model of measurement-based quantum computing (MBQC), computations are performed via sequential measurements on a highly entangled graph state. MBQC is a natural model for photonic quantum computing and has been shown to be useful for tasks like optimization and verification of general quantum computations. Therefore, it is often necessary to translate between MBQC and the predominantly used quantum circuit model in a fast and reliable way. While there are algorithms with linear complexity to extract quantum circuits from measurement patterns using additional ancilla qubits, efficient ancilla-free extraction has shown to be more costly. We develop strategies to parallelize an existing extraction algorithm based on ZX-calculus by exploiting the graph structure of measurement patterns and evaluate the performance on patterns obtained from a benchmark set of quantum circuits. Our results suggest that possible parallelization speedups are closely related to the graph structure of a pattern.}
 }
