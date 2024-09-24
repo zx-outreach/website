@@ -4571,3 +4571,14 @@ doi = {10.1142/S0219887824400115},
   keywords = {MBQC, ZX-calculus, Circuit Extraction, Applied},
   abstract = {In the model of measurement-based quantum computing (MBQC), computations are performed via sequential measurements on a highly entangled graph state. MBQC is a natural model for photonic quantum computing and has been shown to be useful for tasks like optimization and verification of general quantum computations. Therefore, it is often necessary to translate between MBQC and the predominantly used quantum circuit model in a fast and reliable way. While there are algorithms with linear complexity to extract quantum circuits from measurement patterns using additional ancilla qubits, efficient ancilla-free extraction has shown to be more costly. We develop strategies to parallelize an existing extraction algorithm based on ZX-calculus by exploiting the graph structure of measurement patterns and evaluate the performance on patterns obtained from a benchmark set of quantum circuits. Our results suggest that possible parallelization speedups are closely related to the graph structure of a pattern.}
 }
+
+@article{defelice2024fusion,
+    author = {de Felice, Giovanni and Po{\'o}r, Boldizs{\'a}r and Yeh, Lia and Cashman, William},
+    title = {{Fusion and flow: formal protocols to reliably build photonic graph states}},
+    year = {2024},
+    journal = {arXiv preprint arXiv:2409.13541},
+    urldate = {2024-09-20},
+    link = {http://arxiv.org/abs/2409.13541},
+    keywords = {Photons, Pauli Fusion, MBQC, gflow, Protocols},
+    abstract = {Photonics offers a promising platform for implementations of measurement-based quantum computing. Recently proposed fusion-based architectures aim to achieve universality and fault-tolerance. In these approaches, computation is carried out by performing fusion and single-qubit measurements on a resource graph state. The verification of these architectures requires linear algebraic, probabilistic, and control flow structures to be combined in a unified formal language. This paper develops a framework for photonic quantum computing by bringing together linear optics, ZX calculus, and dataflow programming. We characterize fusion measurements that induce Pauli errors and show that they are correctable using a novel flow structure for fusion networks. We prove the correctness of new repeat-until-success protocols for the realization of arbitrary fusions and provide a graph-theoretic proof of universality for linear optics with entangled photon sources. The proposed framework paves the way for the development of compilation algorithms for photonic quantum computing.}
+}
