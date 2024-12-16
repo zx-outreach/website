@@ -112,7 +112,6 @@ body {
                 </div>
                 <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
                 <strong><p>Speaker:</strong> <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=ejwVfcUAAAAJ&hl=en">Benjamin Rodatz</a> (University of Oxford)</p><br>
-                <br>
                 <strong>Time:</strong> 9 - 10 am ET = 2 - 3 pm UK = 3 - 4 pm Netherlands<br>
                 <br>
                 <strong><p>Abstract:</strong> The ZX calculus is a graphical language for representing and rewriting quantum circuits. While its graphical rewrite rules preserve semantics, they may not preserve other features. For example, applying rewrites to a circuit that implements an error-correcting code can change its distance. Here, we define the notion of distance-preserving rewrites that enables the transformation of error-correcting codes without changing their distance. Using these rewrites, we propose an algorithm that transforms a high-weight Pauli measurement into an equivalent quantum circuit with only single- and two-qubit operations. Since we only use distance-preserving rewrites, we guarantee that errors in the low-weight implementation do not propagate to create multiple data errors. Going further, we generalise the Floquetification procedure of <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2307.11136">[arXiv:2308.15489]</a> to arbitrary stabiliser codes. Given a stabiliser code, we synthesise a new quantum error-correcting code which encodes the same number of qubits with at least the same distance. The number of additional qubits this method requires is linearly dependent on the weight or the largest Pauli measurement. This creates a tradeoff between easily implementable low-weight Pauli measurements at the cost of additional physical qubits.</p><br>
@@ -124,10 +123,22 @@ body {
                 </div>
                 <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
                 <strong><p>Speaker:</strong> <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=zOYT7TcAAAAJ&hl=en">Matthew Sutcliffe</a> (University of Oxford)</p><br>
-                <br>
                 <strong>Time:</strong> 9 - 10 am ET = 2 - 3 pm UK = 3 - 4 pm Netherlands<br>
                 <br>
-                <strong><p>Abstract:</strong>We introduce a novel method for strong classical simulation of quantum circuits based on optimally kpartitioning ZX-diagrams, reducing each part individually, and then efficiently cross-referencing their results to conclude the overall probability amplitude of the original circuit. We then analyse how this method fares against the alternatives for circuits of various size, shape, and interconnectedness and demonstrate how it is often liable to outperform those alternatives in speed by orders of magnitude.</p><br>
+                <strong>Abstract:</strong> We introduce a novel method for strong classical simulation of quantum circuits based on optimally kpartitioning ZX-diagrams, reducing each part individually, and then efficiently cross-referencing their results to conclude the overall probability amplitude of the original circuit. We then analyse how this method fares against the alternatives for circuits of various size, shape, and interconnectedness and demonstrate how it is often liable to outperform those alternatives in speed by orders of magnitude.<br>
+            </div>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Monday March 10th: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2411.14448">Universal Graph Representation of Stabilizer Codes</a></p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong> <a target="_blank" rel="noopener" href="https://arxiv.org/search/quant-ph?searchtype=author&query=Khesin,+A+B">Andrey Boris Khesin</a> (Massachusetts Institute of Technology)</p><br>
+                <strong>Time:</strong> 9 - 10 am ET = 2 - 3 pm UK = 3 - 4 pm Netherlands<br>
+                <br>
+                <strong>Abstract:</strong> We introduce a representation of \([[n,k]]\) stabilizer codes as semi-bipartite graphs wherein k "input" nodes map to n "output" nodes, such that output nodes may connect to each other but input nodes may not. We prove that this graph representation is in bijection with tableaus and give an efficient compilation algorithm that transforms tableaus into graphs. We then show that this map is efficiently invertible, which gives a new universal recipe for code construction by way of finding graphs with sufficiently nice properties. <br><br>
+
+                The graph representation gives insight into both code construction and algorithms. To the former, we argue that graphs provide a flexible platform for building codes particularly at smaller (non-asymptotic) scales. We construct as examples constant-size codes, e.g. a \([[64,6,5]]\) code and a family of roughly \([[n,\frac{n}{logn},logn]]\) codes. We also leverage graphs in a probabilistic analysis to extend the quantum Gilbert-Varshamov bound into a three-way distance-rate-weight tradeoff. To the latter, we show that key coding algorithms -- distance approximation, weight reduction, and decoding -- are unified as instances of a single optimization game on a graph. Moreover, key code properties such as distance, weight, and encoding circuit depth, are all controlled by the graph degree. We give efficient algorithms for producing simple encoding circuits whose depths scale as twice the degree and for implementing logical diagonal and certain Clifford gates with non-constant but reduced depth. Finally, we construct a simple efficient decoding algorithm and prove a performance guarantee for a certain class of graphs, including the roughly \([[n,\frac{n}{logn},logn]]\) code. These results give evidence that graphs are generically useful for the study of stabilizer codes and their practical implementations.<br>
+                <br>
+                <strong>Joint-Work With: </strong> Jonathan Z. Lu and Peter W. Shor<br>
             </div>
         </div>   
         <div class="cell row">
