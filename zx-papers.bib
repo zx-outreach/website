@@ -4729,3 +4729,25 @@ urldate = {2012-09-18},
     keywords = {Surface Code, Error Correcting Codes, ZX-calculus},
     abstract = {We employ ZX-calculus and Pauli web to understand the $|Y\rangle$ state injection on the rotated surface code.}
 }
+
+@phdthesis{Khesin2025thesis,
+    author = {Khesin, Andrey Boris},
+    title = {{Quantum Computing from Graphs}},
+    year = {2025},
+    school = {Massachusetts Institute Of Technology},
+    urldate = {2025-02-01},
+    link = {https://arxiv.org/abs/2501.17959},
+    keywords = {ZX-calculus, Error Correcting Codes, Clifford Fragment, PhD Thesis},
+    abstract = {While stabilizer tableaus have proven exceptionally useful as a descriptive tool for additive quantum codes, they offer little guidance for concrete constructions or coding algorithm analysis. We introduce a representation of stabilizer codes as graphs with certain structures. Specifically, the graphs take a semi-bipartite form where input nodes map to output nodes, such that output nodes may connect to each other but input nodes may not. Intuitively, the graph's input-output edges represent information propagation of the encoder, while output-output edges represent the code's entanglement. We prove that this graph representation is in bijection with tableaus and give an efficient compilation algorithm that transforms tableaus into graphs. We show that this map is efficiently invertible, which gives a universal recipe for code construction by finding graphs with nice properties. The graph representation gives insight into both code construction and algorithms. To the former, we argue that graphs provide a flexible platform for building codes. We construct several constant-size codes and several infinite code families. We also use graphs to extend the quantum Gilbert-Varshamov bound to a three-way distance-rate-weight trade-off. To the latter, we show that key coding algorithms, distance approximation, weight reduction, and decoding, are unified as instances of a single optimization game on a graph. Moreover, key code properties such as distance, weight, and encoding circuit depth, are all controlled by the graph degree. We give efficient algorithms for producing encoding circuits whose depths scale with the degree and for implementing certain logical diagonal and Clifford gates with reduced depth. Finally, we find an efficient decoding algorithm for certain classes of graphs. These results give evidence that graphs are useful for the study of quantum computing and its implementations.}
+}
+
+@article{balthasarmansky2024constant,
+    author = {Balthasar Mansky, Maximilian and Kam, Chonfai and Linnhoff-Popien, Claudia},
+    title = {{A Constant Measurement Quantum Algorithm for Graph Connectivity}},
+    year = {2024},
+    journal = {arXiv preprint arXiv:2411.15015},
+    urldate = {2024-11-22},
+    link = {http://arxiv.org/abs/2411.15015},
+    keywords = {Protocols, Applied, MBQC, ZX-calculus},
+    abstract = {We introduce a novel quantum algorithm for determining graph connectedness using a constant number of measurements. The algorithm can be extended to find connected components with a linear number of measurements. It relies on non-unitary abelian gates taken from ZX calculus. Due to the fusion rule, the two-qubit gates correspond to a large single action on the qubits. The algorithm is general and can handle any undirected graph, including those with repeated edges and self-loops. The depth of the algorithm is variable, depending on the graph, and we derive upper and lower bounds. The algorithm exhibits a state decay that can be remedied with ancilla qubits. We provide a numerical simulation of the algorithm.}
+}
