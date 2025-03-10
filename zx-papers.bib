@@ -4776,3 +4776,25 @@ abstract = {One of the promising applications for early quantum computers is the
     keywords = {Entanglement, Classical Simulation, Automation, PyZX, Condensed Matter, ZX-calculus},
     abstract = {We revisit the measurement-induced phase transition (MPT) in Clifford circuits, which are both classically simulable and exhibit critical behavior widely believed to be distinct from classical percolation theory, using ZX-calculus. We analyze the MPT in a dynamical model composed of CNOT, SWAP, identity gates, and Bell-pair measurements, respectively, arranged randomly in a brickwork pattern. Our circuits exhibit a transition that is seemingly distinct from classical percolation based on standard arguments, that is in line with the prevailing understanding in the field. In contrast, by employing ZX-calculus based simplification techniques, we unveil a hidden percolation transition within the circuit structure. Over a range of parameters tied to the probabilities for applying different gates, we demonstrate that the classical percolation transition in the ZX-simplified network coincides with the MPT observed through mutual information. Our findings suggest that the MPT in Clifford circuits is, in fact, controlled by a classical percolation transition in disguise.}
 }
+
+@mastersthesis{Ahmad2025Masters,
+    author = {Ahmad, Wira Azmoon},
+    title = {{Efficient Heuristics for Classical Simulation of Quantum Circuits Using ZX-Calculus}},
+    year = {2025},
+    school = {University of Oxford},
+    link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/ahmad-thesis.pdf},
+    urldate = {2025-02-10},
+    keywords = {Classical Simulation, Automation, PyZX, Clifford+T, ZX-calculus, Master Thesis},
+    abstract = {Quantum circuits require validation and testing to ensure that they perform as expected. Classical simulation is a powerful tool for this purpose, but it is limited by the exponential growth of complexity with the number of qubits. Nevertheless, using the ZX-calculus, a graphical language for quantum mechanics, we can attempt to reduce how exponential this growth is. Recent developments have allowed focus to be placed on complexity being dependent on the number of T-gates that are in the circuit. Given $t$ T-gates, if the complexity of classically simulating the circuit is $O(2\alpha t)$, the aim is to reduce the value of $\alpha$ as much as possible, where $0 < \alpha < 1$. This thesis presents a heuristic approach toward exploiting the structure of the ZX-diagrams used to represent the quantum circuits, in order to reduce $\alpha$. We conceptualise a formal definition of the heuristic method, applying it to existing approaches, and also develop new heuristics that take advantage of the structure made available in the ZX-diagrams. These heuristics perform well in practice, boosting the number of T-gates that can be simulated classically by up to three times as many on certain classes of circuits}
+}
+
+@article{vollmeier2025graphical,
+    author = {Vollmeier, Yves},
+    title = {{Graphical Stabilizer Decompositions for Multi-Control Toffoli Gate Dense Quantum Circuits}},
+    year = {2025},
+    journal = {arXiv preprint arXiv:2503.03798},
+    urldate = {2025-03-05},
+    link = {http://arxiv.org/abs/2503.03798},
+    keywords = {Classical Simulation, Clifford+T, Toffoli, Automation},
+    abstract = {In this thesis, we study concepts in quantum computing using graphical languages, specifically using the ZX-calculus. The core of the research revolves around (graphical) stabilizer decompositions. The first major focus is on the decomposition of non-stabilizer states created from star edges. We discuss previous results and then present novel decompositions that yield a theoretical improvement. The second major focus is on weighting algorithms, applied to the special class of multi-control Toffoli gate dense quantum circuits. The representation of the corresponding gates is based on star edges. The applicability of known methods, such as CNOT-grouping, traditionally used for other classes, is examined in the context of this specific class. We then present a novel weighting algorithm that attempts to determine the best vertex to decompose. A refined version is implemented to simulate a known class of quantum querying algorithms, which is used to search for causal configurations of multiloop Feynman diagrams. For this case, as well as for a generalized benchmark consisting of randomly generated quantum circuits, we demonstrate occasional improvements in the final number of terms against traditional methods. These results are discussed by considering different simplification strategies. This thesis also provides a brief but broad outline of the important preliminaries.}
+}
