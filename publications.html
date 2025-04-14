@@ -93,6 +93,52 @@
 <div class="perEntryDiv">
     <div class="leftContent">
         <span>
+            <a target="_blank" href="http://arxiv.org/abs/2504.03429" class="paperTitle">Optimizing Quantum Circuits via ZX Diagrams using Reinforcement Learning and Graph Neural Networks</a>
+        </span>
+        <br>
+            <span class="authors">Alexander Mattick, Maniraman Periyasamy, Christian Ufrecht, Abhishek Y. Dubey, Christopher Mutschler, Axel Plinge and Daniel D. Scherer</span>
+        <br>
+        <span>
+            <a href="#" class="abstract_more">
+                Show abstract &#x21F2;
+            </a>
+            <a href="#" class="bibdata_more">
+                Show bibdata &#x21F2;
+            </a>
+            
+        </span>
+    </div>
+    <div class="rightContent">
+        <span>
+            <a target="_blank" href="http://arxiv.org/abs/2504.03429" class="journal">arXiv:2504.03429</a>
+        </span>
+        <br>
+        <span>
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('optimisation')" title="This paper significantly discusses optimisation of quantum computation in any form, including compilation and routing">Optimisation</a>, <a target="_blank" onclick="forceSearchKW('automation')" title="This paper discusses automation of processes via software or algorithms">Automation</a>, <a target="_blank" onclick="forceSearchKW('pyzx')" title="The paper uses PyZX">PyZX</a>, <a target="_blank" onclick="forceSearchKW('zx-calculus')" title="This paper uses the core ZX-calculus and not any of the other variations that exists">ZX-calculus</a></span>.
+        </span>
+    </div>
+    <div class="crossContent">
+        <div class="abstract" style="display:none">Quantum computing is currently strongly limited by the impact of noise, in particular introduced by the application of two-qubit gates. For this reason, reducing the number of two-qubit gates is of paramount importance on noisy intermediate-scale quantum hardware. To advance towards more reliable quantum computing, we introduce a framework based on ZX calculus, graph-neural networks and reinforcement learning for quantum circuit optimization. By combining reinforcement learning and tree search, our method addresses the challenge of selecting optimal sequences of ZX calculus rewrite rules. Instead of relying on existing heuristic rules for minimizing circuits, our method trains a novel reinforcement learning policy that directly operates on ZX-graphs, therefore allowing us to search through the space of all possible circuit transformations to find a circuit significantly minimizing the number of CNOT gates. This way we can scale beyond hard-coded rules towards discovering arbitrary optimization rules. We demonstrate our method's competetiveness with state-of-the-art circuit optimizers and generalization capabilities on large sets of diverse random circuits.</div>
+        <div class="bibdata" style="display:none">
+            <pre><code>@article{mattick2025optimizing,
+    author = {Mattick, Alexander and Periyasamy, Maniraman and Ufrecht, Christian and Y. Dubey, Abhishek and Mutschler, Christopher and Plinge, Axel and D. Scherer, Daniel},
+    title = {{Optimizing Quantum Circuits via ZX Diagrams using Reinforcement Learning and Graph Neural Networks}},
+    year = {2025},
+    journal = {arXiv preprint arXiv:2504.03429},
+    urldate = {2025-04-04},
+    link = {http://arxiv.org/abs/2504.03429},
+    keywords = {Optimisation, Automation, PyZX, ZX-calculus},
+    abstract = {Quantum computing is currently strongly limited by the impact of noise, in particular introduced by the application of two-qubit gates. For this reason, reducing the number of two-qubit gates is of paramount importance on noisy intermediate-scale quantum hardware. To advance towards more reliable quantum computing, we introduce a framework based on ZX calculus, graph-neural networks and reinforcement learning for quantum circuit optimization. By combining reinforcement learning and tree search, our method addresses the challenge of selecting optimal sequences of ZX calculus rewrite rules. Instead of relying on existing heuristic rules for minimizing circuits, our method trains a novel reinforcement learning policy that directly operates on ZX-graphs, therefore allowing us to search through the space of all possible circuit transformations to find a circuit significantly minimizing the number of CNOT gates. This way we can scale beyond hard-coded rules towards discovering arbitrary optimization rules. We demonstrate our method's competetiveness with state-of-the-art circuit optimizers and generalization capabilities on large sets of diverse random circuits.}
+}
+</code></pre>
+            <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
+        </div>
+    </div>
+</div></li>
+<li class="pub_entry">
+<div class="perEntryDiv">
+    <div class="leftContent">
+        <span>
             <a target="_blank" href="http://arxiv.org/abs/2503.10983" class="paperTitle">Exhaustive Search for Quantum Circuit Optimization using ZX Calculus</a>
         </span>
         <br>
@@ -160,7 +206,7 @@
         </span>
         <br>
         <span>
-            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('simulation')" title="">Simulation</a>, <a target="_blank" onclick="forceSearchKW('optimisation')" title="This paper significantly discusses optimisation of quantum computation in any form, including compilation and routing">Optimisation</a>, <a target="_blank" onclick="forceSearchKW('zh-calculus')" title="This paper uses the ZH-calculus in some way">ZH-calculus</a></span>.
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('classical simulation')" title="This paper discusses classical simulation of quantum circuits">Classical Simulation</a>, <a target="_blank" onclick="forceSearchKW('optimisation')" title="This paper significantly discusses optimisation of quantum computation in any form, including compilation and routing">Optimisation</a>, <a target="_blank" onclick="forceSearchKW('zh-calculus')" title="This paper uses the ZH-calculus in some way">ZH-calculus</a></span>.
         </span>
     </div>
     <div class="crossContent">
@@ -173,7 +219,7 @@
     journal = {arXiv preprint arXiv:2503.11494},
     urldate = {2025-03-14},
     link = {http://arxiv.org/abs/2503.11494},
-    keywords = {Simulation, Optimisation, ZH-calculus},
+    keywords = {Classical Simulation, Optimisation, ZH-calculus},
     abstract = {Quantum circuit cutting refers to a series of techniques that allow one to partition a quantum computation on a large quantum computer into several quantum computations on smaller devices. This usually comes at the price of a sampling overhead, that is quantified by the $1$-norm of the associated decomposition. The applicability of these techniques relies on the possibility of finding decompositions of the ideal, global unitaries into quantum operations that can be simulated onto each sub-register, which should ideally minimize the $1$-norm. In this work, we show how these decompositions can be obtained diagrammatically using ZX-calculus expanding on the work of Ufrecht et al. [arXiv:2302.00387]. The central idea of our work is that since in ZX-calculus only connectivity matters, it should be possible to cut wires in ZX-diagrams by inserting known decompositions of the identity in standard quantum circuits. We show how, using this basic idea, many of the gate decompositions known in the literature can be re-interpreted as an instance of wire cuts in ZX-diagrams. Furthermore, we obtain improved decompositions for multi-qubit controlled-Z (MCZ) gates with $1$-norm equal to $3$ for any number of qubits and any partition, which we argue to be optimal. Our work gives new ways of thinking about circuit cutting that can be particularly valuable for finding decompositions of large unitary gates. Besides, it sheds light on the question of why exploiting classical communication decreases the 1-norm of a wire cut but does not do so for certain gate decompositions. In particular, using wire cuts with classical communication, we obtain gate decompositions that do not require classical communication.}
 }
 </code></pre>
