@@ -4831,3 +4831,28 @@ abstract = {One of the promising applications for early quantum computers is the
     keywords = {Optimisation, Automation, PyZX, ZX-calculus},
     abstract = {Quantum computing is currently strongly limited by the impact of noise, in particular introduced by the application of two-qubit gates. For this reason, reducing the number of two-qubit gates is of paramount importance on noisy intermediate-scale quantum hardware. To advance towards more reliable quantum computing, we introduce a framework based on ZX calculus, graph-neural networks and reinforcement learning for quantum circuit optimization. By combining reinforcement learning and tree search, our method addresses the challenge of selecting optimal sequences of ZX calculus rewrite rules. Instead of relying on existing heuristic rules for minimizing circuits, our method trains a novel reinforcement learning policy that directly operates on ZX-graphs, therefore allowing us to search through the space of all possible circuit transformations to find a circuit significantly minimizing the number of CNOT gates. This way we can scale beyond hard-coded rules towards discovering arbitrary optimization rules. We demonstrate our method's competetiveness with state-of-the-art circuit optimizers and generalization capabilities on large sets of diverse random circuits.}
 }
+
+@article{LIU2025130541,
+title = {Rapidly Trainable and Shallow-Compiled Quantum Approximate Optimization Algorithm for Maximum Likelihood Detection},
+journal = {Physics Letters A},
+pages = {130541},
+year = {2025},
+issn = {0375-9601},
+doi = {https://doi.org/10.1016/j.physleta.2025.130541},
+link = {https://www.sciencedirect.com/science/article/pii/S0375960125003214},
+author = {Yuxiang Liu and Yinuo Qian and Lu Wang and Zaichen Zhang and Xutao Yu},
+urldate = {2025-04-14},
+keywords = {Optimisation, Variational Circuits, Automation, ZX-calculus},
+abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum likelihood (ML) detection problem is NP-hard and becomes increasingly complex with more transmitting antennas and symbols. The quantum approximate optimization algorithm (QAOA), a leading candidate algorithm running in the noisy intermediate-scale quantum (NISQ) devices, can show quantum advantage for approximately solving combinatorial optimization problems. In this paper, we propose an improved QAOA based maximum likelihood detection. In the proposed scheme, we use ZX-calculus to prove the parameter symmetry in QAOA circuits, which can be used to reduce the search space and accelerate the training process. Moreover, to run QAOA on quantum devices, an improved qubit mapping method with simultaneous gate absorption is proposed, which can compile the quantum circuit of the QAOA to satisfy the connectivity constraints of real quantum devices with fewer CNOT counts. In numerical experiments, our scheme accelerates parameter training by an average of 29.8% and uses fewer CNOT gates and shallower circuit depth during compilation. This demonstrates that our scheme has significant advantages over the traditional scheme.}
+}
+
+@article{xu2025faulttolerant,
+    author = {Xu, Yichen and Dua, Arpit},
+    title = {{Fault-tolerant protocols through spacetime concatenation}},
+    year = {2025},
+    journal = {arXiv preprint arXiv:2504.08918},
+    urldate = {2025-04-11},
+    link = {http://arxiv.org/abs/2504.08918},
+    keywords = {Error correcting codes, ZX-calculus, Applied},
+    abstract = {We introduce a framework called spacetime concatenation for fault-tolerant compilation of syndrome extraction circuits of stabilizer codes. Spacetime concatenation enables efficient compilation of syndrome extraction circuits into dynamical codes through structured gadget layouts and encoding matrices, facilitating low-weight measurements while preserving logical information. Our framework uses conditions that are sufficient for fault-tolerance of the dynamical code, including not measuring logical operators and preserving the spacetime distance. We construct explicit examples of dynamical codes using this framework, including the dynamical bivariate bicycle code and a dynamical Haah code, while illustrating their fault-tolerant properties. Furthermore, we analyze the classification and resource trade-offs of dynamical codes, demonstrating their adaptability to hardware constraints, including fabrication defects and qubit dropout scenarios.}
+}
