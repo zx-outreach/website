@@ -4867,3 +4867,14 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     keywords = {Classical Simulation, Optimisation, Automation, PyZX, ZX-calculus},
     abstract = {Classical simulation of quantum circuits is a pivotal part of the quantum computing landscape, specially within the NISQ era, where the constraints imposed by available hardware are unavoidable. The Gottesman-Knill theorem further motivates this argument by accentuating the importance of Clifford circuits and their role on this topic of simulation. In this work, we propose and analyze use cases that come from quantum circuits that can be written as product between a Clifford and a Non-Clifford unitary, these ranging from fully classical emulation, hybrid quantum-classical execution or even quantum algorithm simplification. To further complement this analysis, we make use of ZX-Calculus and its assets to detect a limiting border of these circuits that would allow for a separation between a Clifford section and a Non-Clifford section. To achieve this, we present a novel procedure for parsing ZX diagrams, that not only allows for the detection of this border but also simplifies the circuit extraction process.}
 }
+
+@article{poirson2025engineering,
+    author = {Poirson, Cl{\'e}ment and Roffe, Joschka and I. Booth, Robert},
+    title = {{Engineering CSS surgery: compiling any CNOT in any code}},
+    year = {2025},
+    journal = {arXiv preprint arXiv:2505.01370},
+    urldate = {2025-05-02},
+    link = {http://arxiv.org/abs/2505.01370},
+    keywords = {Lattice Surgery, Error Correcting Codes, ZX-calculus, Category Theory, Applied},
+    abstract = {We introduce a framework for implementing logic in CSS-style quantum error correction codes, building on the surgery methods of Cowtan and Burton [CB24]. Our approach offers a systematic methodology for designing and analysing surgery protocols. At the physical level, we introduce the concept of subcodes, which encapsulate all the necessary data for performing surgery. At the logical level, leveraging homological algebra, subcodes enable us to track the logical operations induced by any surgery protocol, regardless of the choice of logical operator basis. In particular, we make no assumptions on the structure of the logical operators of the code, thereby eschewing the irreducibility assumption that has been necessary in other formulations of surgery for CSS codes [Coh+22; Cro+24; ZL24]. As a proof of concept, we develop a surgery protocol inspired by lattice surgery that implements a logical CNOT gate between any two logical qubits. Applicable to any CSS code, this protocol is highly versatile and facilitates the process of fault-tolerant design.}
+}
