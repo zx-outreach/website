@@ -30,6 +30,7 @@
     "PyZX": "The paper uses PyZX",
     "Real Fragment": "The paper uses the real Clifford fragment",
     "Error Correcting Codes": "The paper discusses quantum error correcting codes",
+    "Floquet Codes": "THis paper discusses Floquet or other dynamical error correcting codes",
     "Normal-Form": "The paper discusses normal-form diagrams in a non-trivial way",
     "Qutrits": "The paper uses qutrits",
     "Spekkens Toy Model": "The paper discusses Spekkens' Toy Model",
