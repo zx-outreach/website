@@ -30,20 +30,25 @@ if aid.find('arxiv') != -1:
 aid = strip_arxiv_id(aid)
 print(aid)
 
-q = arxiv.query(id_list=[aid])[0]
-title = q['title'].replace("\n","").replace("  "," ")
-print(title, ", ".join(q['authors']))
-d = q['published_parsed']
+client = arxiv.Client()
+search = arxiv.Search(id_list=[aid])
+q = next(client.results(search))
+# q = arxiv.query(id_list=[aid])[0]
+
+title = q.title.replace("\n","").replace("  "," ")
+print(title, ", ".join(str(a) for a in q.authors))
+d = q.published
 
 entry = {
 	'ENTRYTYPE': 'article', 
 	'title': "{" + title + "}", 
-	'year': str(d.tm_year),
-	'urldate': f"{d.tm_year}-{d.tm_mon:02d}-{d.tm_mday:02d}"}
+	'year': str(d.year),
+	'urldate': f"{d.year}-{d.month:02d}-{d.day:02d}"}
 
 authors = []
 ID = None
-for a in q['authors']:
+for a in q.authors:
+	a = str(a)
 	try:
 		first, last = a.split(' ',1)
 	except:
@@ -51,37 +56,37 @@ for a in q['authors']:
 		last = a
 	authors.append('{}, {}'.format(last, first))
 	if ID is None: 
-		ID = last.replace(" ","").lower() + str(d.tm_year)
+		ID = last.replace(" ","").lower() + str(d.year)
 		ID = ID.replace('í','i').replace('ó','o').replace('á','a').replace('é','e').replace('ú','u')
 		ID = ID.replace('ì','i').replace('ò','o').replace('à','a').replace('è','e').replace('ù','u')
 		ID = ID.replace('ö','o').replace('ä','a').replace('ü','u').replace('ï','i').replace('ë','e')
 		ID = ID.replace('õ','o').replace('ã','a').replace('ñ','n').replace('ç','c')
 		first_author = ID
 
-t = q['title'].lower().replace("the ","").replace("a ","").replace("an ", "")
+t = q.title.lower().replace("the ","").replace("a ","").replace("an ", "")
 t = t.replace("towards ", "").replace("-","")
 ID += t.strip().split(" ",1)[0]
 entry['ID'] = ID.lower()
 
-link = q['arxiv_url']
+link = str(q.links[0])
 if link.find('v') != -1: link = link.rsplit('v',1)[0]
 entry['link'] = link
 
 entry['author'] = ' and '.join(authors)
 
-entry['abstract'] = q['summary'].replace('\n',' ')
+entry['abstract'] = q.summary.replace('\n',' ')
 
-if q['doi']:
+if q.doi:
 	print("DOI found!")
-	print("https://dx.doi.org/" + q['doi'])
+	print("https://dx.doi.org/" + q.doi)
 	print("Please manually add correct journal reference\n")
 	entry['doi'] = q['doi']
 
-if q['journal_reference']:
+if q.journal_ref:
 	print("Journal reference found!")
 	print("Please manually check journal reference\n")
-	print(q['journal_reference'])
-	entry['journal'] = q['journal_reference']
+	print(q.journal_ref)
+	entry['journal'] = q.journal_ref
 else:
 	entry['journal'] = "arXiv preprint arXiv:" + aid
 
