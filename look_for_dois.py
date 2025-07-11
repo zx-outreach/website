@@ -65,24 +65,26 @@ print("{} preprints found without journal ref".format(len(papers)))
 
 print("Looking for updated arxiv references")
 print()
-data = arxiv.query(id_list = list(papers.keys()))
+client = arxiv.Client()
+search = arxiv.Search(id_list = list(papers.keys()))
+data = client.results(search)
 
 for q in data:
-    if not q['doi'] and not q['journal_reference']: continue
-    aid = strip_arxiv_id(strip_arxiv_link(q['id']))
-    title = q['title'].replace("\n", "")
-    link = q['arxiv_url']
+    if not q.doi and not q.journal_ref: continue
+    aid = strip_arxiv_id(strip_arxiv_link(q.entry_id))
+    title = q.title.replace("\n", "")
+    link = str(q.links[0])
     if link.find('v') != -1: link = link.rsplit('v',1)[0]
-    if q['doi']:
+    if q.doi:
         print("Found new DOI for '{}':".format(title))
-        print(q['doi'])
-        if q['journal_reference']:
-            print(q['journal_reference'])
+        print(q.doi)
+        if q.journal_ref:
+            print(q.journal_ref)
         del papers[aid]
     else:
-        if q['journal_reference']:
+        if q.journal_ref:
             print("Found new journal ref for '{}':".format(title))
-            print(q['journal_reference'])
+            print(q.journal_ref)
         del papers[aid]
     print()
 
