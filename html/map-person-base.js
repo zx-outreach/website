@@ -12,10 +12,11 @@ var start = function () {
     })
   }
 
-  var addLink = function (a, b) {
+  var addLink = function (a, b, strength) {
     data.links.push({
       source: a,
-      target: b
+      target: b,
+      strength: strength
     })
   }
 
@@ -97,8 +98,12 @@ NODEDATAHERE
   }
 
   const simulation = d3.forceSimulation(nodes)
-    .force("link", d3.forceLink(links).id(d => d.id))
+    .force("link", d3.forceLink(links).id(d => d.id).strength(d => d.strength))
     .force("charge", d3.forceManyBody().strength(-700))
+    .force("collide", d3.forceCollide()
+      .radius(d => 40)  // radius of each node
+      .strength(0.9)                // how hard the collision pushes back
+      )
     .force("mid", midForce)
     .force("center", d3.forceCenter(0, 0))
     .force("constrain", constrainForce)
@@ -162,46 +167,109 @@ NODEDATAHERE
     .enter().append("g")
     .call(drag(simulation));
 
-  var labels1 = node.append("text")
-    .attr("text-anchor", "middle")
-    .text(function (d) {
-      return d.text;
-    })
-    .attr('x', 6)
-    .attr('y', 3);
+  // --- helper for wrapping text into tspans ---
+  function wrap(text, width) {
+    text.each(function() {
+      const textEl = d3.select(this);
+      const words = textEl.text().split(/\s+/).reverse();
+      let word;
+      let line = [];
+      let lineNumber = 0;
+      const lineHeight = 1.1; // ems
+      const y = textEl.attr("y");
+      const x = textEl.attr("x");
+      const dy = 0; // adjust for vertical centering
+      let tspan = textEl.text(null)
+        .append("tspan")
+        .attr("x", x)
+        .attr("y", y)
+        .attr("dy", dy + "em");
 
-
-  function getTextBox(selection) {
-    selection.each(function (d) {
-      d.bbox = this.getBBox();
-    })
+      while ((word = words.pop())) {
+        line.push(word);
+        tspan.text(line.join(" "));
+        if (tspan.node().getComputedTextLength() > width) {
+          line.pop();
+          tspan.text(line.join(" "));
+          line = [word];
+          tspan = textEl.append("tspan")
+            .attr("x", x)
+            .attr("y", y)
+            .attr("dy", ++lineNumber * lineHeight + dy + "em")
+            .text(word);
+        }
+      }
+    });
   }
 
-  node.call(getTextBox)
-    .append("rect")
-    .attr("x", function (d) {
-      return d.bbox.x
-    })
-    .attr("y", function (d) {
-      return d.bbox.y
-    })
-    .attr("width", function (d) {
-      return d.bbox.width
-    })
-    .attr("height", function (d) {
-      return d.bbox.height
-    })
-    .attr("fill", d => color(d.type))
-    .attr("opacity", "0.2")
+  // --- measure bounding boxes of text ---
+  function getTextBox(selection) {
+    selection.each(function(d) {
+      d.bbox = this.getBBox();
+    });
+  }
 
-
-  var labels2 = node.append("text")
+  // --- create text labels ---
+  var labels = node.append("text")
     .attr("text-anchor", "middle")
-    .text(function (d) {
-      return d.text;
-    })
-    .attr('x', 6)
-    .attr('y', 3);
+    .attr("x", 6)
+    .attr("y", 3)
+    .text(d => d.text)
+    .call(wrap, 80);  // 80px width before wrapping
+
+  // --- add background rects based on wrapped text size ---
+  labels.call(getTextBox)
+    .each(function(d) {
+      // insert rect *before* text so it's behind it
+      d3.select(this.parentNode)
+        .insert("rect", "text")
+        .attr("x", d.bbox.x)
+        .attr("y", d.bbox.y)
+        .attr("width", d.bbox.width)
+        .attr("height", d.bbox.height)
+        .attr("fill", color(d.type))
+        .attr("opacity", 0.2);
+    });
+  // var labels1 = node.append("text")
+  //   .attr("text-anchor", "middle")
+  //   .text(function (d) {
+  //     return d.text;
+  //   })
+  //   .attr('x', 6)
+  //   .attr('y', 3);
+
+
+  // function getTextBox(selection) {
+  //   selection.each(function (d) {
+  //     d.bbox = this.getBBox();
+  //   })
+  // }
+
+  // node.call(getTextBox)
+  //   .append("rect")
+  //   .attr("x", function (d) {
+  //     return d.bbox.x
+  //   })
+  //   .attr("y", function (d) {
+  //     return d.bbox.y
+  //   })
+  //   .attr("width", function (d) {
+  //     return d.bbox.width
+  //   })
+  //   .attr("height", function (d) {
+  //     return d.bbox.height
+  //   })
+  //   .attr("fill", d => color(d.type))
+  //   .attr("opacity", "0.2")
+
+
+  // var labels2 = node.append("text")
+  //   .attr("text-anchor", "middle")
+  //   .text(function (d) {
+  //     return d.text;
+  //   })
+  //   .attr('x', 6)
+  //   .attr('y', 3);
 
 
 

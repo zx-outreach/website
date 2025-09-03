@@ -5,7 +5,7 @@ import re
 
 current_date = datetime.datetime.now().date()
 
-num_years = 10  # How many years of data to include
+num_years = 6  # How many years of data to include
 paper_cutoff = 2  # How many papers someone needs to have to be listed
 
 # def clean_text(s):
@@ -59,20 +59,32 @@ for t,e in papers.items():
             recent_authors[author].append(e)
         else: recent_authors[author] = [e]
         if author not in coauthors:
-            coauthors[author] = set()
+            coauthors[author] = []
         for other in authors:
             if other == author: continue
-            coauthors[author].add(other)
+            coauthors[author].append(other)
 
 
+# Filter authors to only include those that have at least paper_cutoff number of ZX papers
 authors = dict(filter(lambda d: len(d[1])>=paper_cutoff, recent_authors.items()))
+# Sort the papers for each author based on urldate
 for author in authors:
     authors[author] = sorted(authors[author], key=lambda e: e['urldate'], reverse=True)
 
-
+# Filter the coauthors to only those that still remain in authors, after
+# those with <paper_cutoff papers have been removed
+# First to only keep those keys
 coauthors = dict(filter(lambda a: a[0] in authors, coauthors.items()))
+# Then to also update the set of the coauthors for each
+from collections import Counter
 for author in coauthors:
-    coauthors[author] = list(sorted(coauthors[author].intersection(authors.keys())))
+    new_coauthors = []
+    for coauth in coauthors[author]:
+        if coauth in authors:
+            new_coauthors.append(coauth)
+    counts = dict(Counter(new_coauthors))
+    coauthors[author] = counts
+    # coauthors[author] = list(sorted(coauthors[author].intersection(authors.keys())))
 
 #### Now that we have prepared the data, we are gonna build the graph
 
@@ -99,7 +111,7 @@ def parse_map_data(authors,coauthors):
         n = nodecount
         nodecount += 1
         people[person] = {'id': n}
-        people[person]['coauthors'] = coauthors[person]
+        people[person]['coauthors'] = sorted(coauthors[person].keys(), key=lambda a: coauthors[person][a], reverse=True)
         # else: people[name]['coauthors'] = []
         # for place in d["place"]:
         #     if place not in places:
@@ -122,7 +134,8 @@ def parse_map_data(authors,coauthors):
         for c in coa:
             t = people[c]['id']
             if (s,t) and (t,s) not in edges:
-                edges.append((s,t))
+                #coa[c] is number of papers they share
+                edges.append((s,t,coa[c]))
 
     nodedata = ""
     infodata = ""
@@ -138,8 +151,9 @@ def parse_map_data(authors,coauthors):
     # for field, d in fields.items():
     #     nodedata += '  addNode({:d},"{}", "field")\n'.format(d['id'],field)
     #     infodata += FIELDDIV.format(d['id'], field, ", ".join(person_link(p) for p in sorted(d['people'])))
-    for t,s in edges:
-        nodedata += "  addLink({:d},{:d})\n".format(t,s)
+    for t,s,num_coauth in edges:
+        strength = min([0.1+num_coauth/8,0.6])
+        nodedata += "  addLink({:d},{:d},{:f})\n".format(t,s,strength)
 
     return nodedata, infodata
 
@@ -157,7 +171,7 @@ def generate_map_html(authors, coauthors):
     with open("html/personmap_base.html", 'r') as f:
         data = f.read()
     data = data.replace("INFODATAHERE", infodata)
-    with open("personmap.html", 'w', encoding='utf-8') as f:
+    with open("map.html", 'w', encoding='utf-8') as f:
         f.write(data)
 
 generate_map_html(authors, coauthors)
