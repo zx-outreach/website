@@ -5246,3 +5246,19 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     keywords = {Classical Simulation, T-count, Automation, PyZX},
     abstract = {We apply the cutting stabiliser decomposition techniques [arXiv:2403.10964] to the quantum states generated from magic state cultivation [arXiv:2409.17595], post-selected upon all $+1$ measured values for simplicity. The resultant states to the $d=3$ and $d=5$ variant magic state cultivation circuits can be expressed as a sum of $4$ and $8$ Clifford ZX-digrams respectively. Modifications to existing ZX-calculus stabiliser decomposition methods may enable better simulation of non-Clifford circuits containing a moderate number of $T$ gates in the context of quantum error correction.}
 }
+
+@article{li2025quantum,
+  title={{Quantum architecture search with neural predictor based on ZX-calculus}},
+  author={Li, Shanchuan and Tsukayama, Daisuke and Shirakashi, Jun-ichi and Shibuya, Tetsuo and Imai, Hiroshi},
+  journal={EPJ Quantum Technology},
+  volume={12},
+  number={1},
+  pages={106},
+  year={2025},
+  publisher={Springer},
+  doi = {10.1140/epjqt/s40507-025-00410-w},
+  urldate = {2025-09-02},
+  link = {https://epjquantumtechnology.springeropen.com/articles/10.1140/epjqt/s40507-025-00410-w},
+  keywords = {Optimisation, PyZX, Automation, Applied, ZX-calculus},
+  abstract = {With the ongoing advances in noisy intermediate-scale quantum hardware, variational quantum algorithms have demonstrated significant potential in a range of quantum applications. However, obtaining high-performance, shallow-parameterized quantum circuits typically requires repeated optimization of the gate parameters over a large set of candidate circuits, resulting in prohibitively high evaluation costs. To address this challenge, this study proposes a novel predictor-based quantum architecture search (PQAS-ZX) method that leverages ZX-calculus. In this approach, a quantum circuit is first represented as a ZX diagram that supports multi-step equivalent simplifications at the diagram level. By applying these equivalence transformations, multiple circuit variants that share the same performance metric are generated, thereby significantly expanding the training dataset and enhancing the ability of the predictor to manage diverse circuit structures. ZX diagrams offer more flexible characterizations of multi-qubit entanglement and phase interactions, as well as higher-level equivalent transformations, compared with the state-of-the-art predictor-based quantum architecture search with graph measures (PQAS-GM). Numerical simulations of three variational quantum eigensolver tasks, namely the transverse-field Ising, Heisenberg, and BeH2 molecular models, demonstrated that PQAS-ZX required only approximately 80.9\%, 82.9\%, and 76.1\% of the queries required by PQAS-GM, respectively, to achieve the same probability of reaching the target ground-state energy. These results highlight the advantage of using ZX diagrams to identify high-quality circuits efficiently and alleviate the evaluation burden of quantum architecture searches.}
+}
