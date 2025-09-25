@@ -1,5 +1,6 @@
 import json
 import datetime
+import re
 
 #############################################
 # First we do Publications stuff
@@ -27,12 +28,6 @@ def entry_sort_key(entry):
     return entry['year']+"-01-01"
 
 
-def normalise_name(n):
-    p1, p2 = n.split(', ')
-    s = p2.strip() + " " + p1.strip()
-    return s
-
-
 def parse_math(s):
     i = s.rfind('$',0)
     while i != -1:
@@ -47,15 +42,31 @@ def clear_arXiv_preprint_text(s):
     return s.replace('arXiv preprint ','')
 
 
-def clean_text(s):
+def clean_text(s,html=True):
     for letter in ['a','o','u','i','e']:
-        s = s.replace(r'\"'+letter,'&'+letter+'uml;')
-        s = s.replace(r"\'"+letter,'&'+letter+'acute;')
-        s = s.replace(r"\~"+letter,letter+'&#771;')
+        if html:
+            s = s.replace(r'\"'+letter,'&'+letter+'uml;')
+            s = s.replace(r"\'"+letter,'&'+letter+'acute;')
+            s = s.replace(r"\~"+letter,letter+'&#771;')
+        else:
+            s = s.replace(r'\"'+letter,letter)
+            s = s.replace(r"\'"+letter,letter)
+            s = s.replace(r"\~"+letter,letter)
     # s = s.replace(r'\"o','&ouml;').replace(r'\"u', '&uuml;').replace(r'\"a', '&auml;')
     # s = s.replace(r"\'e",'&eacute;').replace(r"\'a",'&aacute;').replace(r"\'u",'&uacute;')
     return s.replace('{','').replace('}','').replace(r'\rm','')
 
+# def normalise_name(n):
+#     p1, p2 = n.split(', ')
+#     s = p2.strip() + " " + p1.strip()
+#     return s
+single_letter = re.compile(r'\s[a-zA-Z]\.')
+def normalise_name(n):
+    p1, p2 = n.split(', ')
+    name = p2.strip() + " " + p1.strip()
+    name = re.sub(single_letter, '', name) # Go from John A. Smith to John Smith
+    name = clean_text(name, html=False)
+    return name
 
 def entry_to_rss(title,link,abstract,authors,year, arxiv, date):
     y,m,d = date.split("-")
@@ -266,87 +277,88 @@ def generate_publications_html():
 ############################################
 # Now we do ZX-Map stuff
 
-PLACEDIV  = """<div class="place" id="info-{:d}" style="display:none"><b>{}</b>:
-<br></br>{}</div>\n"""
-PERSONDIV = """<div class="person" id="info-{:d}" style="display:none"><b>{}</b> ({}): {}
-{}</div>\n"""
-FIELDDIV  = """<div class="field" id="info-{:d}" style="display:none"><b>{}</b>:
-<br></br>{}</div>\n"""
+# PLACEDIV  = """<div class="place" id="info-{:d}" style="display:none"><b>{}</b>:
+# <br></br>{}</div>\n"""
+# PERSONDIV = """<div class="person" id="info-{:d}" style="display:none"><b>{}</b> ({}): {}
+# {}</div>\n"""
+# FIELDDIV  = """<div class="field" id="info-{:d}" style="display:none"><b>{}</b>:
+# <br></br>{}</div>\n"""
 
-def person_link(name):
-    return """<a href="/publications.html?q={name}" target="_blank" class="person-link">{name}</a>""".format(name=name)
+# def person_link(name):
+#     return """<a href="/publications.html?q={name}" target="_blank" class="person-link">{name}</a>""".format(name=name)
 
-def parse_map_data(js):
-    nodecount = 0
-    people = {}
-    places = {}
-    fields = {}
-    edges = []
-    for p, d in js["people"].items():
-        last, first = p.split(',')
-        n = nodecount
-        nodecount += 1
-        name = first.strip()+ " " + last.strip()
-        people[name] = {'id': n, 'places': [], 'fields': []}
-        if name in coauthors:
-            people[name]['coauthors'] = sorted(coauthors[name])
-        else: people[name]['coauthors'] = []
-        for place in d["place"]:
-            if place not in places:
-                places[place] = {'id': nodecount, 'people': []}
-                nodecount += 1
-            places[place]['people'].append(name)
-            people[name]['places'].append(place)
-            edges.append((places[place]['id'],n))
-        for field in d["fields"]:
-            if field not in fields:
-                fields[field] = {'id': nodecount, 'people': []}
-                nodecount += 1
-            fields[field]['people'].append(name)
-            people[name]['fields'].append(field)
-            edges.append((fields[field]['id'],n))
+# def parse_map_data(js):
+#     nodecount = 0
+#     people = {}
+#     places = {}
+#     fields = {}
+#     edges = []
+#     for p, d in js["people"].items():
+#         last, first = p.split(',')
+#         n = nodecount
+#         nodecount += 1
+#         name = first.strip()+ " " + last.strip()
+#         people[name] = {'id': n, 'places': [], 'fields': []}
+#         if name in coauthors:
+#             people[name]['coauthors'] = sorted(coauthors[name])
+#         else: people[name]['coauthors'] = []
+#         for place in d["place"]:
+#             if place not in places:
+#                 places[place] = {'id': nodecount, 'people': []}
+#                 nodecount += 1
+#             places[place]['people'].append(name)
+#             people[name]['places'].append(place)
+#             edges.append((places[place]['id'],n))
+#         for field in d["fields"]:
+#             if field not in fields:
+#                 fields[field] = {'id': nodecount, 'people': []}
+#                 nodecount += 1
+#             fields[field]['people'].append(name)
+#             people[name]['fields'].append(field)
+#             edges.append((fields[field]['id'],n))
                 
-    nodedata = ""
-    infodata = ""
-    for place, d in places.items():
-        nodedata += '  addNode({:d},"{}", "place")\n'.format(d['id'],place)
-        infodata += PLACEDIV.format(d['id'], place, ", ".join(person_link(p) for p in sorted(d['people'])))
-    for person, d in people.items():
-        nodedata += '  addNode({:d},"{}", "person")\n'.format(d['id'],person)
-        if person in latest_pubs:
-            authorstr = "<p>Latest publication: " + latest_pubs[person] + "</p>"
-        else: authorstr = ""
-        if d['coauthors']: authorstr += "<p><i>Coauthors</i>: "+ ", ".join(person_link(p) for p in d['coauthors']) + "</p>"
-        infodata += PERSONDIV.format(d['id'], person_link(person), ", ".join(d['places']),
-                                ", ".join(d['fields']), authorstr)
-    for field, d in fields.items():
-        nodedata += '  addNode({:d},"{}", "field")\n'.format(d['id'],field)
-        infodata += FIELDDIV.format(d['id'], field, ", ".join(person_link(p) for p in sorted(d['people'])))
-    for t,s in edges:
-        nodedata += "  addLink({:d},{:d})\n".format(t,s)
+#     nodedata = ""
+#     infodata = ""
+#     for place, d in places.items():
+#         nodedata += '  addNode({:d},"{}", "place")\n'.format(d['id'],place)
+#         infodata += PLACEDIV.format(d['id'], place, ", ".join(person_link(p) for p in sorted(d['people'])))
+#     for person, d in people.items():
+#         nodedata += '  addNode({:d},"{}", "person")\n'.format(d['id'],person)
+#         if person in latest_pubs:
+#             authorstr = "<p>Latest publication: " + latest_pubs[person] + "</p>"
+#         else: authorstr = ""
+#         if d['coauthors']: authorstr += "<p><i>Coauthors</i>: "+ ", ".join(person_link(p) for p in d['coauthors']) + "</p>"
+#         infodata += PERSONDIV.format(d['id'], person_link(person), ", ".join(d['places']),
+#                                 ", ".join(d['fields']), authorstr)
+#     for field, d in fields.items():
+#         nodedata += '  addNode({:d},"{}", "field")\n'.format(d['id'],field)
+#         infodata += FIELDDIV.format(d['id'], field, ", ".join(person_link(p) for p in sorted(d['people'])))
+#     for t,s in edges:
+#         nodedata += "  addLink({:d},{:d})\n".format(t,s)
 
-    return nodedata, infodata
+#     return nodedata, infodata
 
 
-def generate_map_html():
-    with open("mapdata.json",'r', encoding='utf-8') as f:
-        js = json.load(f)
-    nodedata, infodata = parse_map_data(js)
-    with open("html/map-js-base.js",'r') as f:
-        data = f.read()
-    data = data.replace("NODEDATAHERE", nodedata)
-    with open("js/force-directed-graph.js", 'w', encoding='utf-8') as f:
-        f.write(data)
+# def generate_map_html():
+#     with open("mapdata.json",'r', encoding='utf-8') as f:
+#         js = json.load(f)
+#     nodedata, infodata = parse_map_data(js)
+#     with open("html/map-js-base.js",'r') as f:
+#         data = f.read()
+#     data = data.replace("NODEDATAHERE", nodedata)
+#     with open("js/force-directed-graph.js", 'w', encoding='utf-8') as f:
+#         f.write(data)
 
-    with open("html/map_base.html", 'r') as f:
-        data = f.read()
-    data = data.replace("INFODATAHERE", infodata)
-    with open("map.html", 'w', encoding='utf-8') as f:
-        f.write(data)
+#     with open("html/map_base.html", 'r') as f:
+#         data = f.read()
+#     data = data.replace("INFODATAHERE", infodata)
+#     with open("map.html", 'w', encoding='utf-8') as f:
+#         f.write(data)
 
 def main():
+    from make_person_map import generate_map_html, authors, coauthors
     generate_publications_html()
-    generate_map_html()
+    generate_map_html(authors, coauthors)
 
 
 if __name__ == '__main__':

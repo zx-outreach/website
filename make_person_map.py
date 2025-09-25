@@ -174,4 +174,6 @@ def generate_map_html(authors, coauthors):
     with open("map.html", 'w', encoding='utf-8') as f:
         f.write(data)
 
-generate_map_html(authors, coauthors)
+
+if __name__ == '__main__':
+    generate_map_html(authors, coauthors)
