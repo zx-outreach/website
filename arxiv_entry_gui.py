@@ -190,7 +190,8 @@ class ArxivDialog(QDialog):
         if self.cb_git.isChecked():
             import subprocess
             try:
-                subprocess.run(["git", "add", "zx-papers.bib", "publications.html", "publications.rss", "map.html"], check=True)
+                subprocess.run(["git", "add", "zx-papers.bib", "publications.html", 
+                                              "publications.rss", "map.html", "js/person-graph.js"], check=True)
                 subprocess.run(["git", "commit", "-m", f"Added paper by {self.first_author} arXiv:{self.aid}"], check=True)
                 subprocess.run(["git", "push"], check=True)
                 msg += "Pushed to GitHub\n"
