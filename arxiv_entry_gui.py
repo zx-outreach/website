@@ -119,6 +119,10 @@ class ArxivDialog(QDialog):
         self.cb_html = QCheckBox("Recompile HTML")
         self.cb_git = QCheckBox("Push to GitHub")
         self.cb_tweet = QCheckBox("Tweet about it")
+        self.cb_bib.setChecked(True)
+        self.cb_html.setChecked(True)
+        self.cb_git.setChecked(True)
+        self.cb_tweet.setChecked(True)
         for cb in [self.cb_bib, self.cb_html, self.cb_git, self.cb_tweet]:
             cb.hide()
             self.layout.addWidget(cb)
