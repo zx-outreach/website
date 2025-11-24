@@ -4792,7 +4792,7 @@ doi = {10.1142/S0219887824400115},
     urldate = {2024-10-22},
     link = {http://arxiv.org/abs/2410.17240},
     video = {https://www.youtube.com/watch?v=KrPsjIFx_Y8},
-    keywords = {Error Correcting Codes, Floquet Codes, Clifford Fragment, Applied},
+    keywords = {Error Correcting Codes, Floquet Codes, Clifford Fragment, Fault-equivalent rewrites, Applied},
     abstract = {The ZX calculus is a graphical language for representing and rewriting quantum circuits. While its graphical rewrite rules preserve semantics, they may not preserve other features. For example, applying rewrites to a circuit that implements an error-correcting code can change its distance. Here, we define the notion of distance-preserving rewrites that enables the transformation of error-correcting codes without changing their distance. Using these rewrites, we propose an algorithm that transforms a high-weight Pauli measurement into an equivalent quantum circuit with only single- and two-qubit operations. Since we only use distance-preserving rewrites, we guarantee that errors in the low-weight implementation do not propagate to create multiple data errors. Going further, we generalise the Floquetification procedure of [arXiv:2308.15489] to arbitrary stabiliser codes. Given a stabiliser code, we synthesise a new quantum error-correcting code which encodes the same number of qubits with at least the same distance. The number of additional qubits this method requires is linearly dependent on the weight or the largest Pauli measurement. This creates a tradeoff between easily implementable low-weight Pauli measurements at the cost of additional physical qubits.}
 }
 
@@ -5140,7 +5140,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     urldate = {2025-06-20},
     link = {http://arxiv.org/abs/2506.17181},
     video = {https://www.youtube.com/watch?v=vrIJc50vuDo},
-    keywords = {Error Correcting Codes, Floquet Codes, Clifford Fragment, Applied, ZX-calculus},
+    keywords = {Error Correcting Codes, Floquet Codes, Fault-equivalent rewrites, Clifford Fragment, Applied, ZX-calculus},
     abstract = {A key challenge in fault-tolerant quantum computing is synthesising and optimising circuits in a noisy environment, as traditional techniques often fail to account for the effect of noise on circuits. In this work, we propose a framework for designing fault-tolerant quantum circuits that are correct by construction. The framework starts with idealised specifications of fault-tolerant gadgets and refines them using provably sound basic transformations.   To reason about manipulating circuits while preserving their error correction properties, we define fault equivalence; two circuits are considered fault-equivalent if all undetectable faults on one circuit have a corresponding fault on the other. This guarantees that the effect of undetectable faults on both circuits is the same. We argue that fault equivalence is a concept that is already implicitly present in the literature. Many problems, such as state preparation and syndrome extraction, can be naturally expressed as finding an implementable circuit that is fault-equivalent to an idealised specification.   To utilize fault equivalence in a computationally tractable manner, we adapt the ZX calculus, a diagrammatic language for quantum computing. We restrict its rewrite system to not only preserve the underlying linear map but also fault equivalence, i.e. the circuit's behaviour under noise. Enabled by our framework, we verify, optimise and synthesise new and efficient circuits for syndrome extraction and cat state preparation. We anticipate that fault equivalence can capture and unify different approaches in fault-tolerant quantum computing, paving the way for an end-to-end circuit compilation framework.}
 }
 
@@ -5411,4 +5411,15 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     link = {https://arxiv.org/abs/2511.15581},
     keywords = {Automation, Optimisation, Verification},
     abstract = {Systematic discovery of optimization paths in quantum circuit simplification remains a challenge. Today, ZX-calculus, a computing model for quantum circuit transformation, is attracting attention for its highly abstract graph-based approach. Whereas existing tools such as PyZX and Quantomatic offer domain-specific support for quantum circuit optimization, visualization and theorem-proving, we present a complementary approach using LMNtal, a general-purpose hierarchical graph rewriting language, to establish a diagrammatic transformation and verification platform with model checking. Our methodology shows three advantages: (1) manipulation of ZX-diagrams through native graph transformation rules, enabling direct implementation of basic rules; (2) quantified pattern matching via QLMNtal extensions, greatly simplifying rule specification; and (3) interactive visualization and validation of optimization paths through state space exploration. Through case studies, we demonstrate how our framework helps understand optimization paths and design new algorithms and strategies. This suggests that the declarative language LMNtal and its toolchain could serve as a new platform to investigate quantum circuit transformation from a different perspective.}
+}
+
+@article{poor2025ultrlow,
+    author = {Po{\'o}r, Boldizs{\'a}r and Rodatz, Benjamin and Kissinger, Aleks},
+    title = {{Ultra Low Overhead Syndrome Extraction for the Steane code}},
+    year = {2025},
+    journal = {arXiv preprint arXiv:2511.13700},
+    urldate = {2025-11-17},
+    link = {https://arxiv.org/abs/2511.13700},
+    keywords = {Fault-equivalent rewrites, Error Correcting Codes, Clifford Fragment, Applied, Optimisation, ZX-calculus},
+    abstract = {We establish a new performance benchmark for the fault-tolerant syndrome extraction of [[7, 1, 3]] Steane code with a dynamic protocol. Our method is built on two highly optimized circuits derived using fault-equivalent ZX-rewrites: a primary fault-tolerant circuit with 14 CNOTs and an efficient non-fault-tolerant recovery circuit with 11 CNOTs. The protocol uses an adaptive response to internal faults, discarding flagged measurements and falling back to the recovery circuit to correct potentially detrimental errors. Monte Carlo simulations confirm the efficiency of our protocol, reducing the logical error rate per cycle by an average of ~14.3% relative to the optimized Steane method [arXiv:2506.17181] and ~17.7% compared to the Reichardt's three-qubit method [arXiv:1804.06995], the leading prior techniques.}
 }
