@@ -806,6 +806,98 @@ Varna, Bulgaria, 14 July 2025 - 18 July 2025},
 <div class="perEntryDiv">
     <div class="leftContent">
         <span>
+            <a target="_blank" href="https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/kuyanov-thesis.pdf" class="paperTitle">A Rank-Width–Based Approach to Quantum Circuit Simulation via ZX-Calculus</a>
+        </span>
+        <br>
+            <span class="authors">Fedor Kuyanov</span>
+        <br>
+        <span>
+            <a href="#" class="abstract_more">
+                Show abstract &#x21F2;
+            </a>
+            <a href="#" class="bibdata_more">
+                Show bibdata &#x21F2;
+            </a>
+            
+        </span>
+    </div>
+    <div class="rightContent">
+        <span>
+            <a target="_blank" href="https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/kuyanov-thesis.pdf" class="journal">University of Oxford Masters Thesis</a>
+        </span>
+        <br>
+        <span>
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('classical simulation')" title="This paper discusses classical simulation of quantum circuits">Classical Simulation</a>, <a target="_blank" onclick="forceSearchKW('zx-calculus')" title="This paper uses the core ZX-calculus and not any of the other variations that exists">ZX-calculus</a>, <a target="_blank" onclick="forceSearchKW('clifford+t')" title="This paper focuses on the Clifford+T fragment of quantum computation">Clifford+T</a>, <a target="_blank" onclick="forceSearchKW('t-count')" title="The paper discusses T-count (optimisation)">T-count</a>, <a target="_blank" onclick="forceSearchKW('applied')" title="This paper uses ZX-diagrams for some task other than describing the ZX-calculus itself">Applied</a>, <a target="_blank" onclick="forceSearchKW('master thesis')" title="This is a Master Thesis">Master Thesis</a></span>.
+        </span>
+    </div>
+    <div class="crossContent">
+        <div class="abstract" style="display:none">Quantum computing promises to transform the landscape of computation, yet the limitations of current hardware make classical simulation indispensable for the design, optimisation, and verification of quantum algorithms. This dissertation develops a new simulation strategy based on the ZX-calculus, a graphical formalism for reasoning about quantum circuits. We exploit the ZX diagram's rank-width to perform tensor contractions more efficiently. In particular, we introduce a simulation pipeline that reduces a Clifford+T circuit to a graph-like ZX diagram, extracts a linear rank-decomposition via extended gflow, refines it through simulated annealing, and performs a recursive contraction algorithm along the resulting decomposition tree. The computational complexity of our method depends primarily on the cut-rank structure of the decomposition. Our benchmarks demonstrate that our method outperforms other state-of-the-art tensor contraction routines by a factor of 10 on random circuits of different sizes.</div>
+        <div class="bibdata" style="display:none">
+            <pre><code>@mastersthesis{Kuyanov2025Masters,
+    author = {Kuyanov, Fedor},
+    title = {{A Rank-Width–Based Approach to Quantum Circuit Simulation via ZX-Calculus}},
+    year = {2025},
+    school = {University of Oxford},
+    urldate = {2025-08-15},
+    link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/kuyanov-thesis.pdf},
+    keywords = {Classical Simulation, ZX-calculus, Clifford+T, T-count, Applied, Master Thesis},
+    abstract = {Quantum computing promises to transform the landscape of computation, yet the limitations of current hardware make classical simulation indispensable for the design, optimisation, and verification of quantum algorithms. This dissertation develops a new simulation strategy based on the ZX-calculus, a graphical formalism for reasoning about quantum circuits. We exploit the ZX diagram's rank-width to perform tensor contractions more efficiently. In particular, we introduce a simulation pipeline that reduces a Clifford+T circuit to a graph-like ZX diagram, extracts a linear rank-decomposition via extended gflow, refines it through simulated annealing, and performs a recursive contraction algorithm along the resulting decomposition tree. The computational complexity of our method depends primarily on the cut-rank structure of the decomposition. Our benchmarks demonstrate that our method outperforms other state-of-the-art tensor contraction routines by a factor of 10 on random circuits of different sizes.}
+}
+</code></pre>
+            <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
+        </div>
+    </div>
+</div></li>
+<li class="pub_entry">
+<div class="perEntryDiv">
+    <div class="leftContent">
+        <span>
+            <a target="_blank" href="https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/philipps-thesis.pdf" class="paperTitle">GNNs for Fast Classical Simulation of Quantum Circuits through Optimizing ZX-Graph Decompositions</a>
+        </span>
+        <br>
+            <span class="authors">David Philipps</span>
+        <br>
+        <span>
+            <a href="#" class="abstract_more">
+                Show abstract &#x21F2;
+            </a>
+            <a href="#" class="bibdata_more">
+                Show bibdata &#x21F2;
+            </a>
+            
+        </span>
+    </div>
+    <div class="rightContent">
+        <span>
+            <a target="_blank" href="https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/philipps-thesis.pdf" class="journal">University of Oxford Masters Thesis</a>
+        </span>
+        <br>
+        <span>
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('classical simulation')" title="This paper discusses classical simulation of quantum circuits">Classical Simulation</a>, <a target="_blank" onclick="forceSearchKW('zx-calculus')" title="This paper uses the core ZX-calculus and not any of the other variations that exists">ZX-calculus</a>, <a target="_blank" onclick="forceSearchKW('clifford+t')" title="This paper focuses on the Clifford+T fragment of quantum computation">Clifford+T</a>, <a target="_blank" onclick="forceSearchKW('t-count')" title="The paper discusses T-count (optimisation)">T-count</a>, <a target="_blank" onclick="forceSearchKW('applied')" title="This paper uses ZX-diagrams for some task other than describing the ZX-calculus itself">Applied</a>, <a target="_blank" onclick="forceSearchKW('master thesis')" title="This is a Master Thesis">Master Thesis</a></span>.
+        </span>
+    </div>
+    <div class="crossContent">
+        <div class="abstract" style="display:none">Quantum circuits can be simulated on classical hardware using an algorithm known as stabiliser decomposition. This procedure is based on two principles: first, any quantum circuit can be constructed out of the universal Clifford+T gate set; second, circuits made only of Clifford gates can be simulated efficiently on classical computers. The core idea is to recursively decompose a Clifford+T circuit into a linear combination of circuits with a lower T-gate count (T-count) than the original, ultimately producing an exponential number of Clifford circuits. Each circuit can then be simulated individually, and the results are aggregated to obtain the final output. This thesis examines the application of machine learning models to inform the selection of intermediate decompositions, with the goal of minimising the number of T-gates in the resulting circuits. Even minor improvements in this recursive step can combine to yield significant enhancements in the overall simulation. Specifically, we work in the framework of Kissinger and van de Wetering. They combined known gadget decompositions with circuit optimisation routines to reduce the T-count. We also draw on the work of Ahmad et al., who developed heuristics that apply these decompositions strategically to maximise simplification. Building on prior research by Koziell-Pipe, Sutcliffe, and Yeung, we trained a machine learning model that outperformed even the greedy brute-force baseline for applying the Vertex-Cut decomposition on exponentiated Pauli circuits. This demonstrates its ability to learn efficient, non-local simplification strategies. In addition, we document several machine learning techniques that did not yield promising results. We analyse their shortcomings and discuss potential avenues for future improvement.</div>
+        <div class="bibdata" style="display:none">
+            <pre><code>@mastersthesis{Philipps2025Masters,
+    author = {Philipps, David},
+    title = {{GNNs for Fast Classical Simulation of Quantum Circuits through Optimizing ZX-Graph Decompositions}},
+    year = {2025},
+    school = {University of Oxford},
+    urldate = {2025-08-15},
+    link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/philipps-thesis.pdf},
+    keywords = {Classical Simulation, ZX-calculus, Clifford+T, T-count, Applied, Master Thesis},
+    abstract = {Quantum circuits can be simulated on classical hardware using an algorithm known as stabiliser decomposition. This procedure is based on two principles: first, any quantum circuit can be constructed out of the universal Clifford+T gate set; second, circuits made only of Clifford gates can be simulated efficiently on classical computers. The core idea is to recursively decompose a Clifford+T circuit into a linear combination of circuits with a lower T-gate count (T-count) than the original, ultimately producing an exponential number of Clifford circuits. Each circuit can then be simulated individually, and the results are aggregated to obtain the final output. This thesis examines the application of machine learning models to inform the selection of intermediate decompositions, with the goal of minimising the number of T-gates in the resulting circuits. Even minor improvements in this recursive step can combine to yield significant enhancements in the overall simulation. Specifically, we work in the framework of Kissinger and van de Wetering. They combined known gadget decompositions with circuit optimisation routines to reduce the T-count. We also draw on the work of Ahmad et al., who developed heuristics that apply these decompositions strategically to maximise simplification. Building on prior research by Koziell-Pipe, Sutcliffe, and Yeung, we trained a machine learning model that outperformed even the greedy brute-force baseline for applying the Vertex-Cut decomposition on exponentiated Pauli circuits. This demonstrates its ability to learn efficient, non-local simplification strategies. In addition, we document several machine learning techniques that did not yield promising results. We analyse their shortcomings and discuss potential avenues for future improvement.}
+}
+</code></pre>
+            <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
+        </div>
+    </div>
+</div></li>
+<li class="pub_entry">
+<div class="perEntryDiv">
+    <div class="leftContent">
+        <span>
             <a target="_blank" href="https://ora.ox.ac.uk/objects/uuid:54d6e7f4-b845-4275-98cd-cf6749530d9b/files/d9s1616869" class="paperTitle">Novel Methods for Classical Simulation of Quantum Circuits via ZX-Calculus</a>
         </span>
         <br>
@@ -1165,6 +1257,52 @@ Varna, Bulgaria, 14 July 2025 - 18 July 2025},
     link = {http://arxiv.org/abs/2506.13619},
     keywords = {Error Correcting Codes,  Photons, Pauli Fusion, Applied, ZX-Supported},
     abstract = {We introduce a construction for protocols for fault-tolerant quantum computing based on code concatenation and transversal gates. These protocols can be interpreted as families of quantum circuits of low-weight stabilizer measurements without strict locality constraints, effectively implementing concatenated codes. However, we primarily study these protocols in the context of photonic fusion-based quantum computing (FBQC), where they yield families of fusion networks with constant-sized resource states. Their high erasure thresholds relative to their resource-state cost establish them as promising candidates to replace surface codes in the context of FBQC. Examples include protocol families using 8-, 10- and 12-qubit resource states, with erasure thresholds of 13.8%, 19.1% and 11.5%, and footprint-per-logical-qubit scaling as $\mathcal{O}(d)$, $\mathcal{O}(d^{1.46})$ and $\mathcal{O}(d^{0.58})$, respectively, where $d$ is the code distance. We also present techniques for performing logical operations, decoding, and implementing the protocols in photonic hardware. Although we focus on photonic FBQC, these ideas may also be of interest in other settings.}
+}
+</code></pre>
+            <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
+        </div>
+    </div>
+</div></li>
+<li class="pub_entry">
+<div class="perEntryDiv">
+    <div class="leftContent">
+        <span>
+            <a target="_blank" href="https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/priestley-thesis.pdf" class="paperTitle">Finite-Dimensional ZX-Calculus for Loop Quantum Gravity</a>
+        </span>
+        <br>
+            <span class="authors">Ben Priestley</span>
+        <br>
+        <span>
+            <a href="#" class="abstract_more">
+                Show abstract &#x21F2;
+            </a>
+            <a href="#" class="bibdata_more">
+                Show bibdata &#x21F2;
+            </a>
+            
+        </span>
+    </div>
+    <div class="rightContent">
+        <span>
+            <a target="_blank" href="https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/priestley-thesis.pdf" class="journal">University of Oxford Masters Thesis</a>
+        </span>
+        <br>
+        <span>
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('condensed matter')" title="This paper discusses condensed matter systems">Condensed Matter</a>, <a target="_blank" onclick="forceSearchKW('qudits')" title="The paper uses non-qubit Qudits">Qudits</a>, <a target="_blank" onclick="forceSearchKW('zx-calculus')" title="This paper uses the core ZX-calculus and not any of the other variations that exists">ZX-calculus</a>, <a target="_blank" onclick="forceSearchKW('master thesis')" title="This is a Master Thesis">Master Thesis</a></span>.
+        </span>
+    </div>
+    <div class="crossContent">
+        <div class="abstract" style="display:none">Loop quantum gravity (LQG) attempts to unify general relativity with quantum physics to offer a complete description of the universe by quantising spacetime geometry, but the numerical calculations we encounter are extraordinarily difficult. Progress has been made in the covariant formulation of LQG, but the tools do not carry over to the canonical formulation. These tools are graphical by nature, describing space with spin networks to make calculations in LQG more intuitive to the human hand. Recently, a new notation for working with spin networks has been used by Guedes et al. to offer the first accurate numerical results in canonical LQG by allowing the underlying graphs to change throughout the calculation, though they are forced to concede visual intuitiveness. In this thesis, we offer a more radical rephrasing of spin network calculations by translating them into the finite-dimensional ZX-calculus, extending previous attempts to translate into the standard (qubit) ZX-calculus. Specifically, we derive the mixed-dimensional ZX-diagrams representing the generating objects of spin networks and the rules for the forthcoming Penrose Spin Calculus (PSC), and use these to present the ZX-form and correctness of ``loop removal''. We also derive the forms for several fundamental LQG objects (e.g. the Wigner 6j-symbol) in the finite-dimensional ZX-calculus for the first time, extending Wang et al. towards the domain of quantum gravity. This gives us a high-level intuitive graphical language (the ZX-calculus) that retains the flexibility of Guedes et al. to handle changing graph structures, and thus we argue positions the PSC as the new definitive language for canonical LQG. Furthermore, we investigate the possibility for a matrix-like normal form for spin networks deriving from a novel perspective in terms of W-nodes. The forms we derive in this thesis are still primitive and thus limited in their scope and application, but nevertheless indicate the extraordinary potential for the PSC to offer naturally computable pathways to study LQG and spin networks.</div>
+        <div class="bibdata" style="display:none">
+            <pre><code>@mastersthesis{Priestley2025Masters,
+    author = {Priestley, Ben},
+    title = {{Finite-Dimensional ZX-Calculus for Loop Quantum Gravity}},
+    year = {2025},
+    school = {University of Oxford},
+    urldate = {2025-06-15},
+    link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/priestley-thesis.pdf},
+    keywords = {Condensed Matter, Qudits, ZX-calculus, Master Thesis},
+    abstract = {Loop quantum gravity (LQG) attempts to unify general relativity with quantum physics to offer a complete description of the universe by quantising spacetime geometry, but the numerical calculations we encounter are extraordinarily difficult. Progress has been made in the covariant formulation of LQG, but the tools do not carry over to the canonical formulation. These tools are graphical by nature, describing space with spin networks to make calculations in LQG more intuitive to the human hand. Recently, a new notation for working with spin networks has been used by Guedes et al. to offer the first accurate numerical results in canonical LQG by allowing the underlying graphs to change throughout the calculation, though they are forced to concede visual intuitiveness. In this thesis, we offer a more radical rephrasing of spin network calculations by translating them into the finite-dimensional ZX-calculus, extending previous attempts to translate into the standard (qubit) ZX-calculus. Specifically, we derive the mixed-dimensional ZX-diagrams representing the generating objects of spin networks and the rules for the forthcoming Penrose Spin Calculus (PSC), and use these to present the ZX-form and correctness of ``loop removal''. We also derive the forms for several fundamental LQG objects (e.g. the Wigner 6j-symbol) in the finite-dimensional ZX-calculus for the first time, extending Wang et al. towards the domain of quantum gravity. This gives us a high-level intuitive graphical language (the ZX-calculus) that retains the flexibility of Guedes et al. to handle changing graph structures, and thus we argue positions the PSC as the new definitive language for canonical LQG. Furthermore, we investigate the possibility for a matrix-like normal form for spin networks deriving from a novel perspective in terms of W-nodes. The forms we derive in this thesis are still primitive and thus limited in their scope and application, but nevertheless indicate the extraordinary potential for the PSC to offer naturally computable pathways to study LQG and spin networks.}
 }
 </code></pre>
             <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
