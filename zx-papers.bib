@@ -5501,3 +5501,14 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     keywords = {Applied, Phase Gadgets, ZX-calculus},
     abstract = {To enable practically useful quantum computing, we require hundreds to thousands of logical qubits (collections of physical qubits with error correction). Current monolithic device architectures have scaling limits beyond few tens of logical qubits. To scale up, we require architectures that orchestrate several monolithic devices into a distributed quantum computing system. Currently, resource estimation, which is crucial for determining hardware needs and bottlenecks, focuses exclusively on monolithic systems. Our work fills this gap and answers key architectural design questions about distributed systems, including the impact of distribution on application resource needs, the organization of qubits across nodes and the requirements of entanglement distillation (quantum network). To answer these questions, we develop a novel resource estimation framework that models the key components of the distributed execution stack. We analyse the performance of practical quantum algorithms on various hardware configurations, spanning different qubit speeds, entanglement generation rates and distillation protocols. We show that distributed architectures have practically feasible resource requirements; for a node size of 45K qubits, distributed systems need on average 1.4X higher number of physical qubits and 4X higher execution time compared to monolithic architectures, but with more favourable hardware implementation prospects. Our insights on entanglement generation rates, node sizes and architecture have the potential to inform system designs in the coming years.}
 }
+
+@article{paler2025untangling,
+    author = {Paler, Alexandru},
+    title = {{Untangling Surface Codes: Bridging Braids and Lattice Surgery}},
+    year = {2025},
+    journal = {arXiv preprint arXiv:2511.22290},
+    urldate = {2025-11-27},
+    link = {https://arxiv.org/abs/2511.22290},
+    keywords = {Surface code, Lattice Surgery, Optimisation, ZX-calculus},
+    abstract = {We present a systematic method for translating fault-tolerant quantum circuits between their braiding and lattice surgery (LS) representations within the surface code. Our approach employs the ZX calculus to establish an equivalence between these two paradigms, enabling verified, bidirectional conversion of arbitrary surface-code-level circuits. We show that both braiding and LS operations can be uniformly expressed as compositions of multibody measurements and demonstrate that the Raussendorf compression rule encompasses all known braid and bridge optimizations. We also introduce a novel CNOT circuit with LS. Our framework provides a foundation for the automated verification, compilation, and benchmarking of large-scale surface code computations, advancing toward a unified formal language for topological quantum computation.}
+}
