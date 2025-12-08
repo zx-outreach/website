@@ -5512,3 +5512,14 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     keywords = {Surface code, Lattice Surgery, Optimisation, ZX-calculus},
     abstract = {We present a systematic method for translating fault-tolerant quantum circuits between their braiding and lattice surgery (LS) representations within the surface code. Our approach employs the ZX calculus to establish an equivalence between these two paradigms, enabling verified, bidirectional conversion of arbitrary surface-code-level circuits. We show that both braiding and LS operations can be uniformly expressed as compositions of multibody measurements and demonstrate that the Raussendorf compression rule encompasses all known braid and bridge optimizations. We also introduce a novel CNOT circuit with LS. Our framework provides a foundation for the automated verification, compilation, and benchmarking of large-scale surface code computations, advancing toward a unified formal language for topological quantum computation.}
 }
+
+@article{s.herzog2025exploiting,
+    author = {S. Herzog, Laura and Berent, Lucas and Kubica, Aleksander and Wille, Robert},
+    title = {{Exploiting Movable Logical Qubits for Lattice Surgery Compilation}},
+    year = {2025},
+    journal = {arXiv preprint arXiv:2512.04169},
+    urldate = {2025-12-03},
+    link = {https://arxiv.org/abs/2512.04169},
+    keywords = {Lattice Surgery, Error Correcting Codes, ZX-Supported},
+    abstract = {Lattice surgery with two-dimensional quantum error correcting codes is among the leading schemes for fault-tolerant quantum computation, motivated by superconducting hardware architectures. In conventional lattice surgery compilation schemes, logical circuits are compiled following a place-and-route paradigm, where logical qubits remain statically fixed in space throughout the computation. In this work, we introduce a paradigm shift by exploiting movable logical qubits via teleportation during the logical lattice surgery CNOT gate. Focusing on lattice surgery with the color code, we propose a proof-of-concept compilation scheme that leverages this capability. Numerical simulations show that the proposed approach can substantially reduce the routed circuit depth compared to standard place-and-route compilation techniques. Our results demonstrate that optimizations based on movable logical qubits are not limited to architectures with physically movable qubits, such as neutral atoms or trapped ions - they are also readily applicable to superconducting quantum hardware. An open-source implementation of our method is available on GitHub https://github.com/munich-quantum-toolkit/qecc.}
+}
