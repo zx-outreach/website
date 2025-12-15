@@ -72,5 +72,6 @@
     "Cryptography": "This paper is about (post-)quantum cryptography",
     "Photons": "This paper is about photons or photonic computing",
     "Continuous Variable": "This paper discusses or uses continuous-variable quantum systems",
-    "Fault-equivalent rewrites": "This paper uses fault-equivalent rewrites"
+    "Fault-equivalent rewrites": "This paper uses fault-equivalent rewrites",
+    "Education": "This paper discussed using ZX-calculus in education"
 }
