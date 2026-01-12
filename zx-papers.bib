@@ -5326,6 +5326,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     year = {2025},
     school = {University of Birmingham},
     link = {https://etheses.bham.ac.uk/id/eprint/16186/},
+    urldate = {2025-11-10},
     keywords = {ZX-calculus, MBQC, gflow, Circuit Extraction, PhD Thesis},
     abstract = {The ZX-calculus is a powerful graphical language for reasoning about and optimizing quantum computations, being able to represent and rewrite both quantum circuits and measurement-based quantum computations (MBQCs) in a natural way, along with acting as a tool to translate between the two aforementioned types of quantum computation. Finding a circuit that is equivalent to a ZX-diagram can be #P hard - it is therefore important to look at the classes of ZX-diagrams that we have efficient circuit extraction algorithms for. The most general of these classes are ZX-diagrams with a property known as Pauli flow - this is a property from measurement-based quantum computing which ensures that computations remain deterministic despite quantum measurements being inherently probabilistic. The standard ZX-calculus rules are not particularly well suited to measurement-based quantum computing as they often do not preserve the existence of Pauli flow nor preserve the MBQC structure itself. Thus by developing our understanding of ZX-calculus rewrite rules which preserve the existence of Pauli flow, we can better understand which ZX diagrams we are able to efficiently extract a circuit from as well as which Measurement-based computations we can perform deterministically.
 
@@ -5333,6 +5334,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     
     Finally, I examine the flow preservation of the "neighbour unfusion" rule. This rule was used in an optimization procedure for reducing 2-qubit gate count but the authors did not know in what cases this rule preserved gflow which was important for their algorithm to function. Neighbour unfusion is a special case of one of the rules which I proved to preserve Pauli flow and so it also preserves Pauli flow, but it is not as simple in the case of gflow. I find a condition that is both sufficient and necessary for neighbour unfusion to preserve the existence of gflow, along with providing less strict conditions for gflow to be preserved that can function as useful heuristics in their algorithm.}
 }
+
 @article{ostmann2025nonlinear,
     author = {Ostmann, Maike and Nunn, Joshua and E. Jones, Alex},
     title = {{Nonlinear photonic architecture for fault-tolerant quantum computing}},
@@ -5577,4 +5579,19 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     link = {https://arxiv.org/abs/2509.12355},
     keywords = {Condensed Matter, Tensor networks, ZX-calculus},
     abstract = {Establishing a universal diagnostic of topological order remains an open theoretical challenge. In particular, diagnosing long-range entanglement through the entropic area law suffers from spurious contributions, failing to unambiguously identify topological order. Here we devise a protocol based on the ZX calculus, a graphical tensor network, to determine the topological order of a state circumventing entropy calculations. The protocol takes as input real-space bipartitions of a state and returns a ZX contour diagram, $\mathcal{D}_{\partial A}$, displaying long-range graph connectivity only for long-range entangled states. We validate the protocol by showing that the contour diagrams of the toric and color codes are equivalent except for the number of non-local nodes, which differentiates their topological order. The number of these nodes is robust to the choice of the boundary and ground-state superposition, and they are absent for trivial states, even those with spurious entropy contributions. Our results single out ZX calculus as a tool to detect topological long-range entanglement by leveraging the advantages of diagrammatic reasoning against entropic diagnostics.}
+}
+
+
+@phdthesis{Mitosek2025thesis,
+    author = {Mitosek, Piotr},
+    title = {{Computational complexity perspective on graphical calculi for quantum computation}},
+    year = {2025},
+    school = {University of Birmingham},
+    link = {https://etheses.bham.ac.uk/id/eprint/16910/},
+    urldate = {2025-12-18},
+    keywords = {ZX-calculus, MBQC, gflow, Circuit Extraction, PhD Thesis},
+    abstract = {Diagrammatic reasoning via languages such as ZX Calculus is a powerful tool in theoretical quantum computing. However, physical quantum computers do not understand diagrams and require explicit quantum circuits as inputs. Finding a circuit equivalent to the given diagram is known as circuit extraction. Such problems in graphical calculi form a limitation preventing the wider adoption of diagrammatic reasoning.
+    Computational complexity theory formalises the difficulty of problems. For ZX diagrams, the circuit extraction problem is #P-hard and unlikely to have an efficient algorithm. Therefore, partial solutions are critical. Currently, efficient circuit extraction is only possible for diagrams containing a structure of so-called Pauli flow. This structure is necessary and sufficient for robust determinism in measurement-based quantum computation (MBQC) – a model of quantum computation, an alternative to circuits, where adaptive single-qubit measurements drive computation. Thus, Pauli flow links MBQC, ZX Calculus, and the circuit model. It is known how to find flow structures in polynomial time when they exist; nevertheless, their lengthy and complex definitions often hinder working with them.
+    In this thesis, I present contributions to two connected topics: the hardness of problems in graphical calculi and Pauli flow as a method for overcoming circuit extraction. First, I show that circuit extraction can be #P-hard for phase-free ZH diagrams, extending the previous result for ZX diagrams. I also establish a relation between phase-free ZH and $\textbf{NP}^{\textbf{\#P}}$ class. This involves weakening the oracle, crafting a complete problem, and encoding the problem into phase-free ZH.
+    My next contribution concerns Pauli flow. I simplify the Pauli flow definition by providing a new algebraic interpretation. This involves defining two matrices arising from the adjacency matrix of the underlying graph. Then, Pauli flow corresponds to the existence of a right-inverse of the first matrix, which, when multiplied by the second matrix, results in a matrix of a directed acyclic graph. Based on the newly defined algebraic interpretation, I obtain $O(n^3)$ algorithms for finding Pauli flow, improving on the previous $O(n^4)$ bounds. I also introduce a lower bound for Pauli flow-finding by linking it to linear algebra problems over $\mathbb{F}_2$. Finally, when given an unlabelled open graph, I show how to find measurement labelling resulting in Pauli flow.}
 }
