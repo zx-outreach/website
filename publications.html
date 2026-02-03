@@ -93,6 +93,52 @@
 <div class="perEntryDiv">
     <div class="leftContent">
         <span>
+            <a target="_blank" href="https://arxiv.org/abs/2601.23109" class="paperTitle">TopoLS: Lattice Surgery Compilation via Topological Program Transformations</a>
+        </span>
+        <br>
+            <span class="authors">Junyu Zhou, Yuhao Liu, Ethan Decker, Justin Kalloor, Mathias Weiden, Kean Chen, Costin Iancu and Gushu Li</span>
+        <br>
+        <span>
+            <a href="#" class="abstract_more">
+                Show abstract &#x21F2;
+            </a>
+            <a href="#" class="bibdata_more">
+                Show bibdata &#x21F2;
+            </a>
+            
+        </span>
+    </div>
+    <div class="rightContent">
+        <span>
+            <a target="_blank" href="https://arxiv.org/abs/2601.23109" class="journal">arXiv:2601.23109</a>
+        </span>
+        <br>
+        <span>
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('lattice surgery')" title="This paper discusses the surface code quantum computing using lattice surgery specifically">Lattice Surgery</a>, <a target="_blank" onclick="forceSearchKW('surface code')" title="This paper discusses surface code quantum computing">Surface Code</a>, <a target="_blank" onclick="forceSearchKW('optimisation')" title="This paper significantly discusses optimisation of quantum computation in any form, including compilation and routing">Optimisation</a>, <a target="_blank" onclick="forceSearchKW('error correcting codes')" title="The paper discusses quantum error correcting codes">Error Correcting Codes</a>, <a target="_blank" onclick="forceSearchKW('zx-calculus')" title="This paper uses the core ZX-calculus and not any of the other variations that exists">ZX-calculus</a></span>.
+        </span>
+    </div>
+    <div class="crossContent">
+        <div class="abstract" style="display:none">Fault-tolerant quantum computing with surface codes can be achieved by compiling logical circuits into lattice-surgery instructions. To minimize space-time volume, we present TopoLS, a topological compiler that combines ZX-diagram optimizations with Monte Carlo tree search guided by different operation placements and topology-aware circuit partitioning. Our approach enables scalable exploration of lattice surgery structures and consistently reduces resource overhead. Evaluations of various benchmark algorithms across multiple architectures show that TopoLS achieves an average 33% reduction in space-time volume over prior heuristic-based compilers, while maintaining linear compilation time scaling. Compared to the SAT-solver-based compiler, which provides optimal results only for small circuits before becoming intractable, TopoLS offers an effective and scalable solution for lattice-surgery compilation.</div>
+        <div class="bibdata" style="display:none">
+            <pre><code>@article{zhou2026topols:,
+    author = {Zhou, Junyu and Liu, Yuhao and Decker, Ethan and Kalloor, Justin and Weiden, Mathias and Chen, Kean and Iancu, Costin and Li, Gushu},
+    title = {{TopoLS: Lattice Surgery Compilation via Topological Program Transformations}},
+    year = {2026},
+    journal = {arXiv preprint arXiv:2601.23109},
+    urldate = {2026-01-30},
+    link = {https://arxiv.org/abs/2601.23109},
+    keywords = {Lattice Surgery, Surface Code, Optimisation, Error Correcting Codes, ZX-calculus},
+    abstract = {Fault-tolerant quantum computing with surface codes can be achieved by compiling logical circuits into lattice-surgery instructions. To minimize space-time volume, we present TopoLS, a topological compiler that combines ZX-diagram optimizations with Monte Carlo tree search guided by different operation placements and topology-aware circuit partitioning. Our approach enables scalable exploration of lattice surgery structures and consistently reduces resource overhead. Evaluations of various benchmark algorithms across multiple architectures show that TopoLS achieves an average 33% reduction in space-time volume over prior heuristic-based compilers, while maintaining linear compilation time scaling. Compared to the SAT-solver-based compiler, which provides optimal results only for small circuits before becoming intractable, TopoLS offers an effective and scalable solution for lattice-surgery compilation.}
+}
+</code></pre>
+            <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
+        </div>
+    </div>
+</div></li>
+<li class="pub_entry">
+<div class="perEntryDiv">
+    <div class="leftContent">
+        <span>
             <a target="_blank" href="https://arxiv.org/abs/2601.20007" class="paperTitle">Alternating ZX Circuit Extraction for Hardware-Adaptive Compilation</a>
         </span>
         <br>
@@ -114,7 +160,7 @@
         </span>
         <br>
         <span>
-            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('circuit extraction')" title="This paper discusses the circuit extraction problem in a non-trivial way">Circuit Extraction</a>, <a target="_blank" onclick="forceSearchKW('optimisation')" title="This paper significantly discusses optimisation of quantum computation in any form, including compilation and routing">Optimisation</a>, <a target="_blank" onclick="forceSearchKW('zx-calculus')" title="This paper uses the core ZX-calculus and not any of the other variations that exists">ZX-calculus</a></span>.
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('circuit extraction')" title="This paper discusses the circuit extraction problem in a non-trivial way">Circuit Extraction</a>, <a target="_blank" onclick="forceSearchKW('optimisation')" title="This paper significantly discusses optimisation of quantum computation in any form, including compilation and routing">Optimisation</a>, <a target="_blank" onclick="forceSearchKW('pyzx')" title="The paper uses PyZX">PyZX</a>, <a target="_blank" onclick="forceSearchKW('automation')" title="This paper discusses automation of processes via software or algorithms">Automation</a>, <a target="_blank" onclick="forceSearchKW('zx-calculus')" title="This paper uses the core ZX-calculus and not any of the other variations that exists">ZX-calculus</a></span>.
         </span>
     </div>
     <div class="crossContent">
@@ -127,7 +173,7 @@
     journal = {arXiv preprint arXiv:2601.20007},
     urldate = {2026-01-27},
     link = {https://arxiv.org/abs/2601.20007},
-    keywords = {Circuit Extraction, Optimisation, ZX-calculus},
+    keywords = {Circuit Extraction, Optimisation, PyZX, Automation, ZX-calculus},
     abstract = {We present a novel quantum circuit extraction scheme that tightly integrates graph-like ZX diagrams with hardware-adaptive routing. The method utilizes the degrees of freedom during the conversion from a ZX diagram to a quantum circuit (extraction). It alternates between generating multiple extraction options and evaluating them based on hardware constraints, allowing the routing algorithm to inform and guide the extraction process. This feedback loop extends existing graph-like ZX extraction and supports modular integration of different extraction algorithms, routing strategies, and target hardware, making it a versatile building block during compilation. To perform numerical evaluations, a reference instance of the scheme is implemented with SWAP-based routing for neutral atom hardware and evaluated using various benchmark collections on small-to mid-scale circuits. The reference code is available as open-source, allowing fast integration of other extraction and/or routing tools to stimulate further research and foster improvements of the proposed scheme.}
 }
 </code></pre>

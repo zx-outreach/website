@@ -5631,6 +5631,17 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     journal = {arXiv preprint arXiv:2601.20007},
     urldate = {2026-01-27},
     link = {https://arxiv.org/abs/2601.20007},
-    keywords = {Circuit Extraction, Optimisation, ZX-calculus},
+    keywords = {Circuit Extraction, Optimisation, PyZX, Automation, ZX-calculus},
     abstract = {We present a novel quantum circuit extraction scheme that tightly integrates graph-like ZX diagrams with hardware-adaptive routing. The method utilizes the degrees of freedom during the conversion from a ZX diagram to a quantum circuit (extraction). It alternates between generating multiple extraction options and evaluating them based on hardware constraints, allowing the routing algorithm to inform and guide the extraction process. This feedback loop extends existing graph-like ZX extraction and supports modular integration of different extraction algorithms, routing strategies, and target hardware, making it a versatile building block during compilation. To perform numerical evaluations, a reference instance of the scheme is implemented with SWAP-based routing for neutral atom hardware and evaluated using various benchmark collections on small-to mid-scale circuits. The reference code is available as open-source, allowing fast integration of other extraction and/or routing tools to stimulate further research and foster improvements of the proposed scheme.}
+}
+
+@article{zhou2026topols:,
+    author = {Zhou, Junyu and Liu, Yuhao and Decker, Ethan and Kalloor, Justin and Weiden, Mathias and Chen, Kean and Iancu, Costin and Li, Gushu},
+    title = {{TopoLS: Lattice Surgery Compilation via Topological Program Transformations}},
+    year = {2026},
+    journal = {arXiv preprint arXiv:2601.23109},
+    urldate = {2026-01-30},
+    link = {https://arxiv.org/abs/2601.23109},
+    keywords = {Lattice Surgery, Surface Code, Optimisation, Error Correcting Codes, ZX-calculus},
+    abstract = {Fault-tolerant quantum computing with surface codes can be achieved by compiling logical circuits into lattice-surgery instructions. To minimize space-time volume, we present TopoLS, a topological compiler that combines ZX-diagram optimizations with Monte Carlo tree search guided by different operation placements and topology-aware circuit partitioning. Our approach enables scalable exploration of lattice surgery structures and consistently reduces resource overhead. Evaluations of various benchmark algorithms across multiple architectures show that TopoLS achieves an average 33% reduction in space-time volume over prior heuristic-based compilers, while maintaining linear compilation time scaling. Compared to the SAT-solver-based compiler, which provides optimal results only for small circuits before becoming intractable, TopoLS offers an effective and scalable solution for lattice-surgery compilation.}
 }
