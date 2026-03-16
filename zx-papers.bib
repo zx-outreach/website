@@ -3560,7 +3560,7 @@ abstract={For a number of useful quantum circuits, qudit constructions have been
   doi = {10.22331/q-2024-06-18-1379},
     urldate = {2023-03-15},
     link = {http://arxiv.org/abs/2303.08829},
-    keywords = {Surface Code, Lattice Surgery, Error Correcting Codes, Pauli Fusion, ZX-calculus},
+    keywords = {Surface Code, Lattice Surgery, Error Correcting Codes, Pauli webs, Pauli Fusion, ZX-calculus},
     abstract = {There are several models of quantum computation which exhibit shared fundamental fault-tolerance properties. This article makes commonalities explicit by presenting these different models in a unifying framework based on the ZX calculus. We focus on models of topological fault tolerance - specifically surface codes - including circuit-based, measurement-based and fusion-based quantum computation, as well as the recently introduced model of Floquet codes. We find that all of these models can be viewed as different flavors of the same underlying stabilizer fault-tolerance structure, and sustain this through a set of local equivalence transformations which allow mapping between flavors. We anticipate that this unifying perspective will pave the way to transferring progress among the different views of stabilizer fault-tolerance and help researchers familiar with one model easily understand others.}
 }
 
@@ -3909,7 +3909,7 @@ doi = {10.1142/S0219749923500466},
   urldate = {2023-07-20},
   video = {https://www.youtube.com/watch?v=pP1DaKxlC_8},
     link = {http://arxiv.org/abs/2307.11136},
-    keywords = {Error Correcting Codes, Floquet codes, ZX-calculus, Applied, Clifford Fragment},
+    keywords = {Error Correcting Codes, Floquet codes, Pauli webs, ZX-calculus, Applied, Clifford Fragment},
     abstract = {Floquet codes are a recently discovered type of quantum error correction code. They can be thought of as generalising stabilizer codes and subsystem codes, by allowing the logical Pauli operators of the code to vary dynamically over time. In this work, we use the ZX-calculus to create new Floquet codes that are in a definable sense equivalent to known stabilizer codes. In particular, we find a Floquet code that is equivalent to the colour code, but has the advantage that all measurements required to implement it are of weight one or two. Notably, the qubits can even be laid out on a square lattice. This circumvents current difficulties with implementing the colour code fault-tolerantly, while preserving its advantages over other well-studied codes, and could furthermore allow one to benefit from extra features exclusive to Floquet codes. On a higher level, as in arXiv:2303.08829, this work shines a light on the relationship between 'static' stabilizer and subsystem codes and 'dynamic' Floquet codes; at first glance the latter seems a significant generalisation of the former, but in the case of the codes that we find here, the difference is essentially just a few basic ZX-diagram deformations.}
 }
 
@@ -5151,7 +5151,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     urldate = {2025-06-20},
     link = {http://arxiv.org/abs/2506.17181},
     video = {https://www.youtube.com/watch?v=vrIJc50vuDo},
-    keywords = {Error Correcting Codes, Floquet Codes, Fault-equivalent rewrites, Clifford Fragment, Applied, ZX-calculus},
+    keywords = {Error Correcting Codes, Floquet Codes, Fault-equivalent rewrites, Pauli webs, Clifford Fragment, Applied, ZX-calculus},
     abstract = {A key challenge in fault-tolerant quantum computing is synthesising and optimising circuits in a noisy environment, as traditional techniques often fail to account for the effect of noise on circuits. In this work, we propose a framework for designing fault-tolerant quantum circuits that are correct by construction. The framework starts with idealised specifications of fault-tolerant gadgets and refines them using provably sound basic transformations.   To reason about manipulating circuits while preserving their error correction properties, we define fault equivalence; two circuits are considered fault-equivalent if all undetectable faults on one circuit have a corresponding fault on the other. This guarantees that the effect of undetectable faults on both circuits is the same. We argue that fault equivalence is a concept that is already implicitly present in the literature. Many problems, such as state preparation and syndrome extraction, can be naturally expressed as finding an implementable circuit that is fault-equivalent to an idealised specification.   To utilize fault equivalence in a computationally tractable manner, we adapt the ZX calculus, a diagrammatic language for quantum computing. We restrict its rewrite system to not only preserve the underlying linear map but also fault equivalence, i.e. the circuit's behaviour under noise. Enabled by our framework, we verify, optimise and synthesise new and efficient circuits for syndrome extraction and cat state preparation. We anticipate that fault equivalence can capture and unify different approaches in fault-tolerant quantum computing, paving the way for an end-to-end circuit compilation framework.}
 }
 
@@ -5433,7 +5433,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     journal = {arXiv preprint arXiv:2511.13700},
     urldate = {2025-11-17},
     link = {https://arxiv.org/abs/2511.13700},
-    keywords = {Fault-equivalent rewrites, Error Correcting Codes, Clifford Fragment, Applied, Optimisation, ZX-calculus},
+    keywords = {Fault-equivalent rewrites, Pauli webs, Error Correcting Codes, Clifford Fragment, Applied, Optimisation, ZX-calculus},
     abstract = {We establish a new performance benchmark for the fault-tolerant syndrome extraction of [[7, 1, 3]] Steane code with a dynamic protocol. Our method is built on two highly optimized circuits derived using fault-equivalent ZX-rewrites: a primary fault-tolerant circuit with 14 CNOTs and an efficient non-fault-tolerant recovery circuit with 11 CNOTs. The protocol uses an adaptive response to internal faults, discarding flagged measurements and falling back to the recovery circuit to correct potentially detrimental errors. Monte Carlo simulations confirm the efficiency of our protocol, reducing the logical error rate per cycle by an average of ~14.3% relative to the optimized Steane method [arXiv:2506.17181] and ~17.7% compared to the Reichardt's three-qubit method [arXiv:1804.06995], the leading prior techniques.}
 }
 
@@ -5444,7 +5444,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     journal = {arXiv preprint arXiv:2510.08477},
     urldate = {2025-10-09},
     link = {https://arxiv.org/abs/2510.08477},
-    keywords = {Fault-equivalent rewrites, Completeness, Clifford Fragment, ZX-calculus},
+    keywords = {Fault-equivalent rewrites, Pauli webs, Completeness, Clifford Fragment, ZX-calculus},
     abstract = {Two circuits are considered to be equivalent under noise if the effect of faults on one circuit is no worse than the effect of faults on the other circuit. We call this relationship fault equivalence. Fault equivalence offers a way to transform circuits while provably preserving their fault-tolerant properties, enabling a framework for fault-tolerant circuit synthesis and optimisation that is correct by construction. The ZX calculus, a set of graphical rewrite rules for quantum computations, provides a useful tool for manipulating circuits while preserving fault equivalence. For this, the usual set of ZX rewrites has to be restricted to not only preserve the underlying linear map represented by the diagram but also fault equivalence.   In this work, we provide a set of ZX rewrites that are sound and complete for fault equivalence of Clifford ZX diagrams. This means that any equivalence that can be derived using the proposed rules is certain to be correct, and any correct equivalence can be derived using only these rules. For this, we utilise diagrammatic constructions called fault gadgets to reason about arbitrary, possibly correlated Pauli faults in ZX diagrams. Fault gadgets allow us to separate the diagram into a fault-free part, which captures the noise-free behaviour of a diagram, and a noisy part that enumerates the effects of all possible faults. Using this, we provide a unique normal form for ZX diagrams under noise and show that any diagram can be brought into this normal form using our proposed rule set.}
 }
 
@@ -5577,7 +5577,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     school = {University of Oxford},
     link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/schweikart-thesis.pdf},
     urldate = {2025-12-15},
-    keywords = {Fault-equivalent rewrites, Error Correcting Codes, Surface Code, ZX-calculus, Master Thesis},
+    keywords = {Fault-equivalent rewrites, Pauli webs, Error Correcting Codes, Surface Code, ZX-calculus, Master Thesis},
     abstract = {For the successful application of quantum computers, the suppression of noise has often been dubbed as the most critical problem. Quantum Error Correction (QEC) codes encode the state of logical qubits onto a higher number of physical qubits, adding reduncancy to make limited amounts of noise detectable and correctable in theory. However, computing the right correction for a given syndrome is generally N P-complete. Yet, corrections must be performed at a high frequency to suppress noise successfully. For the surface code, the decoding problem is guaranteed to have a specific structure that enables efficient decoding through the Minimum-Weight Perfect Matching (MWPM) decoder. This property can be lost when constructing implementations for the detector measurements, making the decoding problem hard again. In this work, we take a circuit-centric perspective to define matchability-preserving rewrites. Based on the ZX calculus and the recently introduced fault-equivalent rewrites, we formalise how the decoding problem changes through the application of ZX rewrites to a given diagram and detector basis. This allows us to analyse whether given ZX rewrites preserve the property that enabled efficient MWPM decoding. We demonstrate a set of matchability-preserving rewrites that can be used to build fault-tolerant syndrome measurements for surface codes.}
 }
 
@@ -5686,7 +5686,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     journal = {arXiv preprint arXiv:2603.05391},
     urldate = {2026-03-05},
     link = {https://arxiv.org/abs/2603.05391},
-    keywords = {Fault-equivalent rewrites, Error Correcting Codes, Clifford Fragment, Optimisation, Circuit Extraction},
+    keywords = {Fault-equivalent rewrites, Error Correcting Codes, Clifford Fragment, Optimisation, Circuit Extraction, Pauli webs},
     abstract = {The ability to fault-tolerantly prepare CAT states, also known as multi-qubit GHZ states, is an important primitive for quantum error correction. It is required for Shor-style syndrome extraction, and can also be used as a subroutine for doing fault-tolerant state preparation of CSS codewords. Existing approaches to fault-tolerant CAT state preparations have been found using computationally expensive heuristics involving SAT solving, reinforcement learning, or exhaustive analysis. In this paper, we constructively find optimal circuits for CAT states in a more scalable way. In particular, we derive formal lower bounds on the number of CNOT gates required for circuits implementing $n$-qubit CAT states that do not spread errors of weight at most $t$ for $1\leq t \leq 5$. We do this by using fault-equivalent rewrites of ZX-diagrams to reduce it to a problem of characterising certain 3-regular simple graphs. We then provide families of such optimal graphs for infinitely many values of $n$ and $t\leq5$. By encoding the construction of optimal graphs as a constraint satisfaction problem we find explicit constructions for circuits that match this lower bound on CNOT count for all $n\leq50$ and $t \leq 5$ and for nearly all pairs $(n,t)$ with $n\leq 100$ and $t\leq 5$ or $n\leq 50$ and $t\leq 7$, significantly extending the regimes that were achievable by previous methods and improving the resource counts for existing constructions. We additionally show how to trade CNOT count against depth, allowing us to construct constant-depth fault-tolerant implementations using $O(n)$ ancilla and $O(n)$ CNOT gates.}
 }
 
