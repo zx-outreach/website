@@ -5700,3 +5700,14 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     keywords = {Classical Simulation, Applied, ZX-calculus, Automation, PyZX},
     abstract = {In this paper, we introduce a technique for contracting (i.e. numerically evaluating) ZX-diagrams whose complexity scales with their rank-width, a graph parameter that behaves nicely under ZX rewrite rules. Given a rank-decomposition of width $R$, our method simulates a graph-like ZX-diagram in $Õ(4^R)$ time. Applied to classical simulation of quantum circuits, it is no slower than either naive state vector simulation or stabiliser decompositions with $α= 0.5$, and in practice can be significantly faster for suitably chosen rank-decompositions. Since finding optimal rank-decompositions is NP-hard, we introduce heuristics that produce good decompositions in practice. We benchmark our simulation routine against Quimb, a popular tensor contraction library, and observe substantial reductions in floating-point operations (often by several orders of magnitude) for random and structured non-Clifford circuits as well as random ZX-diagrams.}
 }
+
+@article{codsi2026unifying,
+    author = {Codsi, Julien and Laakkonen, Tuomas},
+    title = {{Unifying Graph Measures and Stabilizer Decompositions for the Classical Simulation of Quantum Circuits}},
+    year = {2026},
+    journal = {arXiv preprint arXiv:2603.06377},
+    urldate = {2026-03-06},
+    link = {https://arxiv.org/abs/2603.06377},
+    keywords = {Classical Simulation, Applied, Automation, ZX-calculus},
+    abstract = {Various algorithms have been developed to simulate quantum circuits on classical hardware. Among the most prominent are approaches based on \emph{stabilizer decompositions} and \emph{tensor network contraction}. In this work, we present a unified framework that bridges these two approaches, placing them under a common formalism. Using this, we present two new algorithms to simulate an $n$-qubit circuit $C$: one that runs in $\tilde{O}(T^{\mathsf{tw}(C)})$ time and the other in $\tilde{O}(T^{γ\cdot \mathsf{tw}(C)})$ time, where $\mathsf{tw}(C)$ and $\mathsf{rw}(C)$ refer to the the tree-width and rank-width, respectively, of a tensor network associated to $C$, $T$ is the number of non-Clifford gates in $C$, and $γ\approx 3.42$. The proposed algorithms are simple, only require a linear amount of memory, are trivially parallelizable, and interact nicely with ZX-diagram simplification routines. Furthermore, we introduce the refined complexity measures \emph{focused tree-width} and \emph{focused rank-width}, which are always at least as efficient as their standard equivalent; these can be directly applied within our simulation algorithms, allowing for a more precise upper bound on the run time.}
+}
