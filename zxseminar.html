@@ -212,6 +212,8 @@ body {
                 <br>
                 <strong><p>Abstract:</strong> The ability to fault-tolerantly prepare CAT states, also known as multiqubit GHZ states, is an important primitive for quantum error correction. It is required for Shor-style syndrome extraction, and can also be used as a subroutine for doing fault-tolerant state preparation of CSS codewords. Existing approaches to fault-tolerant CAT state preparations have been found using computationally expensive heuristics involving SAT solving, reinforcement learning, or exhaustive analysis. In this paper, we constructively find optimal circuits for CAT states in a more scalable way. In particular, we derive formal lower bounds on the number of CNOT gates required for circuits implementing n-qubit CAT states that do not spread errors of weight at most t for \(1 \leq t \leq 5\). We do this by using fault-equivalent rewrites of ZX-diagrams to reduce it to a problem of characterising certain 3-regular simple graphs. We then provide families of such optimal graphs for infinitely many values of \(n\) and \(t \leq 5\). By encoding the construction of optimal graphs as a constraint satisfaction problem we find explicit constructions for circuits that match this lower bound on CNOT count for all \(n \leq 50\) and \(t \leq 5\) and for nearly all pairs \((n, t)\) with \(n \leq 100\) and \(t \leq 5\) or \(n \leq 50\) and \(t \leq 7\), significantly extending the regimes that were achievable by previous methods and improving the resource counts for existing constructions. We additionally show how to trade CNOT count against depth, allowing us to construct constant-depth fault-tolerant implementations using \(O(n)\) ancilla and \(O(n)\) CNOT gates.</p><br>
                 <strong>Joint-Work With: </strong>  Sarah Meng Li, Boldizsár Poór, Benjamin Rodatz, John van de Wetering, and Richie Yeung<br>
+                <br>
+                <strong><p>Recording:</strong> <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dptf_IUiahc">https://www.youtube.com/watch?v=dptf_IUiahc</a>
             </div>
             <div style="padding: 1em; background: #d9f2e6">
                 <strong><p>Monday April 13th: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2505.07658">Dynamical Codes for Hardware with Noisy Readouts</a></p></strong>
@@ -269,6 +271,19 @@ body {
                 <strong>Time:</strong> 9 - 10 am ET = 2 - 3 pm UK = 3 - 4 pm Netherlands<br>
                 <br>
                 <strong><p>Abstract:</strong> TBA</p>
+            </div>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Monday May 18th: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2603.19522">Preserving MWPM-Decodability in Fault-Equivalent Rewrites</a></p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong><a target="_blank" rel="noopener" href="https://maxschweik.art/"> Maximilian Schweikart </a> (University of Oxford)</p><br>
+                <strong>Time:</strong> 9 - 10 am ET = 2 - 3 pm UK = 3 - 4 pm France/Netherlands<br>
+                <br>
+                <strong><p>Abstract:</strong> Decoding a quantum error correction code is generally NP-hard, but corrections must be applied at a high frequency to suppress noise successfully. Matchable codes, like the surface code, exhibit a special structure that makes it possible to efficiently, approximately solve the decoding problem through minimum-weight perfect matching (MWPM). However, this efficiency-enabling property can be lost when constructing implementations for fault-tolerant gadgets such as syndrome-extraction circuits or logical operations.<br>
+                <br>
+                In this work, we take a circuit-centric perspective to formalise how the decoding problem changes when applying ZX rewrites to a ZX diagram with a given detector basis. We demonstrate a set of rewrites that preserve MWPM-decodability of circuits and show that these matchability-preserving rewrites can be used to fault-tolerantly extract quantum circuits from phase-free ZX diagrams. In particular, this allows us to build efficiently decodable, fault-tolerant syndrome-extraction circuits for matchable codes.</p>
+                <br>
+                <strong>Joint-Work With: </strong>Linnea Grans-Samuelsson, Aleks Kissinger, and Benjamin Rodatz<br>
             </div>
         </div>   
         <div class="cell row">
