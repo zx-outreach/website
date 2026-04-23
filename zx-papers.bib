@@ -5744,3 +5744,14 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     keywords = {Error correcting codes, ZX-calculus, Applied},
     abstract = {We realize a broad class of code constructions, including Kramers-Wannier duality, tensor product, and check product, as quantum processes consisting of ancilla initialization, local unitaries, and projective measurements. Using ZX-calculus, we represent these transformations diagrammatically and provide a systematic algorithm for extracting quantum circuits. Central to our framework is the observation that the physical content of a classical LDPC code is captured by the operator algebra associated with its Tanner graph, and that code transformations correspond to maps between such algebras. Kramers-Wannier duality then admits a natural interpretation as gauging, while tensor and check products correspond to coupled-layer constructions in which interlayer coupling and projection implement a quotient on stacked operator algebras. Together, these results establish a unified framework connecting code transformations, quantum circuits, and mappings between distinct quantum phases of matter.}
 }
+
+@article{haenel2026tsim:,
+    author = {Haenel, Rafael and Luo, Xiuzhe and Zhao, Chen},
+    title = {{Tsim: Fast Universal Simulator for Quantum Error Correction}},
+    year = {2026},
+    journal = {arXiv preprint arXiv:2604.01059},
+    urldate = {2026-04-01},
+    link = {https://arxiv.org/abs/2604.01059},
+    keywords = {Classical Simulation, Automation, PyZX, Clifford+T},
+    abstract = {We present Tsim, an open-source high-throughput simulator for universal noisy quantum circuits targeting quantum error correction. Tsim represents quantum circuits as ZX diagrams, where Pauli channels are modeled as parameterized vertices. Diagrams are simplified via parameterized ZX rules, and then compiled for vectorized sampling with GPU acceleration. After the one-time compilation, one can sample detector or measurement shots in linear time in the number of Clifford gates and exponentially only in the number of non-Clifford gates. Tsim implements the Stim API and fully supports the Stim circuit format, extending it with T and arbitrary single-qubit rotation instructions. For low-magic circuits, Tsim throughput can match the sampling performance of Stim.}
+}
