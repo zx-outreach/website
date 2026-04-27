@@ -5755,3 +5755,14 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     keywords = {Classical Simulation, Automation, PyZX, Clifford+T},
     abstract = {We present Tsim, an open-source high-throughput simulator for universal noisy quantum circuits targeting quantum error correction. Tsim represents quantum circuits as ZX diagrams, where Pauli channels are modeled as parameterized vertices. Diagrams are simplified via parameterized ZX rules, and then compiled for vectorized sampling with GPU acceleration. After the one-time compilation, one can sample detector or measurement shots in linear time in the number of Clifford gates and exponentially only in the number of non-Clifford gates. Tsim implements the Stim API and fully supports the Stim circuit format, extending it with T and arbitrary single-qubit rotation instructions. For low-magic circuits, Tsim throughput can match the sampling performance of Stim.}
 }
+
+@article{ding2026currentstate,
+    author = {Ding, Sichen and Li, Zhiwu},
+    title = {{Current-State Opacity in Safe Partially Observed Quantum Petri Nets: True-Concurrency Semantics and Exact Symbolic Verification}},
+    year = {2026},
+    journal = {arXiv preprint arXiv:2604.17784},
+    urldate = {2026-04-20},
+    link = {https://arxiv.org/abs/2604.17784},
+    keywords = {Verification, Automation, ZX-calculus, Clifford Fragment},
+    abstract = {Classical opacity theory for discrete-event systems relies strictly on observable event sequences, fundamentally failing to capture security breaches in hybrid architectures where an attacker exploits both classical traces and localized quantum correlations. To address this gap, we formalize current-state opacity within the framework of safe partially observed quantum Petri nets by introducing a true-concurrency semantics that represents classical observations as partially ordered multisets via unfolding configurations. Building upon this, we define quantitative posterior-state leakage as the trace distance between the attacker's localized quantum states, evaluated conditionally on whether the underlying system has reached a secret or non-secret marking. This formulation strictly preserves classical opacity definitions. To achieve computational tractability, we apply the stabilizer formalism and develop an exact symbolic verification algorithm. By combining targeted unfolding exploration, state aggregation exclusively at maximal unobservable reach, and stabilizer-tableau propagation, this procedure circumvents both concurrent interleaving explosions and exponential density-matrix overhead. Finally, an entanglement-swapping case study validates the exact leakage evaluation, demonstrates substantial computational gains, and establishes a rigorous interface for counterexample-guided leakage enforcement.}
+}
