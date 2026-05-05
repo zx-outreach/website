@@ -93,6 +93,52 @@
 <div class="perEntryDiv">
     <div class="leftContent">
         <span>
+            <a target="_blank" href="https://arxiv.org/abs/2604.26788" class="paperTitle">A Semantic Quantum Circuit Cache for Scalable and Distributed Quantum-Classical Workflows</a>
+        </span>
+        <br>
+            <span class="authors">Mar Tejedor, Javier Conejero and Rosa Badia</span>
+        <br>
+        <span>
+            <a href="#" class="abstract_more">
+                Show abstract &#x21F2;
+            </a>
+            <a href="#" class="bibdata_more">
+                Show bibdata &#x21F2;
+            </a>
+            
+        </span>
+    </div>
+    <div class="rightContent">
+        <span>
+            <a target="_blank" href="https://arxiv.org/abs/2604.26788" class="journal">arXiv:2604.26788</a>
+        </span>
+        <br>
+        <span>
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('automation')" title="This paper discusses automation of processes via software or algorithms">Automation</a>, <a target="_blank" onclick="forceSearchKW('pyzx')" title="The paper uses PyZX">PyZX</a>, <a target="_blank" onclick="forceSearchKW('applied')" title="This paper uses ZX-diagrams for some task other than describing the ZX-calculus itself">Applied</a>, <a target="_blank" onclick="forceSearchKW('optimisation')" title="This paper significantly discusses optimisation of quantum computation in any form, including compilation and routing">Optimisation</a></span>.
+        </span>
+    </div>
+    <div class="crossContent">
+        <div class="abstract" style="display:none">Hybrid quantum--classical workflows often execute large ensembles of circuits that differ syntactically but implement identical operations, leading to substantial redundant computation. To address this, we introduce the Quantum Circuit Cache, a content-addressable system that detects semantic equivalence and reuses previously computed results across executions, backends, and workflow stages.   Our approach combines ZX-calculus reduction with isomorphism-invariant Weisfeiler--Leman graph hashing to generate deterministic circuit identifiers, enabling constant-time lookup in distributed caches supporting both lightweight LMDB and scalable Redis deployments. The system integrates transparently into hybrid HPC workflows and remains backend-agnostic across CPU, GPU, and QPU environments.   We evaluate the system on MareNostrum 5 with two representative workloads: distributed wire cutting and Differential Evolution-based QAOA optimization. For wire cutting, caching eliminates up to 91.98% of redundant subcircuit simulations, yielding speedups up to 7.0 times on a single node and maintaining advantages at scale, with Redis-based caching achieving up to 1.6 times speedups under high parallelism. Validation on a 35-qubit superconducting QPU confirms these benefits, achieving an 11.2 times speedup on real hardware. In distributed QAOA optimization, equivalence-aware caching avoids up to 27.6% of circuit evaluations and consistently reduces execution cost without altering the optimization algorithm. In both cases, reuse grows with concurrency and circuit structure, highlighting redundancy as a major systems bottleneck and demonstrating the effectiveness of our Quantum Circuit Cache.</div>
+        <div class="bibdata" style="display:none">
+            <pre><code>@article{tejedor2026semantic,
+    author = {Tejedor, Mar and Conejero, Javier and M. Badia, Rosa},
+    title = {{A Semantic Quantum Circuit Cache for Scalable and Distributed Quantum-Classical Workflows}},
+    year = {2026},
+    journal = {arXiv preprint arXiv:2604.26788},
+    urldate = {2026-04-29},
+    link = {https://arxiv.org/abs/2604.26788},
+    keywords = {Automation, PyZX, Applied, Optimisation},
+    abstract = {Hybrid quantum--classical workflows often execute large ensembles of circuits that differ syntactically but implement identical operations, leading to substantial redundant computation. To address this, we introduce the Quantum Circuit Cache, a content-addressable system that detects semantic equivalence and reuses previously computed results across executions, backends, and workflow stages.   Our approach combines ZX-calculus reduction with isomorphism-invariant Weisfeiler--Leman graph hashing to generate deterministic circuit identifiers, enabling constant-time lookup in distributed caches supporting both lightweight LMDB and scalable Redis deployments. The system integrates transparently into hybrid HPC workflows and remains backend-agnostic across CPU, GPU, and QPU environments.   We evaluate the system on MareNostrum 5 with two representative workloads: distributed wire cutting and Differential Evolution-based QAOA optimization. For wire cutting, caching eliminates up to 91.98% of redundant subcircuit simulations, yielding speedups up to 7.0 times on a single node and maintaining advantages at scale, with Redis-based caching achieving up to 1.6 times speedups under high parallelism. Validation on a 35-qubit superconducting QPU confirms these benefits, achieving an 11.2 times speedup on real hardware. In distributed QAOA optimization, equivalence-aware caching avoids up to 27.6% of circuit evaluations and consistently reduces execution cost without altering the optimization algorithm. In both cases, reuse grows with concurrency and circuit structure, highlighting redundancy as a major systems bottleneck and demonstrating the effectiveness of our Quantum Circuit Cache.}
+}
+</code></pre>
+            <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
+        </div>
+    </div>
+</div></li>
+<li class="pub_entry">
+<div class="perEntryDiv">
+    <div class="leftContent">
+        <span>
             <a target="_blank" href="https://arxiv.org/abs/2604.17784" class="paperTitle">Current-State Opacity in Safe Partially Observed Quantum Petri Nets: True-Concurrency Semantics and Exact Symbolic Verification</a>
         </span>
         <br>
