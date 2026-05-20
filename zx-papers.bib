@@ -5482,7 +5482,7 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     school = {University of Oxford},
     link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/philipps-thesis.pdf},
     urldate = {2025-08-15},
-    keywords = {Classical Simulation, ZX-calculus, Clifford+T, T-count, Applied, Master Thesis},
+    keywords = {Classical Simulation, Machine Learning, ZX-calculus, Clifford+T, T-count, Applied, Master Thesis},
     abstract = {Quantum circuits can be simulated on classical hardware using an algorithm known as stabiliser decomposition. This procedure is based on two principles: first, any quantum circuit can be constructed out of the universal Clifford+T gate set; second, circuits made only of Clifford gates can be simulated efficiently on classical computers. The core idea is to recursively decompose a Clifford+T circuit into a linear combination of circuits with a lower T-gate count (T-count) than the original, ultimately producing an exponential number of Clifford circuits. Each circuit can then be simulated individually, and the results are aggregated to obtain the final output. This thesis examines the application of machine learning models to inform the selection of intermediate decompositions, with the goal of minimising the number of T-gates in the resulting circuits. Even minor improvements in this recursive step can combine to yield significant enhancements in the overall simulation. Specifically, we work in the framework of Kissinger and van de Wetering. They combined known gadget decompositions with circuit optimisation routines to reduce the T-count. We also draw on the work of Ahmad et al., who developed heuristics that apply these decompositions strategically to maximise simplification. Building on prior research by Koziell-Pipe, Sutcliffe, and Yeung, we trained a machine learning model that outperformed even the greedy brute-force baseline for applying the Vertex-Cut decomposition on exponentiated Pauli circuits. This demonstrates its ability to learn efficient, non-local simplification strategies. In addition, we document several machine learning techniques that did not yield promising results. We analyse their shortcomings and discuss potential avenues for future improvement.}
 }
 
@@ -5806,4 +5806,23 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     link = {https://arxiv.org/abs/2605.13993},
     keywords = {ZH-calculus, Completeness, Category Theory, Qudits},
     abstract = {We introduce Graphical Algebraic Geometry (GAG), a family of diagrammatic languages extending the Graphical Linear Algebra programme. We construct several languages within this family and prove that they are universal and complete for the corresponding (co)span semantics of commutative algebras and affine varieties. This framework provides clear graphical representations of algebraic structures -- such as polynomials, ideals, and varieties -- enabling intuitive yet rigorous diagrammatic reasoning. We showcase two practical viewpoints on GAG. First, we show that instances of counting constraint satisfaction problem (#CSP) are recast as rewrite problems of closed diagrams in GAG. This means that deciding rewritability in GAG is #P-hard, and GAG can be viewed as a complete and compositional rewrite system for networks of polynomial constraints. Second, we characterize the qudit ZH calculus, a diagrammatic language for quantum computation, as an extension of Graphical Algebraic Geometry. This establishes the correspondence that Graphical Algebraic Geometry is to the ZH calculus what Graphical Linear Algebra is to the ZX calculus. Using this construction, we show that computing amplitudes in qudit ZH requires only a constant number of queries to a GAG oracle.}
+}
+
+@inproceedings{10.1109/DAC63849.2025.11133226,
+    author = {Choudhury, Navnil and Bhave, Ameya S and Basu, Kanad},
+    title = {{ZXNet: ZX Calculus-Driven Graph Neural Network Framework for Quantum Circuit Equivalence Checking}},
+    year = {2025},
+    isbn = {9798331503048},
+    publisher = {IEEE Press},
+    url = {https://doi.org/10.1109/DAC63849.2025.11133226},
+    doi = {10.1109/DAC63849.2025.11133226},
+    abstract = {Quantum circuit execution often requires transpilation into hardware-compatible instructions, which can significantly alter the original design, making equivalence checking essential. However, existing approaches struggle with scalability and computational overhead. In this paper, we present ZXNet, a transformative framework for quantum circuit equivalence checking using ZX calculus-based graph abstractions. Leveraging graph neural networks, ZXNet captures complex equivalence patterns by integrating critical local and global circuit features. ZXNet achieves 99.4\% validation accuracy, and up to 62\texttimes{} speedup over state-of-the-art methods, furnishing improvements of 45.83\% in scalability, 42.22\% in per-qubit verification time, and 5.94\% in accuracy, outperforming state-of-the-art approaches.},
+    booktitle = {Proceedings of the 62nd Annual ACM/IEEE Design Automation Conference},
+    number = {373},
+    numpages = {7},
+    location = {San Francisco, California, United States},
+    series = {DAC '25},
+    urldate = {2025-11-26},
+    link = {https://dl.acm.org/doi/abs/10.1109/DAC63849.2025.11133226},
+    keywords = {ZX-calculus, Automation, Verification, Machine Learning, Applied},
 }

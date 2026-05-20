@@ -74,5 +74,6 @@
     "Continuous Variable": "This paper discusses or uses continuous-variable quantum systems",
     "Fault-equivalent rewrites": "This paper uses fault-equivalent rewrites",
     "Education": "This paper discussed using ZX-calculus in education",
-    "Pauli webs": "Uses Pauli webs or detecting regions"
+    "Pauli webs": "Uses Pauli webs or detecting regions",
+    "Machine learning": "Some manner of machine learning techniques are used in the paper"
 }
