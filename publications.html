@@ -93,6 +93,52 @@
 <div class="perEntryDiv">
     <div class="leftContent">
         <span>
+            <a target="_blank" href="https://arxiv.org/abs/2605.15266" class="paperTitle">Synthesis and Optimization of Encoding Circuits for Fault-Tolerant Quantum Computation</a>
+        </span>
+        <br>
+            <span class="authors">Tom Peham, Matthew Steinberg, Robert Wille and Sascha Heußen</span>
+        <br>
+        <span>
+            <a href="#" class="abstract_more">
+                Show abstract &#x21F2;
+            </a>
+            <a href="#" class="bibdata_more">
+                Show bibdata &#x21F2;
+            </a>
+            
+        </span>
+    </div>
+    <div class="rightContent">
+        <span>
+            <a target="_blank" href="https://arxiv.org/abs/2605.15266" class="journal">arXiv:2605.15266</a>
+        </span>
+        <br>
+        <span>
+            Keywords: <span class="keywords"><a target="_blank" onclick="forceSearchKW('error correcting codes')" title="The paper discusses quantum error correcting codes">Error Correcting codes</a>, <a target="_blank" onclick="forceSearchKW('optimisation')" title="This paper significantly discusses optimisation of quantum computation in any form, including compilation and routing">Optimisation</a>, <a target="_blank" onclick="forceSearchKW('automation')" title="This paper discusses automation of processes via software or algorithms">Automation</a>, <a target="_blank" onclick="forceSearchKW('applied')" title="This paper uses ZX-diagrams for some task other than describing the ZX-calculus itself">Applied</a></span>.
+        </span>
+    </div>
+    <div class="crossContent">
+        <div class="abstract" style="display:none">Preparing arbitrary logical states is a central primitive for universal fault-tolerant quantum computation and the cost of encoded-state preparation contributes directly to the overall resource overhead. This makes the synthesis of efficient general-state encoding circuits an important problem, particularly with respect to two-qubit gate count and circuit depth. Yet the synthesis of such encoders has been studied less extensively than general Clifford circuit synthesis or the preparation of specific logical Pauli-eigenstates. In this work, we develop methods for synthesizing efficient encoders for arbitrary stabilizer codes. We formulate encoder synthesis as a search over stabilizer tableaus and introduce greedy and rollout-based algorithms that exploit the freedom among stabilizer-equivalent realizations of the same encoding isometry. For code families with a modular structure, such as generalized concatenated and holographic codes, we show how large encoders can be assembled from optimized local constituent encoders, and we use SMT-based exact synthesis to obtain optimal local circuits for small instances. We further evaluate the proposed methods on a broad set of stabilizer codes, including holographic and quantum low-density parity-check (qLDPC) codes, and compare them against recent encoder-synthesis methods and existing constructions from the literature, obtaining improvements of up to 43% in two-qubit gate count and up to 70% in depth. Our results support the optimization of encoded-state preparation in several fault-tolerant quantum-computing schemes, and all methods are openly available as part of the Munich Quantum Toolkit.</div>
+        <div class="bibdata" style="display:none">
+            <pre><code>@article{peham2026synthesis,
+    author = {Peham, Tom and Steinberg, Matthew and Wille, Robert and Heußen, Sascha},
+    title = {{Synthesis and Optimization of Encoding Circuits for Fault-Tolerant Quantum Computation}},
+    year = {2026},
+    journal = {arXiv preprint arXiv:2605.15266},
+    urldate = {2026-05-14},
+    link = {https://arxiv.org/abs/2605.15266},
+    keywords = {Error Correcting codes, Optimisation, Automation, Applied},
+    abstract = {Preparing arbitrary logical states is a central primitive for universal fault-tolerant quantum computation and the cost of encoded-state preparation contributes directly to the overall resource overhead. This makes the synthesis of efficient general-state encoding circuits an important problem, particularly with respect to two-qubit gate count and circuit depth. Yet the synthesis of such encoders has been studied less extensively than general Clifford circuit synthesis or the preparation of specific logical Pauli-eigenstates. In this work, we develop methods for synthesizing efficient encoders for arbitrary stabilizer codes. We formulate encoder synthesis as a search over stabilizer tableaus and introduce greedy and rollout-based algorithms that exploit the freedom among stabilizer-equivalent realizations of the same encoding isometry. For code families with a modular structure, such as generalized concatenated and holographic codes, we show how large encoders can be assembled from optimized local constituent encoders, and we use SMT-based exact synthesis to obtain optimal local circuits for small instances. We further evaluate the proposed methods on a broad set of stabilizer codes, including holographic and quantum low-density parity-check (qLDPC) codes, and compare them against recent encoder-synthesis methods and existing constructions from the literature, obtaining improvements of up to 43% in two-qubit gate count and up to 70% in depth. Our results support the optimization of encoded-state preparation in several fault-tolerant quantum-computing schemes, and all methods are openly available as part of the Munich Quantum Toolkit.}
+}
+</code></pre>
+            <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
+        </div>
+    </div>
+</div></li>
+<li class="pub_entry">
+<div class="perEntryDiv">
+    <div class="leftContent">
+        <span>
             <a target="_blank" href="https://arxiv.org/abs/2605.13993" class="paperTitle">Graphical Algebraic Geometry: From Ideals and Varieties to Quantum Calculi</a>
         </span>
         <br>
@@ -906,7 +952,7 @@ My next contribution concerns Pauli flow. I simplify the Pauli flow definition b
             <a href="#" class="bibdata_more">
                 Show bibdata &#x21F2;
             </a>
-            
+            <a href="https://youtu.be/HossXf6LuWM">Video &#127909;</a>
         </span>
     </div>
     <div class="rightContent">
@@ -929,7 +975,8 @@ My next contribution concerns Pauli flow. I simplify the Pauli flow definition b
     urldate = {2025-12-15},
     link = {https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/schweikart-thesis.pdf},
     keywords = {Fault-equivalent rewrites, Pauli webs, Error Correcting Codes, Surface Code, ZX-calculus, Master Thesis},
-    abstract = {For the successful application of quantum computers, the suppression of noise has often been dubbed as the most critical problem. Quantum Error Correction (QEC) codes encode the state of logical qubits onto a higher number of physical qubits, adding reduncancy to make limited amounts of noise detectable and correctable in theory. However, computing the right correction for a given syndrome is generally N P-complete. Yet, corrections must be performed at a high frequency to suppress noise successfully. For the surface code, the decoding problem is guaranteed to have a specific structure that enables efficient decoding through the Minimum-Weight Perfect Matching (MWPM) decoder. This property can be lost when constructing implementations for the detector measurements, making the decoding problem hard again. In this work, we take a circuit-centric perspective to define matchability-preserving rewrites. Based on the ZX calculus and the recently introduced fault-equivalent rewrites, we formalise how the decoding problem changes through the application of ZX rewrites to a given diagram and detector basis. This allows us to analyse whether given ZX rewrites preserve the property that enabled efficient MWPM decoding. We demonstrate a set of matchability-preserving rewrites that can be used to build fault-tolerant syndrome measurements for surface codes.}
+    abstract = {For the successful application of quantum computers, the suppression of noise has often been dubbed as the most critical problem. Quantum Error Correction (QEC) codes encode the state of logical qubits onto a higher number of physical qubits, adding reduncancy to make limited amounts of noise detectable and correctable in theory. However, computing the right correction for a given syndrome is generally N P-complete. Yet, corrections must be performed at a high frequency to suppress noise successfully. For the surface code, the decoding problem is guaranteed to have a specific structure that enables efficient decoding through the Minimum-Weight Perfect Matching (MWPM) decoder. This property can be lost when constructing implementations for the detector measurements, making the decoding problem hard again. In this work, we take a circuit-centric perspective to define matchability-preserving rewrites. Based on the ZX calculus and the recently introduced fault-equivalent rewrites, we formalise how the decoding problem changes through the application of ZX rewrites to a given diagram and detector basis. This allows us to analyse whether given ZX rewrites preserve the property that enabled efficient MWPM decoding. We demonstrate a set of matchability-preserving rewrites that can be used to build fault-tolerant syndrome measurements for surface codes.},
+    video = {https://youtu.be/HossXf6LuWM}
 }
 </code></pre>
             <p><a href="#" class="bib_clipboard">Copy to Clipboard</a></p>
