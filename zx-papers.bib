@@ -5849,3 +5849,18 @@ abstract = {In multiple-input and multiple-output (MIMO) systems, the maximum li
     keywords = {Error correcting codes, Applied, ZX-calculus},
     abstract = {The ZX-calculus is a powerful graphical language for manipulating quantum circuits, which has recently found many applications in quantum error correction. We extend this language to handle Floquet and other dynamical stabilizer codes via the connection between measurement-based code switching and gauge fixing (arXiv:1810.10037). We combine gauge-fixing steps to implement a closed loop in the space of stabilizer codes, returning to the original codespace up to a logical Clifford gate. These measurement-based paths in the space of stabilizer codes can be viewed as shortcuts, or "chutes and ladders", relative to single-qubit Clifford operations and qubit permutations. This yields a machine-interpretable method for constructing dynamical automorphisms and facilitates the search for implementations of desired logical gates. As an example, we implement a logical phase gate via distance-preserving code switching for the seven-qubit code bare code (arXiv:1702.01155), which has no non-trivial logical Clifford gates based on single-qubit Clifford operations and qubit permutations (arXiv:2409.18175).}
 }
+
+@INPROCEEDINGS{11539371,
+  author={Kuo, Chien-Tung Cherie and Tsai, Cheng-En and Huang, Chung-Yang Ric},
+  booktitle={2026 Design, Automation & Test in Europe Conference (DATE)}, 
+  title={Ultra-Low Logical Depth Fault-Tolerant Quantum Circuit Synthesis via Lattice Surgery}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-7},
+  doi={10.23919/DATE69613.2026.11539371},
+  keywords={Error Correcting codes, Automation, Surface Code, Lattice Surgery, Applied, ZX-calculus},
+  urldate = {2026-06-04},
+  link = {https://ieeexplore.ieee.org/abstract/document/11539371},
+  abstract={We present FTQCS, a ZX-calculus–based fault-tolerant circuit synthesis framework that compiles quantum circuits into lattice-surgery schedules for surface-code execution. FTQCS uses global ZX rewrites to optimize circuits, align them with merge/split primitives, and generate space-aware layouts. For Clifford circuits, it automates constant logical-depth synthesis; for Clifford+T, it extends this strategy to efficiently incorporate non-Clifford resources. The framework reduces the asymptotic space–time costs to O(n2), improving upon the O(n3) complexity of prior approaches and delivering substantial practical improvements. The experimental results show that FTQCS achieves near-constant logical-depth, speeds up execution by over 148×, and cuts space–time cost up to 16.6× on benchmark circuits. Implemented as an extension of Qsyn, FTQCS provides a scalable, verifiable path from high-level circuits to resource-efficient lattice-surgery schedules.}
+}
