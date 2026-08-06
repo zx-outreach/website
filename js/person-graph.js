@@ -136,6 +136,7 @@ var start = function () {
   addNode(113,"Da-Chuan Lu", "person")
   addNode(114,"Yi-Zhuang You", "person")
   addNode(115,"Laura Herzog", "person")
+  addNode(116,"Aleksander Kubica", "person")
   addLink(0,1,0.600000)
   addLink(0,2,0.225000)
   addLink(0,3,0.225000)
@@ -410,6 +411,7 @@ var start = function () {
   addLink(39,28,0.350000)
   addLink(39,91,0.350000)
   addLink(39,115,0.350000)
+  addLink(39,116,0.225000)
   addLink(40,20,0.350000)
   addLink(41,75,0.350000)
   addLink(41,99,0.225000)
@@ -679,7 +681,10 @@ var start = function () {
   addLink(113,114,0.225000)
   addLink(113,97,0.225000)
   addLink(114,113,0.225000)
+  addLink(115,116,0.225000)
   addLink(115,39,0.350000)
+  addLink(116,115,0.225000)
+  addLink(116,39,0.225000)
 
 
   // Event handling
