@@ -103,6 +103,61 @@ body {
         p { margin:-6 }
         </style>
         <div class="cell row">
+            <h2>Fall 2026 Schedule</h2>
+            <style>
+            p { margin:0 }
+            </style>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Tuesday October 6th: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2605.10910">Equivariant Reinforcement Learning for Clifford Quantum Circuit Synthesis</a></p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong> <a target="_blank" rel="noopener" href="https://y-richie-y.github.io/">Richie Yeung</a> (University of Oxford)</p><br>
+                <strong>Time:</strong> 10:30 - 11:30 am ET = 3:30 - 4:30 pm UK = 4:30 - 5:30 pm Netherlands<br>
+                <br>
+                <strong><p>Abstract:</strong> We consider the problem of synthesizing Clifford quantum circuits for devices with all-to-all qubit connectivity. We approach this task as a reinforcement learning problem in which an agent learns to discover a sequence of elementary Clifford gates that reduces a given symplectic matrix representation of a Clifford circuit to the identity. This formulation permits a simple learning curriculum based on random walks from the identity. We introduce a novel neural network architecture that is equivariant to qubit relabelings of the symplectic matrix representation, and which is size-agnostic, allowing a single learned policy to be applied across different qubit counts without circuit splicing or network reparameterization. On six-qubit Clifford circuits, the largest regime for which optimal references are available, our agent finds circuits within one two-qubit gate of optimality in milliseconds per instance, and finds optimal circuits in 99.2% of instances within seconds per instance. After continued training on ten-qubit instances, the agent scales to unseen Clifford tableaus with up to thirty qubits, including targets generated from circuits with over a thousand Clifford gates, where it achieves lower average two-qubit gate counts than Qiskit’s Aaronson-Gottesman and greedy Clifford synthesizers.</p><br>
+                <strong>Joint-Work With: </strong> Aleks Kissinger and Rob Cornish<br>
+            </div>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Tuesday October 13th: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2606.12383">Minimality of the Stabilizer ZX Calculus</a></p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong> Harry K. Stoltz</p><br>
+                <strong>Time:</strong> 10:30 - 11:30 am ET = 3:30 - 4:30 pm UK = 4:30 - 5:30 pm Netherlands<br>
+                <br>
+                <strong><p>Abstract:</strong> The stabilizer fragment of the ZX calculus is amongst the most important fragments of the theory. Crucially, the stabilizer calculus can be described by a small collection of rewrites, most of which have been shown to be necessary by Backens–Perdrix–Wang [1]. However, two rules, describing the red/green compact-structure coincidence and the important bialgebra law, had not been shown to be necessary. We present two alternate interpretations, showing that both of these rules are individually necessary. Thus, this resolves a problem which has remained open for over a decade, and gives the first complete, minimal ruleset for the stabilizer ZX Calculus.</p><br>
+            </div>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Tuesday October 20th: SpiderCSS: Scalable Fault-Tolerant CSS State Preparation</p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong> <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=14J53a4AAAAJ&hl=en">Boldizsár Poór</a> (University of Oxford)</p><br>
+                <strong>Time:</strong> 10:30 - 11:30 am ET = 3:30 - 4:30 pm UK = 4:30 - 5:30 pm Netherlands<br>
+                <br>
+                <strong><p>Abstract:</strong> TBA</p><br>
+                <strong>Joint-Work With: </strong> Andrey Boris Khesin, Sarah Meng Li, Benjamin Rodatz, John van de Wetering, and Richie Yeung<br>
+            </div>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Tuesday October 27th: Calculating the Entanglement Entropy and Magic of ZX-Diagrams</p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong> TBA</p><br>
+                <strong>Time:</strong> 11:30 am - 12:30 pm ET = 3:30 - 4:30 pm UK = 4:30 - 5:30 pm Netherlands<br>
+                <br>
+                <strong><p>Abstract:</strong> TBA</p><br>
+                <strong>Joint-Work With: </strong> Razin Shaikh and Aleks Kissinger<br>
+            </div>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Tuesday November 10th: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2609.03048">Resource-adaptive Distributed Fault Tolerance with Very Noisy Bell Pairs</a></p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong> Moritz Schmidt</p><br>
+                <strong>Time:</strong> 10:30 - 11:30 am ET = 3:30 - 4:30 pm UK = 4:30 - 5:30 pm Netherlands<br>
+                <br>
+                <strong><p>Abstract:</strong> Distributed architectures have been proposed as a pathway to large-scale quantum computers. Combined with the need for fault-tolerance, such architectures require distributed quantum error correction (DQEC) and distributed logical gates. An important challenge is how to realize DQEC primitives in the setting where interaction between modules is restricted to shared Bell pairs that are significantly noisier than on-chip operations. We extend the work in [1] on fault tolerance by construction to this setting, deriving different strategies for handling the additional noise. Through fault-improvement we recover conventional entanglement distillation, and also find more dynamical protocols that enable space-time trade-offs. We show that integrated decoding halves the required distillation code distance compared to entanglement distillation implemented using separate decoding, thus requiring significantly fewer Bell pairs. As a main focus of the work, we synthesize efficient circuits for an important primitive in distributed fault tolerance: distributed stabilizer measurements. These circuits can be adapted to resource constraints, e.g. on the Bell pair generation rate or the space available for on-chip auxiliary qubits. Noting that full local fault-tolerance is not always needed to preserve the correct scaling of logical error rates, we further optimize the circuits depending on the surrounding context. We consider in particular the surface code and the color code, both as distributed memories and in the case of lattice surgery across separate modules. Here, robustness to certain hook and readout errors reduces the number of required Bell pairs even further, compared to the context-free setting. We numerically benchmark the resulting implementations under circuit level noise with additional interconnect noise.</p><br>
+                <strong>Joint-Work With: </strong> Martin Moureau, Benjamin Rodatz, Boldizsár Poór, Elie Mounzer, and Linnea Grans-Samuelsson<br>
+            </div>
+        </div>
+        <div class="cell row">
             <h2>Winter 2026 Schedule</h2>
             <style>
             p { margin:0 }
