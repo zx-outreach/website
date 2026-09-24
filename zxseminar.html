@@ -137,14 +137,24 @@ body {
                 <strong>Joint-Work With: </strong> Andrey Boris Khesin, Sarah Meng Li, Benjamin Rodatz, John van de Wetering, and Richie Yeung<br>
             </div>
             <div style="padding: 1em; background: #d9f2e6">
-                <strong><p>Tuesday October 27th: Calculating the Entanglement Entropy and Magic of ZX-Diagrams</p></strong>
+                <strong><p>Tuesday October 27th: Entanglement Entropy and Magic of ZX-Diagrams</p></strong>
                 </div>
                 <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
                 <strong><p>Speaker:</strong> Marcin Szyniszewski</p><br>
                 <strong>Time:</strong> 11:30 am - 12:30 pm ET = 3:30 - 4:30 pm UK = 4:30 - 5:30 pm Netherlands<br>
                 <br>
-                <strong><p>Abstract:</strong> TBA</p><br>
+                <strong><p>Abstract:</strong> Entanglement and non-stabilizerness are complementary resources underlying the complexity of quantum states, yet extracting either quantity from large quantum circuits generally requires exponentially-scaling resources. In diagrammatic approaches to quantum computation, such as the ZX-calculus, both quantities likewise typically require expensive tensor contractions, which are not native to these graphical methods. Here we show that both entanglement and magic can instead be efficiently estimated directly from ZX-diagrams. Diagrams with flow can be transformed into a normal form that separates the (potentially extensive) stabilizer entanglement from the non-Clifford deformations, giving additive upper and lower bounds on bipartite entanglement entropy. We further tighten these bounds through a preprocessing procedure that removes or merges redundant non-Clifford contributions. In contrast, upper-bounding magic does not require flow and can be performed after simplification of the ZX-diagram. We benchmark these methods in random circuits and Clifford-dressed Trotterized many-body dynamics, finding that the resulting bounds remain informative even at large qubit numbers, circuit depths, and internal spider counts. Our results provide scalable probes of entanglement and non-stabilizerness of ZX-diagrams and establish a bridge between ZX-calculus and quantum many-body resource characterization, with applications across quantum computing, quantum information, and condensed-matter physics.</p><br>
                 <strong>Joint-Work With: </strong> Razin Shaikh and Aleks Kissinger<br>
+            </div>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Tuesday November 3rd: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2608.24370">ABSTRACTS: Amsterdam Benchmark Suite for the Time and Resource Analysis of Clifford+T Simulators</a></p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong> <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=zOYT7TcAAAAJ&hl=en">Matthew Sutcliffe</a></p><br>
+                <strong>Time:</strong> 10:30 - 11:30 am ET = 3:30 - 4:30 pm UK = 4:30 - 5:30 pm Netherlands<br>
+                <br>
+                <strong><p>Abstract:</strong> Recent years have seen a rapid growth in literature presenting new methods for simulating non-Clifford quantum circuits with classical hardware. These methods span a range of approaches, including stabiliser decomposition and tensor contraction techniques, varying in efficiency depending on circuit class, depth, non-Clifford gate count, and other metrics. A notable limitation of this literature is the lack of a standardised approach to benchmarking, with each new paper outlining its own specification, simulating its own set of circuits on the authors’ own hardware. This paper seeks to address this issue by presenting a standardised and canonical benchmark suite and infrastructure for quantifying the efficiency of non-Clifford classical simulators, with a consistent dataset of circuits and providing consistent (virtual) hardware, thereby enabling a fair comparison of results.</p><br>
+                <strong>Joint-Work With: </strong> John van de Wetering<br>
             </div>
             <div style="padding: 1em; background: #d9f2e6">
                 <strong><p>Tuesday November 10th: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2609.03048">Resource-adaptive Distributed Fault Tolerance with Very Noisy Bell Pairs</a></p></strong>
@@ -155,6 +165,16 @@ body {
                 <br>
                 <strong><p>Abstract:</strong> Distributed architectures have been proposed as a pathway to large-scale quantum computers. Combined with the need for fault-tolerance, such architectures require distributed quantum error correction (DQEC) and distributed logical gates. An important challenge is how to realize DQEC primitives in the setting where interaction between modules is restricted to shared Bell pairs that are significantly noisier than on-chip operations. We extend the work in [1] on fault tolerance by construction to this setting, deriving different strategies for handling the additional noise. Through fault-improvement we recover conventional entanglement distillation, and also find more dynamical protocols that enable space-time trade-offs. We show that integrated decoding halves the required distillation code distance compared to entanglement distillation implemented using separate decoding, thus requiring significantly fewer Bell pairs. As a main focus of the work, we synthesize efficient circuits for an important primitive in distributed fault tolerance: distributed stabilizer measurements. These circuits can be adapted to resource constraints, e.g. on the Bell pair generation rate or the space available for on-chip auxiliary qubits. Noting that full local fault-tolerance is not always needed to preserve the correct scaling of logical error rates, we further optimize the circuits depending on the surrounding context. We consider in particular the surface code and the color code, both as distributed memories and in the case of lattice surgery across separate modules. Here, robustness to certain hook and readout errors reduces the number of required Bell pairs even further, compared to the context-free setting. We numerically benchmark the resulting implementations under circuit level noise with additional interconnect noise.</p><br>
                 <strong>Joint-Work With: </strong> Martin Moureau, Benjamin Rodatz, Boldizsár Poór, Elie Mounzer, and Linnea Grans-Samuelsson<br>
+            </div>
+            <div style="padding: 1em; background: #d9f2e6">
+                <strong><p>Tuesday December 1st: <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2607.05501">Towards Lattice Surgery Compilation for the Color Code Using Pipe Diagrams</a></p></strong>
+                </div>
+                <div class = "adjust-line-height", style="padding: 1em; background: #f2f2f2">
+                <strong><p>Speaker:</strong> Laura S. Herzog</p><br>
+                <strong>Time:</strong> 10:30 - 11:30 am ET = 3:30 - 4:30 pm UK = 4:30 - 5:30 pm Netherlands<br>
+                <br>
+                <strong><p>Abstract:</strong> Pipe diagrams have emerged as a powerful framework for flexible lattice surgery compilation and spacetime optimization for the surface code. In contrast, analogous compilation techniques for color code architectures remain largely unexplored, despite the color code’s favorable properties, including reduced qubit overhead and transversal single-qubit Clifford gates. In this work, we develop a pipe diagram representation for the triangular color code on the 6.6.6 lattice and establish its correspondence to ZX-diagrammatic descriptions of computation. We present distance-independent constructions of color code pipe diagrams together with explicit realizations of correlation surfaces, stabilizers, and syndrome extraction circuits. This framework enables both macroscopic optimization of logical computations in spacetime and microscopic compilation to executable syndrome extraction circuits. We demonstrate the potential for compact spacetime embeddings with the color code’s geometry. These results provide a foundation for automated lattice surgery compilation and diagrammatic optimization in color code architectures.</p><br>
+                <strong>Joint-Work With: </strong> Gilad Kishony, Robert Wille, and Austin Fowler<br>
             </div>
         </div>
         <div class="cell row">
